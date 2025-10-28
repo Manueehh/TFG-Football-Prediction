@@ -1,5 +1,15 @@
+# ==========================================================
+#  data_preparation.py
+#  Football Prediction
+#  Author: Manuel Avilés Rodríguez
+# ==========================================================
+
 import pandas as pd
 import os
+
+# Global variable for directory
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
 
 def data_concat_and_selection(dataframes : list[pd.DataFrame]):
     f_df = pd.DataFrame()
@@ -54,9 +64,8 @@ def data_transforming(dataframe : pd.DataFrame):
     return dataframe.drop_duplicates()
 
 def read_primera():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(base_dir, '..', 'data', 'Primera')
-    path = os.path.normpath(path)  # handle ".." correctly
+    path = os.path.normpath(path)
     dataframes = []
 
     for filename in os.listdir(path):
@@ -69,13 +78,15 @@ def read_primera():
     return dataframes
 
 def write_csv(dataframe : pd.DataFrame):
-    base_dir = os.path.dirname(os.path.abspath(__file__))
     processed_folder = os.path.join(base_dir, '..', 'data', 'processed')
     os.makedirs(processed_folder, exist_ok=True)
     output_file = os.path.join(processed_folder, 'LaLiga_combined.csv')
     dataframe.to_csv(output_file, index=False)
 
-dataframes_primera = read_primera()
-dataframes_concat = data_concat_and_selection(dataframes=dataframes_primera)
-data_transformed = data_transforming(dataframes_concat)
-write_csv(data_transformed)
+def main():
+    dataframes_primera = read_primera()
+    dataframes_concat = data_concat_and_selection(dataframes=dataframes_primera)
+    data_transformed = data_transforming(dataframes_concat)
+    write_csv(data_transformed)
+
+main()
