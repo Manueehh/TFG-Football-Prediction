@@ -6,6 +6,7 @@
 
 import pandas as pd
 import os
+import numpy as np
 
 # Global variable for directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -139,17 +140,29 @@ def add_index_features(df):
 
 def add_market_features(df):
     """
-    Odd bets into probabilities
+    Odd marks into probabilities
     """
-    for c in ["B365H", "B365D", "B365A"]:
-        if c in df.columns:
-            df[f"{c}_prob"] = 1 / df[c]
+
+    cols = ["B365H", "B365D", "B365A"]
+    if not all(c in df.columns for c in cols):
+        print("⚠️  No se encontraron todas las columnas de cuotas (B365H/D/A). Se omite esta transformación.")
+        return df
     
-    sum_probs = df[["B365H_prob", "B365D_prob", "B365A_prob"]].sum(axis=1)
-    for c in ["B365H_prob", "B365D_prob", "B365A_prob"]:
-        df[c] = df[c] / sum_probs
-    
+    for c in cols:
+        df[f"{c}_prob"] = 1 / df[c]
+
+    sum_probs = df[[f"{c}_prob" for c in cols]].sum(axis=1)
+    for c in cols:
+        df[f"{c}_prob"] = df[f"{c}_prob"] / sum_probs
+
+    df["prob_diff_home_away"] = df["B365H_prob"] - df["B365A_prob"] 
+    df["prob_fav_margin"] = df[[f"{c}_prob" for c in cols]].max(axis=1) - df[[f"{c}_prob" for c in cols]].min(axis=1)
+
+    df.replace([np.inf, -np.inf], np.nan, inplace=True)
+    df.fillna(0, inplace=True)
+
     return df
+
 
 
 def generate_features(df):
