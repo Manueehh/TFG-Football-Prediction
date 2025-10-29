@@ -13,7 +13,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 
 def data_concat_and_selection(dataframes : list[pd.DataFrame]):
     f_df = pd.DataFrame()
-    # Data concatenation, this is for Primera Division, make another method for Segunda Division
+    # Data concatenation, this is for Primera Division
     for dataframe in dataframes:
         f_df = pd.concat([f_df,dataframe],ignore_index=True)
 
@@ -45,7 +45,6 @@ def data_concat_and_selection(dataframes : list[pd.DataFrame]):
     B365D : Bet365 odds for draw
     B365A : Bet365 odds for winning Away Team
     """
-    print("AAAAAAAAAAAAAAAAAAAAAAAAA")
     f_df_cols = f_df.filter(['Div','Date','HomeTeam','AwayTeam','FTHG','FTAG','FTR','HTHG','HTAG','HTR','HS','AS','HST','AST','HF','AF','HC','AC',
                               'HY','AY','HR','AR','B365H','B365D','B365A'])
     return f_df_cols
@@ -56,8 +55,6 @@ def data_transforming(dataframe : pd.DataFrame):
     """
     dataframe['Div'] = dataframe['Div'].astype('category')
     dataframe['Date'] = pd.to_datetime(dataframe['Date'], dayfirst=True, errors='coerce')
-    dataframe['HomeTeam'] = dataframe['HomeTeam'].astype('category')
-    dataframe['AwayTeam'] = dataframe['AwayTeam'].astype('category')
     dataframe['FTR'] = dataframe['FTR'].astype('category')
     dataframe['HTR'] = dataframe['HTR'].astype('category')
 
@@ -123,7 +120,8 @@ def mapping_team_names(data_transformed : pd.DataFrame):
         'Las Palmas' : 'Las Palmas',
         'Leganes' : 'Leganés',
         'Girona' : 'Girona',
-        'Huesca' : 'Huesca'
+        'Huesca' : 'Huesca',
+        'Eibar' : 'Eibar'
     }
 
     data_transformed['HomeTeam'] = data_transformed['HomeTeam'].map(team_name_map).fillna(data_transformed['HomeTeam'])

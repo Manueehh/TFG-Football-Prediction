@@ -72,7 +72,6 @@ def get_info_from_matches():
                     "away_lineup": match.get("away_lineup")
                 })
         except Exception as e:
-            print(f"⚠️ Error en fila {i}: {e}")
             continue
 
     matches_lineups_df = pd.DataFrame(all_matches)

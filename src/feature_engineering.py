@@ -181,6 +181,15 @@ def join_with_matches(data_features : pd.DataFrame):
 
     return df_joined
 
+def get_season(date):
+    """Returns season in format YYYY_YY based on football calendar."""
+    if pd.isna(date):
+        return None
+    year = date.year
+    if date.month >= 7:
+        return f"{year}_{str(year + 1)[2:]}"
+    else:
+        return f"{year - 1}_{str(year)[2:]}"
 
 if __name__ == "__main__":
     path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
@@ -188,4 +197,7 @@ if __name__ == "__main__":
     df = pd.read_csv(path)
     df = generate_features(df)
     df = join_with_matches(df)
+    df['Date'] = pd.to_datetime(df['Date'], dayfirst=True, errors='coerce')
+    df["Season"] = df["Date"].apply(get_season)
     df.to_csv("data/processed/laliga_features.csv", index=False)
+    print(df.dtypes)
