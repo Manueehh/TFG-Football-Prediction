@@ -83,10 +83,57 @@ def write_csv(dataframe : pd.DataFrame):
     output_file = os.path.join(processed_folder, 'LaLiga_combined.csv')
     dataframe.to_csv(output_file, index=False)
 
-def main():
+def mapping_team_names(data_transformed : pd.DataFrame):
+    team_name_map = {
+        'Alaves' : 'Alavés',
+        'Ath Bilbao' : 'Athletic',
+        'Valencia' : 'Valencia',
+        'Ath Madrid' : 'Atlético',
+        'Cadiz' : 'Cádiz',
+        'Celta' : 'Celta',
+        'Espanol' : 'Espanyol',
+        'Mallorca' : 'Mallorca',
+        'Osasuna' : 'Osasuna',
+        'Sevilla' : 'Sevilla',
+        'Betis' : 'Real Betis',
+        'La Coruna' : 'RC Deportivo',
+        'Real Madrid' : 'Real Madrid',
+        'Barcelona' : 'Barcelona',
+        'Getafe' : 'Getafe',
+        'Malaga' : 'Málaga',
+        'Santander' : 'Racing',
+        'Sociedad' : 'R. Sociedad',
+        'Villarreal' : 'Villarreal',
+        'Zaragoza' : 'Real Zaragoza',
+        'Recreativo' : 'Recreativo',
+        'Gimnastic' : 'Gimnàstic Tarragona',
+        'Levante' : 'Levante',
+        'Murcia' : 'Real Murcia',
+        'Almeria' : 'Almería',
+        'Valladolid' : 'Real Valladolid',
+        'Numancia' : 'Numancia',
+        'Sp Gijon' : 'Real Sporting',
+        'Tenerife' : 'Tenerife',
+        'Xerez' : 'Xerez CD',
+        'Hercules' : 'Hércules',
+        'Granada' : 'Granada',
+        'Vallecano' : 'Rayo Vallecano',
+        'Elche' : 'Elche',
+        'Cordoba' : 'Córdoba',
+        'Las Palmas' : 'Las Palmas',
+        'Leganes' : 'Leganés',
+        'Girona' : 'Girona',
+        'Huesca' : 'Huesca'
+    }
+
+    data_transformed['HomeTeam'] = data_transformed['HomeTeam'].map(team_name_map).fillna(data_transformed['HomeTeam'])
+    data_transformed['AwayTeam'] = data_transformed['AwayTeam'].map(team_name_map).fillna(data_transformed['AwayTeam'])
+
+    return data_transformed
+
+if __name__ == "__main__":
     dataframes_primera = read_primera()
     dataframes_concat = data_concat_and_selection(dataframes=dataframes_primera)
     data_transformed = data_transforming(dataframes_concat)
+    data_transformed = mapping_team_names(data_transformed)
     write_csv(data_transformed)
-
-main()

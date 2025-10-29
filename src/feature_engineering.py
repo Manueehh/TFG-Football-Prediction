@@ -11,7 +11,7 @@ import numpy as np
 # Global variable for directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-def rolling_feature(df, team_col, value_col, new_col, window=7):
+def rolling_feature(df : pd.DataFrame, team_col : str, value_col : str, new_col : str, window=7):
     """
     Rolling mean for each team. Shift(1) avoids the actual match and only takes into account the 7 previous matches
     """
@@ -22,20 +22,7 @@ def rolling_feature(df, team_col, value_col, new_col, window=7):
     )
     return df
 
-
-def rolling_sum(df, team_col, value_col, new_col, window=7):
-    """
-    Rolling sum for each team.
-    """
-    df[new_col] = (
-        df.groupby(team_col)[value_col]
-          .apply(lambda x: x.shift(1).rolling(window).sum())
-          .reset_index(level=0, drop=True)
-    )
-    return df
-
-
-def add_elo_features(df, k_factor=20):
+def add_elo_features(df : pd.DataFrame, k_factor=20):
     """
     ELO ratings for each team
     """
@@ -71,7 +58,7 @@ def add_elo_features(df, k_factor=20):
     return df
 
 
-def add_form_features(df, window=7):
+def add_form_features(df : pd.DataFrame, window=7):
     """
     Average of goals scored by home and away teams.
     """
@@ -86,7 +73,7 @@ def add_form_features(df, window=7):
     return df
 
 
-def add_stat_features(df, window=7):
+def add_stat_features(df : pd.DataFrame, window=7):
     """
     Rolling averages for each team (shots, shots on target, corners, etc...)
     """
@@ -112,7 +99,7 @@ def add_stat_features(df, window=7):
     return df
 
 
-def add_index_features(df):
+def add_index_features(df : pd.DataFrame):
     """
     Various statistics, like attack strength, defense strength, discipline...
     """
@@ -138,7 +125,7 @@ def add_index_features(df):
     return df
 
 
-def add_market_features(df):
+def add_market_features(df : pd.DataFrame):
     """
     Odd marks into probabilities
     """
@@ -165,7 +152,7 @@ def add_market_features(df):
 
 
 
-def generate_features(df):
+def generate_features(df : pd.DataFrame):
     """
     Computes all the features
     """
@@ -180,10 +167,25 @@ def generate_features(df):
     
     return df
 
+def join_with_matches(data_features : pd.DataFrame):
+    path = os.path.join(base_dir, '..', 'data', 'processed', 'matches_final_info.csv')
+    path = os.path.normpath(path)
+    matches_lineups = pd.read_csv(path)
+
+    df_joined = pd.merge(
+        data_features,
+        matches_lineups,
+        on=['Date','HomeTeam','AwayTeam'],
+        how='left'
+    )
+
+    return df_joined
+
 
 if __name__ == "__main__":
     path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
     path = os.path.normpath(path)
     df = pd.read_csv(path)
     df = generate_features(df)
+    df = join_with_matches(df)
     df.to_csv("data/processed/laliga_features.csv", index=False)
