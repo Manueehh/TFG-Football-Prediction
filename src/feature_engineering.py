@@ -7,6 +7,7 @@
 import pandas as pd
 import os
 import numpy as np
+import ast
 
 # Global variable for directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -179,7 +180,24 @@ def join_with_matches(data_features : pd.DataFrame):
         how='left'
     )
 
-    return df_joined
+    df_joined['Home_Lineup_List'] = df_joined['home_lineup_names'].apply(string_into_list)
+    df_joined['Away_Lineup_List'] = df_joined['away_lineup_names'].apply(string_into_list)
+
+    return df_joined.drop(['home_lineup_names','away_lineup_names'],axis=1)
+
+def string_into_list(column):
+    if isinstance(column, list):
+        return column
+    if not isinstance(column, str):
+        return []
+    
+    try:
+        val = ast.literal_eval(column)
+        if isinstance(val, list):
+            return [str(x) for x in val]
+        return []
+    except Exception:
+        return []
 
 def get_season(date):
     """Returns season in format YYYY_YY based on football calendar."""
@@ -200,4 +218,3 @@ if __name__ == "__main__":
     df['Date'] = pd.to_datetime(df['Date'], dayfirst=True, errors='coerce')
     df["Season"] = df["Date"].apply(get_season)
     df.to_csv("data/processed/laliga_features.csv", index=False)
-    print(df.dtypes)
