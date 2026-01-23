@@ -40,9 +40,9 @@ def main():
                 "AwayLineup": away_lineup
             })
 
-            print(f"✅ Partido {i} guardado correctamente.")
+            print(f"Partido {i} guardado correctamente.")
 
-        print(f"\n✅ Todos los partidos registrados. Archivo guardado como '{archivo_salida}'")
+        print(f"Todos los partidos registrados. Archivo guardado como '{archivo_salida}'")
 
 if __name__ == "__main__":
     main()
