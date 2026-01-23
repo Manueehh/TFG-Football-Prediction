@@ -133,7 +133,7 @@ def add_market_features(df : pd.DataFrame):
 
     cols = ["B365H", "B365D", "B365A"]
     if not all(c in df.columns for c in cols):
-        print("⚠️  No se encontraron todas las columnas de cuotas (B365H/D/A). Se omite esta transformación.")
+        print("No se encontraron todas las columnas de cuotas (B365H/D/A). Se omite esta transformación.")
         return df
     
     for c in cols:
@@ -209,6 +209,22 @@ def get_season(date):
     else:
         return f"{year - 1}_{str(year)[2:]}"
 
+def get_rivalidades(df):
+    rivalidades = []
+    path = os.path.join(base_dir,'..', 'data','raw','rivalidades.txt')
+    with open(path,'r',encoding='utf-8') as f:
+        for linea in f:
+            linea = linea.strip()
+            if not linea:
+                continue
+            linea = linea.strip("(),")
+            equipo1, equipo2 = linea.split(",",1)
+            rivalidades.append((equipo1.strip(),equipo2.strip()))
+    rivalidades_set = {frozenset(r) for r in rivalidades}
+    df["derby"] = (df.apply(lambda r: frozenset((r['HomeTeam'],r['AwayTeam'])) in rivalidades_set, axis=1).astype('int8'))
+    return df
+    
+
 if __name__ == "__main__":
     path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
     path = os.path.normpath(path)
@@ -217,4 +233,5 @@ if __name__ == "__main__":
     df = join_with_matches(df)
     df['Date'] = pd.to_datetime(df['Date'], dayfirst=True, errors='coerce')
     df["Season"] = df["Date"].apply(get_season)
+    df = get_rivalidades(df)
     df.to_csv("data/processed/laliga_features.csv", index=False)

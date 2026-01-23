@@ -129,10 +129,6 @@ def load_player_values():
     return player_values
 
 
-def concat_dfs(dataframes: list[pd.DataFrame]) -> pd.DataFrame:
-    return pd.concat(dataframes, ignore_index=True)
-
-
 def write_csv(dataframe: pd.DataFrame, filename: str):
     processed_folder = os.path.join(base_dir, "..", "data", "processed")
     os.makedirs(processed_folder, exist_ok=True)
@@ -173,7 +169,7 @@ def add_team_values_to_features(features: pd.DataFrame, players_df: pd.DataFrame
 
 if __name__ == "__main__":
     players_list = load_player_values()
-    players_df = concat_dfs(players_list)
+    players_df = pd.concat(players_list,ignore_index=True)
     write_csv(players_df, "players_with_market_values.csv")
 
     features = load_matches()

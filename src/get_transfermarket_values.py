@@ -1,11 +1,12 @@
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-from tqdm import tqdm
 import time
 import random
 import os
 import json
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+from tqdm import tqdm
+
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
