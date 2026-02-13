@@ -163,6 +163,9 @@ def generate_features(df : pd.DataFrame):
     df = add_form_features(df)
     df = add_stat_features(df)
     df = add_index_features(df)
+    df = get_rivalidades(df)
+    df = get_resultado_string(df)
+    df = get_resultado_M(df)
     if "B365H" in df.columns:
         df = add_market_features(df)
     
@@ -209,7 +212,7 @@ def get_season(date):
     else:
         return f"{year - 1}_{str(year)[2:]}"
 
-def get_rivalidades(df):
+def get_rivalidades(df : pd.DataFrame):
     rivalidades = []
     path = os.path.join(base_dir,'..', 'data','raw','rivalidades.txt')
     with open(path,'r',encoding='utf-8') as f:
@@ -224,6 +227,16 @@ def get_rivalidades(df):
     df["derby"] = (df.apply(lambda r: frozenset((r['HomeTeam'],r['AwayTeam'])) in rivalidades_set, axis=1).astype('int8'))
     return df
     
+def get_resultado_string(df):
+    df['result_string'] = df['FTHG'].astype(str) + '-' + df['FTAG'].astype(str)
+    return df
+
+def get_resultado_M(df : pd.DataFrame):
+    goals_home = df['FTHG'].where(df['FTHG'] <= 2, 'M')
+    goals_away = df['FTAG'].where(df['FTAG'] <= 2, 'M')
+
+    df['result_abstract'] = goals_home.astype(str) + '-' + goals_away.astype(str)
+    return df
 
 if __name__ == "__main__":
     path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
@@ -233,5 +246,6 @@ if __name__ == "__main__":
     df = join_with_matches(df)
     df['Date'] = pd.to_datetime(df['Date'], dayfirst=True, errors='coerce')
     df["Season"] = df["Date"].apply(get_season)
-    df = get_rivalidades(df)
+    print(f"Different results count: {len(df['result_string'].unique())}")
+    print(f"Different results abstract: {len(df['result_abstract'].unique())}")
     df.to_csv("data/processed/laliga_features.csv", index=False)
