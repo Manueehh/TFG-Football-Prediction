@@ -54,7 +54,7 @@ def add_elo_features(df : pd.DataFrame, k_factor=20):
     
     df["elo_home"] = elo_home
     df["elo_away"] = elo_away
-    df["elo_diff"] = df["elo_home"] - df["elo_away"]
+    df["elo_diff"] = abs(df["elo_home"] - df["elo_away"])
     
     return df
 
@@ -188,6 +188,48 @@ def join_with_matches(data_features : pd.DataFrame):
 
     return df_joined.drop(['home_lineup_names','away_lineup_names'],axis=1)
 
+def merge_lineups(df : pd.DataFrame) -> pd.DataFrame:
+    """
+    Merges lineup CSVs (data/lineups/) into the dataframe for seasons 2022-23 onwards.
+    Overwrites Home_Lineup_List and Away_Lineup_List preserving earlier seasons from join_with_matches().
+    """
+    new_lineup_seasons = {'2022_23', '2023_24', '2024_25'}
+    lineups_dir = os.path.normpath(os.path.join(base_dir, '..', 'data', 'laliga_lineups'))
+
+    lineup_frames = []
+    for filename in sorted(os.listdir(lineups_dir)):
+        if filename.startswith('LaLiga_lineups_') and filename.endswith('.csv'):
+            file_path = os.path.join(lineups_dir, filename)
+            df_lineup = pd.read_csv(file_path, usecols=['Date', 'HomeTeam', 'AwayTeam', 'HomeLineup', 'AwayLineup'])
+            lineup_frames.append(df_lineup)
+
+    if not lineup_frames:
+        print("No lineup files found in data/lineups/. Skipping merge_lineups.")
+        return df
+
+    lineups = pd.concat(lineup_frames, ignore_index=True)
+    lineups['Date'] = pd.to_datetime(lineups['Date'], errors='coerce').dt.strftime('%Y-%m-%d')
+    df['Date'] = pd.to_datetime(df['Date'], errors='coerce').dt.strftime('%Y-%m-%d')
+
+    mask_new = df['Season'].isin(new_lineup_seasons)
+    df_new = pd.merge(df[mask_new].copy(), lineups, on=['Date', 'HomeTeam', 'AwayTeam'], how='left')
+
+    df_new['Home_Lineup_List'] = df_new['HomeLineup'].apply(
+        lambda x: [p.strip() for p in x.split(',')] if isinstance(x, str) else []
+    )
+    df_new['Away_Lineup_List'] = df_new['AwayLineup'].apply(
+        lambda x: [p.strip() for p in x.split(',')] if isinstance(x, str) else []
+    )
+    df_new = df_new.drop(columns=['HomeLineup', 'AwayLineup'])
+
+    df.loc[mask_new, 'Home_Lineup_List'] = df_new['Home_Lineup_List'].values
+    df.loc[mask_new, 'Away_Lineup_List'] = df_new['Away_Lineup_List'].values
+
+    matched = df_new['Home_Lineup_List'].apply(lambda x: len(x) > 0).sum()
+    print(f"Lineups merged: {matched}/{len(df_new)} rows matched ({matched/len(df_new)*100:.1f}%)")
+
+    return df
+
 def string_into_list(column):
     if isinstance(column, list):
         return column
@@ -241,11 +283,13 @@ def get_resultado_M(df : pd.DataFrame):
 if __name__ == "__main__":
     path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
     path = os.path.normpath(path)
+    
     df = pd.read_csv(path)
     df = generate_features(df)
     df = join_with_matches(df)
     df['Date'] = pd.to_datetime(df['Date'], dayfirst=True, errors='coerce')
     df["Season"] = df["Date"].apply(get_season)
+    df = merge_lineups(df)
     print(f"Different results count: {len(df['result_string'].unique())}")
     print(f"Different results abstract: {len(df['result_abstract'].unique())}")
     df.to_csv("data/processed/laliga_features.csv", index=False)

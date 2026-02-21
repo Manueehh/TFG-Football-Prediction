@@ -18,7 +18,7 @@ def main():
         print(f"\nComenzando registro de alineaciones para la temporada {temporada}")
         print("-------------------------------------------------------------")
 
-        for i in range(161, 380):  # 380 partidos
+        for i in range(221, 380):  # 380 partidos
             print(f"\n🕹 Partido {i}/380")
 
             date = input("Fecha del partido (YYYY-MM-DD): ").strip()

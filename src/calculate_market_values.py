@@ -166,6 +166,23 @@ def add_team_values_to_features(features: pd.DataFrame, players_df: pd.DataFrame
 
     return features
 
+def add_various_features(df : pd.DataFrame):
+    """
+    Various features, like team values diffs and statistic-related variables
+    """
+    df["team_value_diff"] = df["home_team_value"] - df["away_team_value"]
+    df["team_value_ratio"] = df["home_team_value"] / (df["away_team_value"] + 1)
+
+    df["shots_on_target_ratio_home"] = (df["home_avg_shots_on_target_7"] / (df["home_avg_shots_7"] + 1e-5))
+    df["shots_on_target_ratio_away"] = (df["away_avg_shots_on_target_7"] / (df["away_avg_shots_7"] + 1e-5))
+
+    df["attack_vs_defense_home"] = df["attack_strength_home"] - df["defense_strength_away"]
+    df["attack_vs_defense_away"] = df["attack_strength_away"] - df["defense_strength_home"]
+
+    df["total_avg_goals"] = (df["home_avg_goals_scored_7"] + df["away_avg_goals_scored_7"])
+
+    return df
+
 
 if __name__ == "__main__":
     players_list = load_player_values()
@@ -175,4 +192,6 @@ if __name__ == "__main__":
     features = load_matches()
     features = add_team_values_to_features(features, players_df)
 
-    write_csv(features, "laliga_features.csv")
+    df_final = add_various_features(features)
+
+    write_csv(df_final, "laliga_features.csv")
