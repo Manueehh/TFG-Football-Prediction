@@ -151,7 +151,13 @@ def add_market_features(df : pd.DataFrame):
 
     return df
 
-
+def add_binary_output(df : pd.DataFrame):
+    """
+    Binary Output para 1/X2 solution
+    """
+    df['FTR_1X2'] = df['FTR'].apply(lambda x: '1' if x == 'H' else 'X2')
+    return df
+    
 
 def generate_features(df : pd.DataFrame):
     """
@@ -166,6 +172,7 @@ def generate_features(df : pd.DataFrame):
     df = get_rivalidades(df)
     df = get_resultado_string(df)
     df = get_resultado_M(df)
+    df = add_binary_output(df)
     if "B365H" in df.columns:
         df = add_market_features(df)
     
@@ -281,7 +288,7 @@ def get_resultado_M(df : pd.DataFrame):
     return df
 
 if __name__ == "__main__":
-    path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
+    path = os.path.join(base_dir, '..', 'data', 'processed','laliga_features.csv')
     path = os.path.normpath(path)
     
     df = pd.read_csv(path)
