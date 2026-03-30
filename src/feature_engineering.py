@@ -12,7 +12,7 @@ import ast
 # Global variable for directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-def rolling_feature(df : pd.DataFrame, team_col : str, value_col : str, new_col : str, window=9):
+def rolling_feature(df : pd.DataFrame, team_col : str, value_col : str, new_col : str, window=7):
     """
     Rolling mean for each team. Shift(1) avoids the actual match and only takes into account the 7 previous matches
     """
@@ -59,38 +59,38 @@ def add_elo_features(df : pd.DataFrame, k_factor=20):
     return df
 
 
-def add_form_features(df : pd.DataFrame, window=9):
+def add_form_features(df : pd.DataFrame, window=7):
     """
     Average of goals scored by home and away teams.
     """
-    df = rolling_feature(df, "HomeTeam", "FTHG", "home_avg_goals_scored_9", window)
-    df = rolling_feature(df, "AwayTeam", "FTAG", "away_avg_goals_scored_9", window)
-    df = rolling_feature(df, "HomeTeam", "FTAG", "home_avg_goals_conceded_9", window)
-    df = rolling_feature(df, "AwayTeam", "FTHG", "away_avg_goals_conceded_9", window)
+    df = rolling_feature(df, "HomeTeam", "FTHG", "home_avg_goals_scored_7", window)
+    df = rolling_feature(df, "AwayTeam", "FTAG", "away_avg_goals_scored_7", window)
+    df = rolling_feature(df, "HomeTeam", "FTAG", "home_avg_goals_conceded_7", window)
+    df = rolling_feature(df, "AwayTeam", "FTHG", "away_avg_goals_conceded_7", window)
     
-    df["goal_diff_form_home"] = df["home_avg_goals_scored_9"] - df["home_avg_goals_conceded_9"]
-    df["goal_diff_form_away"] = df["away_avg_goals_scored_9"] - df["away_avg_goals_conceded_9"]
+    df["goal_diff_form_home"] = df["home_avg_goals_scored_7"] - df["home_avg_goals_conceded_7"]
+    df["goal_diff_form_away"] = df["away_avg_goals_scored_7"] - df["away_avg_goals_conceded_7"]
     
     return df
 
 
-def add_stat_features(df : pd.DataFrame, window=9):
+def add_stat_features(df : pd.DataFrame, window=7):
     """
     Rolling averages for each team (shots, shots on target, corners, etc...)
     """
     cols = [
-        ("HomeTeam", "HS", "home_avg_shots_9"),
-        ("AwayTeam", "AS", "away_avg_shots_9"),
-        ("HomeTeam", "HST", "home_avg_shots_on_target_9"),
-        ("AwayTeam", "AST", "away_avg_shots_on_target_9"),
-        ("HomeTeam", "HC", "home_avg_corners_9"),
-        ("AwayTeam", "AC", "away_avg_corners_9"),
-        ("HomeTeam", "HF", "home_avg_fouls_9"),
-        ("AwayTeam", "AF", "away_avg_fouls_9"),
-        ("HomeTeam", "HY", "home_avg_yellows_9"),
-        ("AwayTeam", "AY", "away_avg_yellows_9"),
-        ("HomeTeam", "HR", "home_avg_reds_9"),
-        ("AwayTeam", "AR", "away_avg_reds_9"),
+        ("HomeTeam", "HS", "home_avg_shots_7"),
+        ("AwayTeam", "AS", "away_avg_shots_7"),
+        ("HomeTeam", "HST", "home_avg_shots_on_target_7"),
+        ("AwayTeam", "AST", "away_avg_shots_on_target_7"),
+        ("HomeTeam", "HC", "home_avg_corners_7"),
+        ("AwayTeam", "AC", "away_avg_corners_7"),
+        ("HomeTeam", "HF", "home_avg_fouls_7"),
+        ("AwayTeam", "AF", "away_avg_fouls_7"),
+        ("HomeTeam", "HY", "home_avg_yellows_7"),
+        ("AwayTeam", "AY", "away_avg_yellows_7"),
+        ("HomeTeam", "HR", "home_avg_reds_7"),
+        ("AwayTeam", "AR", "away_avg_reds_7"),
     ]
     
     for team_col, value_col, new_col in cols:
@@ -105,22 +105,22 @@ def add_index_features(df : pd.DataFrame):
     Various statistics, like attack strength, defense strength, discipline...
     """
     df["attack_strength_home"] = (
-        df["home_avg_goals_scored_9"] + 0.1 * df["home_avg_shots_on_target_9"]
+        df["home_avg_goals_scored_7"] + 0.1 * df["home_avg_shots_on_target_7"]
     )
     df["attack_strength_away"] = (
-        df["away_avg_goals_scored_9"] + 0.1 * df["away_avg_shots_on_target_9"]
+        df["away_avg_goals_scored_7"] + 0.1 * df["away_avg_shots_on_target_7"]
     )
     df["defense_strength_home"] = 1 / (
-        df["home_avg_goals_conceded_9"] + 0.1 * df["home_avg_yellows_9"] + 1e-3
+        df["home_avg_goals_conceded_7"] + 0.1 * df["home_avg_yellows_7"] + 1e-3
     )
     df["defense_strength_away"] = 1 / (
-        df["away_avg_goals_conceded_9"] + 0.1 * df["away_avg_yellows_9"] + 1e-3
+        df["away_avg_goals_conceded_7"] + 0.1 * df["away_avg_yellows_7"] + 1e-3
     )
     df["discipline_index_home"] = 1 - (
-        (0.5 * df["home_avg_yellows_9"] + 1.5 * df["home_avg_reds_9"]) / 10
+        (0.5 * df["home_avg_yellows_7"] + 1.5 * df["home_avg_reds_7"]) / 10
     )
     df["discipline_index_away"] = 1 - (
-        (0.5 * df["away_avg_yellows_9"] + 1.5 * df["away_avg_reds_9"]) / 10
+        (0.5 * df["away_avg_yellows_7"] + 1.5 * df["away_avg_reds_7"]) / 10
     )
     
     return df
@@ -288,7 +288,7 @@ def get_resultado_M(df : pd.DataFrame):
     return df
 
 if __name__ == "__main__":
-    path = os.path.join(base_dir, '..', 'data', 'processed','laliga_features.csv')
+    path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
     path = os.path.normpath(path)
     
     df = pd.read_csv(path)
