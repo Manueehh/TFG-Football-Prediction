@@ -173,13 +173,13 @@ def add_various_features(df : pd.DataFrame):
     df["team_value_diff"] = df["home_team_value"] - df["away_team_value"]
     df["team_value_ratio"] = df["home_team_value"] / (df["away_team_value"] + 1)
 
-    df["shots_on_target_ratio_home"] = (df["home_avg_shots_on_target_3"] / (df["home_avg_shots_3"] + 1e-5))
-    df["shots_on_target_ratio_away"] = (df["away_avg_shots_on_target_3"] / (df["away_avg_shots_3"] + 1e-5))
+    df["shots_on_target_ratio_home"] = (df["home_avg_shots_on_target_9"] / (df["home_avg_shots_9"] + 1e-5))
+    df["shots_on_target_ratio_away"] = (df["away_avg_shots_on_target_9"] / (df["away_avg_shots_9"] + 1e-5))
 
     df["attack_vs_defense_home"] = df["attack_strength_home"] - df["defense_strength_away"]
     df["attack_vs_defense_away"] = df["attack_strength_away"] - df["defense_strength_home"]
 
-    df["total_avg_goals"] = (df["home_avg_goals_scored_3"] + df["away_avg_goals_scored_3"])
+    df["total_avg_goals"] = (df["home_avg_goals_scored_9"] + df["away_avg_goals_scored_9"])
 
     return df
 
