@@ -12,7 +12,7 @@ import ast
 # Global variable for directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-def rolling_feature(df : pd.DataFrame, team_col : str, value_col : str, new_col : str, window=7):
+def rolling_feature(df : pd.DataFrame, team_col : str, value_col : str, new_col : str, window=3):
     """
     Rolling mean for each team. Shift(1) avoids the actual match and only takes into account the 7 previous matches
     """
