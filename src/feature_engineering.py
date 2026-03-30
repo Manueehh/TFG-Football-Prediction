@@ -59,7 +59,7 @@ def add_elo_features(df : pd.DataFrame, k_factor=20):
     return df
 
 
-def add_form_features(df : pd.DataFrame, window=3):
+def add_form_features(df : pd.DataFrame, window=9):
     """
     Average of goals scored by home and away teams.
     """
@@ -74,7 +74,7 @@ def add_form_features(df : pd.DataFrame, window=3):
     return df
 
 
-def add_stat_features(df : pd.DataFrame, window=3):
+def add_stat_features(df : pd.DataFrame, window=9):
     """
     Rolling averages for each team (shots, shots on target, corners, etc...)
     """
@@ -288,7 +288,7 @@ def get_resultado_M(df : pd.DataFrame):
     return df
 
 if __name__ == "__main__":
-    path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
+    path = os.path.join(base_dir, '..', 'data', 'processed','laliga_features.csv')
     path = os.path.normpath(path)
     
     df = pd.read_csv(path)
