@@ -58,6 +58,49 @@ def add_elo_features(df : pd.DataFrame, k_factor=20):
     
     return df
 
+def add_h2h_key(df : pd.DataFrame):
+    """
+    Head 2 Head key
+    """
+    df['h2h_key'] = df.apply(lambda r: '_'.join(sorted([r['HomeTeam'], r['AwayTeam']])),axis=1)
+
+    return df
+
+def add_h2h_history(df : pd.DataFrame):
+    """
+    Direct Head 2 Head local/away victories or draws between teams of the 7 previous matches
+    """
+    df = add_h2h_key(df)
+
+    df['ftr_home_win'] = (df['FTR'] == 'H').astype(int)
+    df['ftr_draw'] = (df['FTR'] == 'D').astype(int)
+    df['ftr_away_win'] = (df['FTR'] == 'A').astype(int)
+
+    df['h2h_local_wins'] = (
+        df.groupby('h2h_key')['ftr_home_win'].apply(
+            lambda x: x.shift(1).rolling(7, min_periods=1).sum()).reset_index(
+                level=0, drop=True
+            )
+        )
+    
+    df['h2h_draw'] = (
+        df.groupby('h2h_key')['ftr_draw'].apply(
+            lambda x: x.shift(1).rolling(7, min_periods=1).sum()).reset_index(
+                level=0, drop=True
+            )
+        )
+    
+    df['h2h_away_wins'] = (
+        df.groupby('h2h_key')['ftr_away_win'].apply(
+            lambda x: x.shift(1).rolling(7, min_periods=1).sum()).reset_index(
+                level=0, drop=True
+            )
+        )
+    
+    df.drop(columns=['ftr_home_win','ftr_draw','ftr_away_win','h2h_key'])
+    
+    return df
+
 
 def add_form_features(df : pd.DataFrame, window=7):
     """
@@ -173,6 +216,7 @@ def generate_features(df : pd.DataFrame):
     df = get_resultado_string(df)
     df = get_resultado_M(df)
     df = add_binary_output(df)
+    df = add_h2h_history(df)
     if "B365H" in df.columns:
         df = add_market_features(df)
     
@@ -288,7 +332,7 @@ def get_resultado_M(df : pd.DataFrame):
     return df
 
 if __name__ == "__main__":
-    path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
+    path = os.path.join(base_dir, '..', 'data', 'processed','laliga_features.csv')
     path = os.path.normpath(path)
     
     df = pd.read_csv(path)
