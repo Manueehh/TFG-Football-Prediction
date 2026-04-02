@@ -58,49 +58,6 @@ def add_elo_features(df : pd.DataFrame, k_factor=20):
     
     return df
 
-def add_h2h_key(df : pd.DataFrame):
-    """
-    Head 2 Head key
-    """
-    df['h2h_key'] = df.apply(lambda r: '_'.join(sorted([r['HomeTeam'], r['AwayTeam']])),axis=1)
-
-    return df
-
-def add_h2h_history(df : pd.DataFrame):
-    """
-    Direct Head 2 Head local/away victories or draws between teams of the 7 previous matches
-    """
-    df = add_h2h_key(df)
-
-    df['ftr_home_win'] = (df['FTR'] == 'H').astype(int)
-    df['ftr_draw'] = (df['FTR'] == 'D').astype(int)
-    df['ftr_away_win'] = (df['FTR'] == 'A').astype(int)
-
-    df['h2h_local_wins'] = (
-        df.groupby('h2h_key')['ftr_home_win'].apply(
-            lambda x: x.shift(1).rolling(7, min_periods=1).sum()).reset_index(
-                level=0, drop=True
-            )
-        )
-    
-    df['h2h_draw'] = (
-        df.groupby('h2h_key')['ftr_draw'].apply(
-            lambda x: x.shift(1).rolling(7, min_periods=1).sum()).reset_index(
-                level=0, drop=True
-            )
-        )
-    
-    df['h2h_away_wins'] = (
-        df.groupby('h2h_key')['ftr_away_win'].apply(
-            lambda x: x.shift(1).rolling(7, min_periods=1).sum()).reset_index(
-                level=0, drop=True
-            )
-        )
-    
-    df = df.drop(columns=['ftr_home_win','ftr_draw','ftr_away_win','h2h_key'])
-    
-    return df
-
 
 def add_form_features(df : pd.DataFrame, window=7):
     """
@@ -168,6 +125,66 @@ def add_index_features(df : pd.DataFrame):
     
     return df
 
+def calc_streak(series):
+    streak = []
+    count = 0
+    for val in series.shift(1):
+        if pd.isna(val):
+            streak.append(0)
+        elif val == 1:
+            count += 1
+            streak.append(count)
+        else:
+            count = 0
+            streak.append(0)
+    return pd.Series(streak, index=series.index)
+
+
+def add_streak_features(df: pd.DataFrame):
+    df['home_win_flag'] = (df['FTR'] == 'H').astype(int)
+    df['away_win_flag'] = (df['FTR'] == 'A').astype(int)
+
+    df['home_win_streak'] = (
+        df.groupby('HomeTeam')['home_win_flag']
+          .apply(calc_streak)
+          .reset_index(level=0, drop=True)
+    )
+
+    df['away_win_streak'] = (
+        df.groupby('AwayTeam')['away_win_flag']
+          .apply(calc_streak)
+          .reset_index(level=0, drop=True)
+    )
+
+    home_results = df[['Date', 'HomeTeam', 'FTR']].copy()
+    home_results['team'] = home_results['HomeTeam']
+    home_results['win'] = (home_results['FTR'] == 'H').astype(int)
+
+    away_results = df[['Date', 'AwayTeam', 'FTR']].copy()
+    away_results['team'] = away_results['AwayTeam']
+    away_results['win'] = (away_results['FTR'] == 'A').astype(int)
+
+    all_results = pd.concat([
+        home_results[['Date', 'team', 'win']],
+        away_results[['Date', 'team', 'win']]
+    ]).sort_values('Date').reset_index(drop=True)
+
+    all_results['overall_streak'] = (
+        all_results.groupby('team')['win']
+                   .apply(calc_streak)
+                   .reset_index(level=0, drop=True)
+    )
+
+    streak_dict = all_results.set_index(['Date', 'team'])['overall_streak'].to_dict()
+
+    df['home_overall_streak'] = df.apply(
+        lambda r: streak_dict.get((r['Date'], r['HomeTeam']), 0), axis=1)
+    df['away_overall_streak'] = df.apply(
+        lambda r: streak_dict.get((r['Date'], r['AwayTeam']), 0), axis=1)
+
+    df = df.drop(columns=['home_win_flag', 'away_win_flag'])
+    return df
+
 
 def add_market_features(df : pd.DataFrame):
     """
@@ -216,7 +233,7 @@ def generate_features(df : pd.DataFrame):
     df = get_resultado_string(df)
     df = get_resultado_M(df)
     df = add_binary_output(df)
-    df = add_h2h_history(df)
+    df = add_streak_features(df)
     if "B365H" in df.columns:
         df = add_market_features(df)
     
