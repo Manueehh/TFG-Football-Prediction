@@ -97,7 +97,7 @@ def add_h2h_history(df : pd.DataFrame):
             )
         )
     
-    df.drop(columns=['ftr_home_win','ftr_draw','ftr_away_win','h2h_key'])
+    df = df.drop(columns=['ftr_home_win','ftr_draw','ftr_away_win','h2h_key'])
     
     return df
 
