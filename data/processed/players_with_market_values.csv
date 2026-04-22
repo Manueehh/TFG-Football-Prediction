@@ -78,7 +78,7 @@ Ismael Falcón,300000.0,Atlético,2005_06
 Curro Galán,0.0,Atlético,2005_06
 Luis Amaranto Perea,12000000.0,Atlético,2005_06
 Pablo Ibáñez,9500000.0,Atlético,2005_06
-García Calvo,4250000.0,Atlético,2005_06
+José García Calvo,4250000.0,Atlético,2005_06
 Juan Velasco,3500000.0,Atlético,2005_06
 Pablo Sicilia,150000.0,Atlético,2005_06
 Antonio López,10500000.0,Atlético,2005_06
@@ -172,7 +172,7 @@ Diego Tardelli,750000.0,Real Betis,2005_06
 Armando Ribeiro,900000.0,Cádiz,2005_06
 Alejandro Limia,600000.0,Cádiz,2005_06
 Raúl Navas,0.0,Cádiz,2005_06
-José Julian De La Cuesta,3000000.0,Cádiz,2005_06
+José Julián de la Cuesta,3000000.0,Cádiz,2005_06
 Ramón de Quintana,500000.0,Cádiz,2005_06
 Abraham Paz,450000.0,Cádiz,2005_06
 Eduardo Berizzo,150000.0,Cádiz,2005_06
@@ -241,7 +241,7 @@ Lionel Scaloni,4000000.0,RC Deportivo,2005_06
 Aldo Duscher,7500000.0,RC Deportivo,2005_06
 Julian de Guzmán,3000000.0,RC Deportivo,2005_06
 Carlos Pita,150000.0,RC Deportivo,2005_06
-Sergio,8000000.0,RC Deportivo,2005_06
+Sergio González,8000000.0,RC Deportivo,2005_06
 Roberto Acuña,1250000.0,RC Deportivo,2005_06
 Jesús Muñoz,500000.0,RC Deportivo,2005_06
 Paco Gallardo,750000.0,RC Deportivo,2005_06
@@ -337,10 +337,10 @@ Fernando Usero,100000.0,Málaga,2005_06
 Marcelo Romero,0.0,Málaga,2005_06
 Abel Gómez,0.0,Málaga,2005_06
 Manu Sánchez,700000.0,Málaga,2005_06
-Duda,2000000.0,Málaga,2005_06
 Antonio López,0.0,Málaga,2005_06
 Jorge Pina,75000.0,Málaga,2005_06
 Saúl,0.0,Málaga,2005_06
+Duda,2000000.0,Málaga,2005_06
 Diego Castro,0.0,Málaga,2005_06
 Edgar,1000000.0,Málaga,2005_06
 Salva Ballesta,6000000.0,Málaga,2005_06
@@ -458,10 +458,10 @@ Pablo García,4500000.0,Real Madrid,2005_06
 Thomas Gravesen,3500000.0,Real Madrid,2005_06
 Javi García,1750000.0,Real Madrid,2005_06
 Marcos Tébar,0.0,Real Madrid,2005_06
-David Beckham,22000000.0,Real Madrid,2005_06
 Guti,10500000.0,Real Madrid,2005_06
 Rubén de la Red,1500000.0,Real Madrid,2005_06
 Borja Valero,0.0,Real Madrid,2005_06
+David Beckham,22000000.0,Real Madrid,2005_06
 Júlio Baptista,20000000.0,Real Madrid,2005_06
 Zinédine Zidane,12500000.0,Real Madrid,2005_06
 José Manuel Jurado,2000000.0,Real Madrid,2005_06
@@ -520,7 +520,6 @@ Adriano,2250000.0,Sevilla,2005_06
 David Castedo,400000.0,Sevilla,2005_06
 Antonio Puerta,0.0,Sevilla,2005_06
 Dani Alves,5000000.0,Sevilla,2005_06
-Jesús Navas,2500000.0,Sevilla,2005_06
 Manuel Blanco,175000.0,Sevilla,2005_06
 Josep Lluís Martí,1500000.0,Sevilla,2005_06
 Antonio Vera,0.0,Sevilla,2005_06
@@ -528,6 +527,7 @@ Enzo Maresca,8000000.0,Sevilla,2005_06
 Renato,5000000.0,Sevilla,2005_06
 Jordi López,500000.0,Sevilla,2005_06
 Bruno Herrero,75000.0,Sevilla,2005_06
+Jesús Navas,2500000.0,Sevilla,2005_06
 Antonio López,0.0,Sevilla,2005_06
 Jesuli,3000000.0,Sevilla,2005_06
 Diego Capel,500000.0,Sevilla,2005_06
@@ -594,11 +594,11 @@ Marcos Senna,1750000.0,Villarreal,2005_06
 Josico,800000.0,Villarreal,2005_06
 Héctor Font,600000.0,Villarreal,2005_06
 Santi Cazorla,400000.0,Villarreal,2005_06
+Marquitos,50000.0,Villarreal,2005_06
 Roger García,3000000.0,Villarreal,2005_06
 Javier Calleja,500000.0,Villarreal,2005_06
 Juan Román Riquelme,18000000.0,Villarreal,2005_06
 Javi Rubio,500000.0,Villarreal,2005_06
-Marquitos,50000.0,Villarreal,2005_06
 Xisco Nadal,600000.0,Villarreal,2005_06
 Antonio Guayre,400000.0,Villarreal,2005_06
 Diego Forlán,9000000.0,Villarreal,2005_06
@@ -810,7 +810,7 @@ Antonio Barragán,250000.0,RC Deportivo,2006_07
 Aldo Duscher,7500000.0,RC Deportivo,2006_07
 Julian de Guzmán,3000000.0,RC Deportivo,2006_07
 Juan Rodríguez,800000.0,RC Deportivo,2006_07
-Sergio,8000000.0,RC Deportivo,2006_07
+Sergio González,8000000.0,RC Deportivo,2006_07
 Fabián Estoyanoff,1750000.0,RC Deportivo,2006_07
 Juan Carlos Valerón,14000000.0,RC Deportivo,2006_07
 Joan Verdú,1000000.0,RC Deportivo,2006_07
@@ -1062,12 +1062,12 @@ Fernando Gago,16500000.0,Real Madrid,2006_07
 Emerson,16000000.0,Real Madrid,2006_07
 Javi García,2000000.0,Real Madrid,2006_07
 Marcos Tébar,500000.0,Real Madrid,2006_07
-David Beckham,19800000.0,Real Madrid,2006_07
 Guti,17800000.0,Real Madrid,2006_07
 Rubén de la Red,3500000.0,Real Madrid,2006_07
 Pedro Mosquera,500000.0,Real Madrid,2006_07
 Borja Valero,300000.0,Real Madrid,2006_07
 Adrián González,50000.0,Real Madrid,2006_07
+David Beckham,19800000.0,Real Madrid,2006_07
 Júlio Baptista,11500000.0,Real Madrid,2006_07
 Juan Mata,1100000.0,Real Madrid,2006_07
 Robinho,25000000.0,Real Madrid,2006_07
@@ -1151,7 +1151,6 @@ Adriano,15000000.0,Sevilla,2006_07
 Antonio Puerta,6000000.0,Sevilla,2006_07
 David Castedo,800000.0,Sevilla,2006_07
 Dani Alves,22000000.0,Sevilla,2006_07
-Jesús Navas,7000000.0,Sevilla,2006_07
 Andreas Hinkel,1900000.0,Sevilla,2006_07
 Christian Poulsen,8600000.0,Sevilla,2006_07
 Josep Lluís Martí,3000000.0,Sevilla,2006_07
@@ -1159,8 +1158,9 @@ Lolo,0.0,Sevilla,2006_07
 Renato,7000000.0,Sevilla,2006_07
 Enzo Maresca,3600000.0,Sevilla,2006_07
 Bruno Herrero,100000.0,Sevilla,2006_07
-Duda,1600000.0,Sevilla,2006_07
+Jesús Navas,7000000.0,Sevilla,2006_07
 Jesuli,2500000.0,Sevilla,2006_07
+Duda,1600000.0,Sevilla,2006_07
 Alejandro Alfaro,1500000.0,Sevilla,2006_07
 Diego Capel,500000.0,Sevilla,2006_07
 Fernando Sales,600000.0,Sevilla,2006_07
@@ -1224,10 +1224,10 @@ Leandro Somoza,4250000.0,Villarreal,2006_07
 Marcos Senna,1750000.0,Villarreal,2006_07
 Josico,800000.0,Villarreal,2006_07
 Bruno Soriano,50000.0,Villarreal,2006_07
+Marquitos,50000.0,Villarreal,2006_07
 Robert Pirès,9000000.0,Villarreal,2006_07
 Juan Román Riquelme,17500000.0,Villarreal,2006_07
 Matías Fernández,11000000.0,Villarreal,2006_07
-Marquitos,50000.0,Villarreal,2006_07
 Cani,11000000.0,Villarreal,2006_07
 Diego Forlán,9000000.0,Villarreal,2006_07
 Nihat Kahveci,8000000.0,Villarreal,2006_07
@@ -1414,7 +1414,7 @@ Laure,200000.0,RC Deportivo,2007_08
 Julian de Guzmán,4000000.0,RC Deportivo,2007_08
 Juan Rodríguez,2400000.0,RC Deportivo,2007_08
 Andrés Guardado,8000000.0,RC Deportivo,2007_08
-Sergio,4400000.0,RC Deportivo,2007_08
+Sergio González,4400000.0,RC Deportivo,2007_08
 Antonio Tomás,600000.0,RC Deportivo,2007_08
 Joan Verdú,2800000.0,RC Deportivo,2007_08
 Juan Carlos Valerón,2400000.0,RC Deportivo,2007_08
@@ -1663,10 +1663,10 @@ Pablo Oliveira,100000.0,Recreativo,2007_08
 José Ignacio Zahinos,1400000.0,Recreativo,2007_08
 Pablo Bernal,0.0,Recreativo,2007_08
 Jesús Vázquez,3200000.0,Recreativo,2007_08
+Marquitos,2600000.0,Recreativo,2007_08
 Gerard López,1800000.0,Recreativo,2007_08
 Rafa Barber,1400000.0,Recreativo,2007_08
 Carlos Martins,7000000.0,Recreativo,2007_08
-Marquitos,2600000.0,Recreativo,2007_08
 Joselito,0.0,Recreativo,2007_08
 Laurenţiu Roşu,1200000.0,Recreativo,2007_08
 Varela,800000.0,Recreativo,2007_08
@@ -1691,7 +1691,6 @@ Adriano,16000000.0,Sevilla,2007_08
 José Manuel Casado,800000.0,Sevilla,2007_08
 Antonio Puerta,0.0,Sevilla,2007_08
 Dani Alves,20000000.0,Sevilla,2007_08
-Jesús Navas,10000000.0,Sevilla,2007_08
 Andreas Hinkel,2500000.0,Sevilla,2007_08
 Dani Salas,200000.0,Sevilla,2007_08
 Christian Poulsen,11000000.0,Sevilla,2007_08
@@ -1700,9 +1699,10 @@ Lolo,1200000.0,Sevilla,2007_08
 Renato,9000000.0,Sevilla,2007_08
 Seydou Keita,8000000.0,Sevilla,2007_08
 Enzo Maresca,3400000.0,Sevilla,2007_08
+Jesús Navas,10000000.0,Sevilla,2007_08
 Tom De Mul,2400000.0,Sevilla,2007_08
-Duda,2400000.0,Sevilla,2007_08
 Diego Capel,7000000.0,Sevilla,2007_08
+Duda,2400000.0,Sevilla,2007_08
 Alejandro Alfaro,1000000.0,Sevilla,2007_08
 Frédéric Kanouté,22000000.0,Sevilla,2007_08
 Luís Fabiano,18000000.0,Sevilla,2007_08
@@ -1806,7 +1806,7 @@ Vicente Pascual,100000.0,Real Zaragoza,2007_08
 Sergio Asenjo,1600000.0,Real Valladolid,2007_08
 Ludovic Butelle,900000.0,Real Valladolid,2007_08
 Alberto López,400000.0,Real Valladolid,2007_08
-García Calvo,1800000.0,Real Valladolid,2007_08
+José García Calvo,1800000.0,Real Valladolid,2007_08
 Rafa López,1400000.0,Real Valladolid,2007_08
 Iñaki Bea,500000.0,Real Valladolid,2007_08
 Daniel Cifuentes,300000.0,Real Valladolid,2007_08
@@ -1985,7 +1985,7 @@ Thierry Henry,27000000.0,Barcelona,2008_09
 Eidur Gudjohnsen,5000000.0,Barcelona,2008_09
 Ricardo,3000000.0,Betis,2008_09
 Casto,2400000.0,Betis,2008_09
-Adrián,0.0,Betis,2008_09
+Adrián San Miguel,0.0,Betis,2008_09
 Juanito,5000000.0,Betis,2008_09
 Melli,4000000.0,Betis,2008_09
 Arzu,4000000.0,Betis,2008_09
@@ -2035,7 +2035,7 @@ Diego Seoane,0.0,RC Deportivo,2008_09
 Julian de Guzmán,4400000.0,RC Deportivo,2008_09
 Juan Rodríguez,3000000.0,RC Deportivo,2008_09
 Andrés Guardado,10000000.0,RC Deportivo,2008_09
-Sergio,4000000.0,RC Deportivo,2008_09
+Sergio González,4000000.0,RC Deportivo,2008_09
 Antonio Tomás,1000000.0,RC Deportivo,2008_09
 Joan Verdú,3000000.0,RC Deportivo,2008_09
 Juan Carlos Valerón,2000000.0,RC Deportivo,2008_09
@@ -2283,13 +2283,13 @@ Ivica Dragutinovic,2000000.0,Sevilla,2008_09
 Javi Navarro,0.0,Sevilla,2008_09
 Adriano,18000000.0,Sevilla,2008_09
 Fernando Navarro,9000000.0,Sevilla,2008_09
-Jesús Navas,17000000.0,Sevilla,2008_09
 Abdoulay Konko,6000000.0,Sevilla,2008_09
 Romaric,10000000.0,Sevilla,2008_09
 Aldo Duscher,6000000.0,Sevilla,2008_09
 Renato,9000000.0,Sevilla,2008_09
 Enzo Maresca,5000000.0,Sevilla,2008_09
 Miguel Ángel Cordero,600000.0,Sevilla,2008_09
+Jesús Navas,17000000.0,Sevilla,2008_09
 Tom De Mul,2800000.0,Sevilla,2008_09
 José Carlos,500000.0,Sevilla,2008_09
 Diego Capel,14000000.0,Sevilla,2008_09
@@ -2304,7 +2304,7 @@ Javier Chevantón,3400000.0,Sevilla,2008_09
 Teemu Pukki,600000.0,Sevilla,2008_09
 Fernando Rodríguez,0.0,Sevilla,2008_09
 Enrique Carreño,0.0,Sevilla,2008_09
-Renan Soares,6000000.0,Valencia,2008_09
+Renan Brito,6000000.0,Valencia,2008_09
 Timo Hildebrand,4000000.0,Valencia,2008_09
 César Sánchez,1000000.0,Valencia,2008_09
 Vicente Guaita,500000.0,Valencia,2008_09
@@ -2373,7 +2373,7 @@ Jozy Altidore,3000000.0,Villarreal,2008_09
 Sergio Asenjo,4000000.0,Real Valladolid,2008_09
 Justo Villar,1800000.0,Real Valladolid,2008_09
 Alberto López,100000.0,Real Valladolid,2008_09
-García Calvo,1600000.0,Real Valladolid,2008_09
+José García Calvo,1600000.0,Real Valladolid,2008_09
 Nano Rivas,1000000.0,Real Valladolid,2008_09
 Luis Prieto,1000000.0,Real Valladolid,2008_09
 Iñaki Bea,300000.0,Real Valladolid,2008_09
@@ -2434,7 +2434,7 @@ Egoitz Jaio,300000.0,Numancia,2008_09
 Nandi,0.0,Numancia,2008_09
 Carlos Bellvís,2000000.0,Numancia,2008_09
 Domingo Cisma,1000000.0,Numancia,2008_09
-Juanra,2000000.0,Numancia,2008_09
+Juanra Cabrero,2000000.0,Numancia,2008_09
 Felipe Guréndez,200000.0,Numancia,2008_09
 Alberto Montejo,0.0,Numancia,2008_09
 Jarque,0.0,Numancia,2008_09
@@ -2444,7 +2444,7 @@ Dimas Delgado,600000.0,Numancia,2008_09
 Juan Carlos Moreno,1200000.0,Numancia,2008_09
 José Javier Barkero,3000000.0,Numancia,2008_09
 Mario Martínez,2000000.0,Numancia,2008_09
-Javier Del Pino,2000000.0,Numancia,2008_09
+Javier del Pino,2000000.0,Numancia,2008_09
 Álvaro Antón,1400000.0,Numancia,2008_09
 Juan Quero,1600000.0,Numancia,2008_09
 Lago Júnior,200000.0,Numancia,2008_09
@@ -2476,10 +2476,10 @@ Fernando Usero,100000.0,Málaga,2008_09
 Marcelo Romero,0.0,Málaga,2008_09
 Abel Gómez,0.0,Málaga,2008_09
 Manu Sánchez,700000.0,Málaga,2008_09
-Duda,2000000.0,Málaga,2008_09
 Antonio López,0.0,Málaga,2008_09
 Jorge Pina,75000.0,Málaga,2008_09
 Saúl,0.0,Málaga,2008_09
+Duda,2000000.0,Málaga,2008_09
 Diego Castro,0.0,Málaga,2008_09
 Edgar,1000000.0,Málaga,2008_09
 Salva Ballesta,6000000.0,Málaga,2008_09
@@ -2640,7 +2640,7 @@ Juan Rodríguez,4000000.0,RC Deportivo,2009_10
 Juca,3000000.0,RC Deportivo,2009_10
 Andrés Guardado,12000000.0,RC Deportivo,2009_10
 Antonio Tomás,3000000.0,RC Deportivo,2009_10
-Sergio,2000000.0,RC Deportivo,2009_10
+Sergio González,2000000.0,RC Deportivo,2009_10
 Juan Domínguez,1000000.0,RC Deportivo,2009_10
 Juan Carlos Valerón,1400000.0,RC Deportivo,2009_10
 Iván Pérez,600000.0,RC Deportivo,2009_10
@@ -2852,13 +2852,13 @@ Adriano,20000000.0,Sevilla,2009_10
 Fernando Navarro,6000000.0,Sevilla,2009_10
 Manuel Redondo,0.0,Sevilla,2009_10
 Antonio Luna,0.0,Sevilla,2009_10
-Jesús Navas,28000000.0,Sevilla,2009_10
 Abdoulay Konko,8000000.0,Sevilla,2009_10
 Didier Zokora,14000000.0,Sevilla,2009_10
 Romaric,9000000.0,Sevilla,2009_10
 Aldo Duscher,2000000.0,Sevilla,2009_10
 Lolo,2000000.0,Sevilla,2009_10
 Renato,9000000.0,Sevilla,2009_10
+Jesús Navas,28000000.0,Sevilla,2009_10
 Tom De Mul,2000000.0,Sevilla,2009_10
 José Carlos,1000000.0,Sevilla,2009_10
 Luis Alberto,0.0,Sevilla,2009_10
@@ -2956,12 +2956,12 @@ Borja Fernández,2000000.0,Real Valladolid,2009_10
 Javi Baraja,1200000.0,Real Valladolid,2009_10
 Pelé,2800000.0,Real Valladolid,2009_10
 Haris Medunjanin,2600000.0,Real Valladolid,2009_10
+Marquitos,2400000.0,Real Valladolid,2009_10
 Héctor Font,1400000.0,Real Valladolid,2009_10
 Asier Arranz,400000.0,Real Valladolid,2009_10
 Carlos Lázaro,300000.0,Real Valladolid,2009_10
 David Lázaro,200000.0,Real Valladolid,2009_10
 Fabián Canobbio,2600000.0,Real Valladolid,2009_10
-Marquitos,2400000.0,Real Valladolid,2009_10
 Sisi González,2000000.0,Real Valladolid,2009_10
 Jonathan Sesma,2000000.0,Real Valladolid,2009_10
 Sergio García,0.0,Real Valladolid,2009_10
@@ -3016,15 +3016,15 @@ Apoño,3600000.0,Málaga,2009_10
 Dani Toribio,900000.0,Málaga,2009_10
 Edu Ramos,300000.0,Málaga,2009_10
 Jordi Pablo,700000.0,Málaga,2009_10
-Duda,6000000.0,Málaga,2009_10
 José Luque,500000.0,Málaga,2009_10
 Fernando,2000000.0,Málaga,2009_10
 Selim Benachour,2000000.0,Málaga,2009_10
+Francisco Portillo,0.0,Málaga,2009_10
+Duda,6000000.0,Málaga,2009_10
 Albert Luque,2000000.0,Málaga,2009_10
 Juanmi,0.0,Málaga,2009_10
 Valdo,1200000.0,Málaga,2009_10
 Javi López,600000.0,Málaga,2009_10
-Francisco Portillo,0.0,Málaga,2009_10
 Pedrito,0.0,Málaga,2009_10
 Victor Obinna,4000000.0,Málaga,2009_10
 Fernando Forestieri,1600000.0,Málaga,2009_10
@@ -3068,7 +3068,7 @@ Mate Bilic,3000000.0,Real Sporting,2009_10
 Luis Morán,3000000.0,Real Sporting,2009_10
 David Barral,3000000.0,Real Sporting,2009_10
 Borja Navarro,0.0,Real Sporting,2009_10
-Renan Soares,3000000.0,Xerez CD,2009_10
+Renan Brito,3000000.0,Xerez CD,2009_10
 Chema,1000000.0,Xerez CD,2009_10
 Toni Lechuga,100000.0,Xerez CD,2009_10
 Leandro Gioda,2400000.0,Xerez CD,2009_10
@@ -3394,9 +3394,9 @@ Javad Nekounam,3500000.0,Osasuna,2010_11
 Lolo,1500000.0,Osasuna,2010_11
 Patxi Puñal,1000000.0,Osasuna,2010_11
 Oier Sanjurjo,400000.0,Osasuna,2010_11
-David Timor,0.0,Osasuna,2010_11
 Rúper,2000000.0,Osasuna,2010_11
 Krisztián Vadócz,1500000.0,Osasuna,2010_11
+David Timor,0.0,Osasuna,2010_11
 Javier Calleja,900000.0,Osasuna,2010_11
 Fernando Soriano,3000000.0,Osasuna,2010_11
 Masoud Shojaei,2000000.0,Osasuna,2010_11
@@ -3424,11 +3424,11 @@ Mehdi Lacen,3000000.0,Racing,2010_11
 Gonzalo Colsa,3000000.0,Racing,2010_11
 Pape Diop,3000000.0,Racing,2010_11
 Alexandros Tziolis,2600000.0,Racing,2010_11
-Tato,0.0,Racing,2010_11
 Adrián González,900000.0,Racing,2010_11
 Edu Bedia,500000.0,Racing,2010_11
 Ramón Arcas,0.0,Racing,2010_11
 Julián Luque,0.0,Racing,2010_11
+Tato,0.0,Racing,2010_11
 Kennedy,3000000.0,Racing,2010_11
 Óscar Serrano,2500000.0,Racing,2010_11
 Manuel Arana,2500000.0,Racing,2010_11
@@ -3467,9 +3467,9 @@ Mandi,0.0,Real Madrid,2010_11
 Mesut Özil,32000000.0,Real Madrid,2010_11
 Kaká,30000000.0,Real Madrid,2010_11
 Sergio Canales,6000000.0,Real Madrid,2010_11
+Pablo Sarabia,0.0,Real Madrid,2010_11
 Ángel Di María,25000000.0,Real Madrid,2010_11
 Pedro León,8000000.0,Real Madrid,2010_11
-Pablo Sarabia,0.0,Real Madrid,2010_11
 Cristiano Ronaldo,90000000.0,Real Madrid,2010_11
 Gonzalo Higuaín,38000000.0,Real Madrid,2010_11
 Karim Benzema,25000000.0,Real Madrid,2010_11
@@ -3491,7 +3491,6 @@ Ivica Dragutinovic,600000.0,Sevilla,2010_11
 Bernardo Espinosa,0.0,Sevilla,2010_11
 Fernando Navarro,5000000.0,Sevilla,2010_11
 Antonio Luna,500000.0,Sevilla,2010_11
-Jesús Navas,25000000.0,Sevilla,2010_11
 Mouhamadou Dabo,5000000.0,Sevilla,2010_11
 Abdoulay Konko,5000000.0,Sevilla,2010_11
 Didier Zokora,10000000.0,Sevilla,2010_11
@@ -3501,6 +3500,7 @@ Ivan Rakitic,10000000.0,Sevilla,2010_11
 Tiberio Guarente,5500000.0,Sevilla,2010_11
 Renato,2000000.0,Sevilla,2010_11
 José Campaña,0.0,Sevilla,2010_11
+Jesús Navas,25000000.0,Sevilla,2010_11
 José Carlos,1000000.0,Sevilla,2010_11
 Luis Alberto,0.0,Sevilla,2010_11
 Diego Perotti,12000000.0,Sevilla,2010_11
@@ -3633,13 +3633,13 @@ Enzo Maresca,2000000.0,Málaga,2010_11
 Recio,1000000.0,Málaga,2010_11
 Edu Ramos,0.0,Málaga,2010_11
 Cala,0.0,Málaga,2010_11
-Duda,6000000.0,Málaga,2010_11
 Júlio Baptista,5000000.0,Málaga,2010_11
 Fernando,2000000.0,Málaga,2010_11
+Francisco Portillo,600000.0,Málaga,2010_11
+Duda,6000000.0,Málaga,2010_11
 Quincy Owusu-Abeyie,2000000.0,Málaga,2010_11
 Juanmi,1000000.0,Málaga,2010_11
 Albert Luque,0.0,Málaga,2010_11
-Francisco Portillo,600000.0,Málaga,2010_11
 Sebastián Fernández,3200000.0,Málaga,2010_11
 Salomón Rondón,5000000.0,Málaga,2010_11
 Edinho,1500000.0,Málaga,2010_11
@@ -3750,7 +3750,7 @@ Javi Venta,600000.0,Levante,2010_11
 Vicente Iborra,2000000.0,Levante,2010_11
 Xavi Torres,2000000.0,Levante,2010_11
 Miguel Pallardó,2000000.0,Levante,2010_11
-Sergio,1000000.0,Levante,2010_11
+Sergio González,1000000.0,Levante,2010_11
 Gorka Larrea,600000.0,Levante,2010_11
 Miguel Pérez,600000.0,Levante,2010_11
 Juanlu,2500000.0,Levante,2010_11
@@ -3780,7 +3780,7 @@ Cristian Pulhac,1000000.0,Hércules,2010_11
 Pepe Sellés,0.0,Hércules,2010_11
 David Cortés,2500000.0,Hércules,2010_11
 Kiko Femenía,2000000.0,Hércules,2010_11
-Juanra,1000000.0,Hércules,2010_11
+Juanra Cabrero,1000000.0,Hércules,2010_11
 Abel Aguilar,2500000.0,Hércules,2010_11
 Matías Fritzler,2500000.0,Hércules,2010_11
 Javier Farinós,1000000.0,Hércules,2010_11
@@ -3898,8 +3898,8 @@ Cristian Tello,5000000.0,Barcelona,2011_12
 Isaac Cuenca,3000000.0,Barcelona,2011_12
 Lionel Messi,100000000.0,Barcelona,2011_12
 Pedro,28000000.0,Barcelona,2011_12
-David Villa,35000000.0,Barcelona,2011_12
 Alexis Sánchez,30000000.0,Barcelona,2011_12
+David Villa,35000000.0,Barcelona,2011_12
 Gerard Deulofeu,1500000.0,Barcelona,2011_12
 Cristian Álvarez,2500000.0,Espanyol,2011_12
 Carlos Kameni,2000000.0,Espanyol,2011_12
@@ -3961,12 +3961,12 @@ Javi Casquero,1000000.0,Getafe,2011_12
 Míchel Madera,2500000.0,Getafe,2011_12
 Pedro Mosquera,700000.0,Getafe,2011_12
 Abdelaziz Barrada,4000000.0,Getafe,2011_12
+Pablo Sarabia,2500000.0,Getafe,2011_12
 Samu Saiz,0.0,Getafe,2011_12
 Diego Castro,5000000.0,Getafe,2011_12
 Jaime Gavilán,1800000.0,Getafe,2011_12
 Pedro León,4500000.0,Getafe,2011_12
 Pedro Ríos,3000000.0,Getafe,2011_12
-Pablo Sarabia,2500000.0,Getafe,2011_12
 Hugo Fraile,0.0,Getafe,2011_12
 Miku,4000000.0,Getafe,2011_12
 Adrián Colunga,3000000.0,Getafe,2011_12
@@ -4021,9 +4021,9 @@ Damià Abella,2000000.0,Osasuna,2011_12
 Marcos Pérez,0.0,Osasuna,2011_12
 Javad Nekounam,3000000.0,Osasuna,2011_12
 Lolo,1500000.0,Osasuna,2011_12
-David Timor,800000.0,Osasuna,2011_12
 Patxi Puñal,700000.0,Osasuna,2011_12
 Raoul Loé,0.0,Osasuna,2011_12
+David Timor,800000.0,Osasuna,2011_12
 Javier Calleja,600000.0,Osasuna,2011_12
 Raúl García,5000000.0,Osasuna,2011_12
 Masoud Shojaei,2000000.0,Osasuna,2011_12
@@ -4124,12 +4124,12 @@ Fernando Navarro,4000000.0,Sevilla,2011_12
 Antonio Luna,1500000.0,Sevilla,2011_12
 Samu de los Reyes,200000.0,Sevilla,2011_12
 Alberto Moreno,0.0,Sevilla,2011_12
-Jesús Navas,20000000.0,Sevilla,2011_12
 Coke,3000000.0,Sevilla,2011_12
 Ivan Rakitic,9000000.0,Sevilla,2011_12
 Tiberio Guarente,3000000.0,Sevilla,2011_12
 José Campaña,1500000.0,Sevilla,2011_12
 Salva Rivas,200000.0,Sevilla,2011_12
+Jesús Navas,20000000.0,Sevilla,2011_12
 Tom De Mul,800000.0,Sevilla,2011_12
 Piotr Trochowski,4500000.0,Sevilla,2011_12
 Luis Alberto,500000.0,Sevilla,2011_12
@@ -4193,8 +4193,8 @@ Marcos Gullón,1500000.0,Villarreal,2011_12
 Gonzalo Castellani,800000.0,Villarreal,2011_12
 Manu Trigueros,300000.0,Villarreal,2011_12
 Jordi Pablo,400000.0,Villarreal,2011_12
-Cani,6000000.0,Villarreal,2011_12
 Moi Gómez,500000.0,Villarreal,2011_12
+Cani,6000000.0,Villarreal,2011_12
 Hernán Pérez,2000000.0,Villarreal,2011_12
 Javier Camuñas,2000000.0,Villarreal,2011_12
 Fofo,100000.0,Villarreal,2011_12
@@ -4225,13 +4225,13 @@ Santi Cazorla,20000000.0,Málaga,2011_12
 Apoño,3000000.0,Málaga,2011_12
 Enzo Maresca,2000000.0,Málaga,2011_12
 Recio,2000000.0,Málaga,2011_12
-Duda,4500000.0,Málaga,2011_12
 Isco,8000000.0,Málaga,2011_12
 Júlio Baptista,5000000.0,Málaga,2011_12
 Diego Buonanotte,2500000.0,Málaga,2011_12
+Francisco Portillo,800000.0,Málaga,2011_12
+Duda,4500000.0,Málaga,2011_12
 Juanmi,1500000.0,Málaga,2011_12
 Joaquín,5000000.0,Málaga,2011_12
-Francisco Portillo,800000.0,Málaga,2011_12
 Sebastián Fernández,3500000.0,Málaga,2011_12
 Salomón Rondón,9000000.0,Málaga,2011_12
 Ruud van Nistelrooy,2000000.0,Málaga,2011_12
@@ -4333,12 +4333,12 @@ Keylor Navas,800000.0,Levante,2011_12
 Mario Guillén,0.0,Levante,2011_12
 Sergio Garabato,0.0,Levante,2011_12
 Pablo Coronado,0.0,Levante,2011_12
+Pedro Botelho,1500000.0,Levante,2011_12
 David Navarro,1200000.0,Levante,2011_12
 Gustavo Cabral,800000.0,Levante,2011_12
 Nano Rivas,750000.0,Levante,2011_12
 Sergio Ballesteros,500000.0,Levante,2011_12
 Héctor Rodas,400000.0,Levante,2011_12
-Pedro Botelho,1500000.0,Levante,2011_12
 Asier del Horno,1000000.0,Levante,2011_12
 Juanfran,500000.0,Levante,2011_12
 Marc Mateu,200000.0,Levante,2011_12
@@ -4365,7 +4365,7 @@ Roger Martí,0.0,Levante,2011_12
 Casto,2000000.0,Betis,2011_12
 Iñaki Goitia,1200000.0,Betis,2011_12
 Fabri,1200000.0,Betis,2011_12
-Adrián,0.0,Betis,2011_12
+Adrián San Miguel,0.0,Betis,2011_12
 Chechu Dorado,2500000.0,Betis,2011_12
 Paulão,2500000.0,Betis,2011_12
 Ustaritz,1800000.0,Betis,2011_12
@@ -4404,12 +4404,12 @@ Dani Giménez,1000000.0,Rayo Vallecano,2011_12
 Isma Gil,0.0,Rayo Vallecano,2011_12
 Jordi Figueras,2500000.0,Rayo Vallecano,2011_12
 Alejandro Arribas,2000000.0,Rayo Vallecano,2011_12
+Pedro Botelho,1500000.0,Rayo Vallecano,2011_12
 Mikel Labaka,1400000.0,Rayo Vallecano,2011_12
 Raúl Bravo,1000000.0,Rayo Vallecano,2011_12
 Jorge Pulido,500000.0,Rayo Vallecano,2011_12
 José Alcañiz,0.0,Rayo Vallecano,2011_12
 José Manuel Casado,2000000.0,Rayo Vallecano,2011_12
-Pedro Botelho,1500000.0,Rayo Vallecano,2011_12
 Tito,1500000.0,Rayo Vallecano,2011_12
 Sueliton,100000.0,Rayo Vallecano,2011_12
 Aitor Núñez,0.0,Rayo Vallecano,2011_12
@@ -4617,11 +4617,11 @@ Borja Fernández,1000000.0,Getafe,2012_13
 Míchel Madera,2000000.0,Getafe,2012_13
 Diego Benito,0.0,Getafe,2012_13
 Abdelaziz Barrada,8000000.0,Getafe,2012_13
+Pablo Sarabia,1800000.0,Getafe,2012_13
 Diego Castro,5000000.0,Getafe,2012_13
 Ángel Lafita,2500000.0,Getafe,2012_13
 Jaime Gavilán,1800000.0,Getafe,2012_13
 Pedro León,3000000.0,Getafe,2012_13
-Pablo Sarabia,1800000.0,Getafe,2012_13
 Hugo Fraile,300000.0,Getafe,2012_13
 Miku,4000000.0,Getafe,2012_13
 Álvaro Vázquez,3000000.0,Getafe,2012_13
@@ -4654,13 +4654,13 @@ Carlos Cristeto,0.0,Mallorca,2012_13
 Nico Baleani,0.0,Mallorca,2012_13
 Alejandro Alfaro,2500000.0,Mallorca,2012_13
 Marc Fernández,400000.0,Mallorca,2012_13
+Brandon Thomas,200000.0,Mallorca,2012_13
 Michaël Pereira,2500000.0,Mallorca,2012_13
 Giovani dos Santos,6500000.0,Mallorca,2012_13
 Tomer Hemed,3500000.0,Mallorca,2012_13
 Víctor Casadesús,3000000.0,Mallorca,2012_13
 Emilio Nsue,2500000.0,Mallorca,2012_13
 Javier Arizmendi,1500000.0,Mallorca,2012_13
-Brandon Thomas,200000.0,Mallorca,2012_13
 Álvaro Giménez,0.0,Mallorca,2012_13
 Abdón Prats,0.0,Mallorca,2012_13
 Andrés Fernández,3000000.0,Osasuna,2012_13
@@ -4680,8 +4680,8 @@ Oier Sanjurjo,2000000.0,Osasuna,2012_13
 Lolo,1500000.0,Osasuna,2012_13
 Anthony Annan,1200000.0,Osasuna,2012_13
 Francisco Silva,1200000.0,Osasuna,2012_13
-David Timor,1200000.0,Osasuna,2012_13
 Patxi Puñal,100000.0,Osasuna,2012_13
+David Timor,1200000.0,Osasuna,2012_13
 Sisi González,1500000.0,Osasuna,2012_13
 Masoud Shojaei,1200000.0,Osasuna,2012_13
 Roberto Torres,400000.0,Osasuna,2012_13
@@ -4743,7 +4743,6 @@ Israel Puerto,500000.0,Sevilla,2012_13
 Fernando Navarro,3000000.0,Sevilla,2012_13
 Alberto Moreno,2500000.0,Sevilla,2012_13
 Antonio Luna,1500000.0,Sevilla,2012_13
-Jesús Navas,20000000.0,Sevilla,2012_13
 Cicinho,3000000.0,Sevilla,2012_13
 Coke,2000000.0,Sevilla,2012_13
 Geoffrey Kondogbia,10000000.0,Sevilla,2012_13
@@ -4752,6 +4751,7 @@ Ivan Rakitic,15000000.0,Sevilla,2012_13
 José Campaña,2500000.0,Sevilla,2012_13
 Javi Hervás,1600000.0,Sevilla,2012_13
 Antonio Cotán,0.0,Sevilla,2012_13
+Jesús Navas,20000000.0,Sevilla,2012_13
 Miroslav Stevanovic,1800000.0,Sevilla,2012_13
 Piotr Trochowski,3500000.0,Sevilla,2012_13
 Bryan Rabello,1000000.0,Sevilla,2012_13
@@ -4813,15 +4813,15 @@ Lucas Piazón,5000000.0,Málaga,2012_13
 Manuel Iturra,3500000.0,Málaga,2012_13
 Recio,2000000.0,Málaga,2012_13
 Enzo Maresca,800000.0,Málaga,2012_13
-Duda,2000000.0,Málaga,2012_13
 Isco,25000000.0,Málaga,2012_13
 Júlio Baptista,3000000.0,Málaga,2012_13
+Francisco Portillo,3000000.0,Málaga,2012_13
 Pedro Morales,2000000.0,Málaga,2012_13
 Diego Buonanotte,2000000.0,Málaga,2012_13
+Duda,2000000.0,Málaga,2012_13
 Juanmi,1500000.0,Málaga,2012_13
 Fabrice Olinga,1000000.0,Málaga,2012_13
 Joaquín,3000000.0,Málaga,2012_13
-Francisco Portillo,3000000.0,Málaga,2012_13
 Javier Saviola,3000000.0,Málaga,2012_13
 Sebastián Fernández,2500000.0,Málaga,2012_13
 Roque Santa Cruz,3000000.0,Málaga,2012_13
@@ -4923,7 +4923,7 @@ Roger Martí,500000.0,Levante,2012_13
 Casto,2000000.0,Betis,2012_13
 Iñaki Goitia,1200000.0,Betis,2012_13
 Fabri,1200000.0,Betis,2012_13
-Adrián,0.0,Betis,2012_13
+Adrián San Miguel,0.0,Betis,2012_13
 Chechu Dorado,2500000.0,Betis,2012_13
 Paulão,2500000.0,Betis,2012_13
 Ustaritz,1800000.0,Betis,2012_13
@@ -4962,12 +4962,12 @@ Dani Giménez,1000000.0,Rayo Vallecano,2012_13
 Isma Gil,0.0,Rayo Vallecano,2012_13
 Jordi Figueras,2500000.0,Rayo Vallecano,2012_13
 Alejandro Arribas,2000000.0,Rayo Vallecano,2012_13
+Pedro Botelho,1500000.0,Rayo Vallecano,2012_13
 Mikel Labaka,1400000.0,Rayo Vallecano,2012_13
 Raúl Bravo,1000000.0,Rayo Vallecano,2012_13
 Jorge Pulido,500000.0,Rayo Vallecano,2012_13
 José Alcañiz,0.0,Rayo Vallecano,2012_13
 José Manuel Casado,2000000.0,Rayo Vallecano,2012_13
-Pedro Botelho,1500000.0,Rayo Vallecano,2012_13
 Tito,1500000.0,Rayo Vallecano,2012_13
 Sueliton,100000.0,Rayo Vallecano,2012_13
 Aitor Núñez,0.0,Rayo Vallecano,2012_13
@@ -5167,10 +5167,10 @@ José Sosa,9000000.0,Atlético,2013_14
 Samu Saiz,0.0,Atlético,2013_14
 Arda Turan,25000000.0,Atlético,2013_14
 Momar Ndoye,0.0,Atlético,2013_14
+Léo Baptistão,6000000.0,Atlético,2013_14
 Diego Costa,35000000.0,Atlético,2013_14
 David Villa,10000000.0,Atlético,2013_14
 Adrián López,8000000.0,Atlético,2013_14
-Léo Baptistão,6000000.0,Atlético,2013_14
 Rubén Mesa,0.0,Atlético,2013_14
 Héctor Hernández,0.0,Atlético,2013_14
 Víctor Valdés,12000000.0,Barcelona,2013_14
@@ -5248,13 +5248,13 @@ Borja Fernández,1000000.0,Getafe,2013_14
 Juan Rodríguez,600000.0,Getafe,2013_14
 Pedro Mosquera,2000000.0,Getafe,2013_14
 Míchel Madera,1500000.0,Getafe,2013_14
+Pablo Sarabia,3000000.0,Getafe,2013_14
 Sammir,3000000.0,Getafe,2013_14
 Ivi López,0.0,Getafe,2013_14
 Diego Castro,3000000.0,Getafe,2013_14
 Ángel Lafita,2500000.0,Getafe,2013_14
 Jaime Gavilán,1600000.0,Getafe,2013_14
 Pedro León,4000000.0,Getafe,2013_14
-Pablo Sarabia,3000000.0,Getafe,2013_14
 Javi Navas,0.0,Getafe,2013_14
 Álvaro Vázquez,3000000.0,Getafe,2013_14
 Miku,3000000.0,Getafe,2013_14
@@ -5417,15 +5417,15 @@ Ignacio Camacho,5000000.0,Málaga,2013_14
 Fernando Tissone,2500000.0,Málaga,2013_14
 Pablo Pérez,1500000.0,Málaga,2013_14
 Sergi Darder,1500000.0,Málaga,2013_14
-Duda,1800000.0,Málaga,2013_14
+Francisco Portillo,3000000.0,Málaga,2013_14
 Pedro Morales,2000000.0,Málaga,2013_14
 Bobley Anderson,1000000.0,Málaga,2013_14
-Bartlomiej Pawlowski,1000000.0,Málaga,2013_14
+Bartłomiej Pawłowski,1000000.0,Málaga,2013_14
 Oleksandr Yakovenko,1800000.0,Málaga,2013_14
+Duda,1800000.0,Málaga,2013_14
 Juanmi,1500000.0,Málaga,2013_14
 Fabrice Olinga,1000000.0,Málaga,2013_14
 Nordin Amrabat,4000000.0,Málaga,2013_14
-Francisco Portillo,3000000.0,Málaga,2013_14
 Samu García,1000000.0,Málaga,2013_14
 Sebastián Fernández,1500000.0,Málaga,2013_14
 Roque Santa Cruz,2500000.0,Málaga,2013_14
@@ -5444,6 +5444,7 @@ Cote,3000000.0,R. Sociedad,2013_14
 Carlos Martínez,5000000.0,R. Sociedad,2013_14
 Dani Estrada,1500000.0,R. Sociedad,2013_14
 Joseba Zaldua,200000.0,R. Sociedad,2013_14
+Marco Sangalli,0.0,R. Sociedad,2013_14
 Markel Bergara,2500000.0,R. Sociedad,2013_14
 Gorka Elustondo,1400000.0,R. Sociedad,2013_14
 Rubén Pardo,6000000.0,R. Sociedad,2013_14
@@ -5453,9 +5454,8 @@ Javi Ros,1500000.0,R. Sociedad,2013_14
 Jon Gaztañaga,300000.0,R. Sociedad,2013_14
 Xabi Prieto,8000000.0,R. Sociedad,2013_14
 Sergio Canales,5000000.0,R. Sociedad,2013_14
-Chory Castro,6000000.0,R. Sociedad,2013_14
 Alain Oyarzun,0.0,R. Sociedad,2013_14
-Marco Sangalli,0.0,R. Sociedad,2013_14
+Chory Castro,6000000.0,R. Sociedad,2013_14
 Carlos Vela,20000000.0,R. Sociedad,2013_14
 Pablo Hervías,0.0,R. Sociedad,2013_14
 Antoine Griezmann,25000000.0,R. Sociedad,2013_14
@@ -5498,7 +5498,7 @@ Aloys Nong,600000.0,Levante,2013_14
 Casto,2000000.0,Betis,2013_14
 Iñaki Goitia,1200000.0,Betis,2013_14
 Fabri,1200000.0,Betis,2013_14
-Adrián,0.0,Betis,2013_14
+Adrián San Miguel,0.0,Betis,2013_14
 Chechu Dorado,2500000.0,Betis,2013_14
 Paulão,2500000.0,Betis,2013_14
 Ustaritz,1800000.0,Betis,2013_14
@@ -5537,12 +5537,12 @@ Dani Giménez,1000000.0,Rayo Vallecano,2013_14
 Isma Gil,0.0,Rayo Vallecano,2013_14
 Jordi Figueras,2500000.0,Rayo Vallecano,2013_14
 Alejandro Arribas,2000000.0,Rayo Vallecano,2013_14
+Pedro Botelho,1500000.0,Rayo Vallecano,2013_14
 Mikel Labaka,1400000.0,Rayo Vallecano,2013_14
 Raúl Bravo,1000000.0,Rayo Vallecano,2013_14
 Jorge Pulido,500000.0,Rayo Vallecano,2013_14
 José Alcañiz,0.0,Rayo Vallecano,2013_14
 José Manuel Casado,2000000.0,Rayo Vallecano,2013_14
-Pedro Botelho,1500000.0,Rayo Vallecano,2013_14
 Tito,1500000.0,Rayo Vallecano,2013_14
 Sueliton,100000.0,Rayo Vallecano,2013_14
 Aitor Núñez,0.0,Rayo Vallecano,2013_14
@@ -5711,9 +5711,9 @@ Bruno Soriano,7000000.0,Villarreal,2013_14
 Tomás Pina,4000000.0,Villarreal,2013_14
 Manu Trigueros,4000000.0,Villarreal,2013_14
 Edu Ramos,200000.0,Villarreal,2013_14
+Moi Gómez,2000000.0,Villarreal,2013_14
 Joan Román,1000000.0,Villarreal,2013_14
 Cani,2500000.0,Villarreal,2013_14
-Moi Gómez,2000000.0,Villarreal,2013_14
 Matías Nahuel,1000000.0,Villarreal,2013_14
 Hernán Pérez,2500000.0,Villarreal,2013_14
 Giovani dos Santos,10000000.0,Villarreal,2013_14
@@ -5743,17 +5743,17 @@ Verza,2500000.0,Almería,2013_14
 Ramon Azeez,2000000.0,Almería,2013_14
 Miguel Ángel Corona,800000.0,Almería,2013_14
 Cristóbal Gil,0.0,Almería,2013_14
+Suso,5000000.0,Almería,2013_14
 Fernando Soriano,400000.0,Almería,2013_14
 Hélder Barbosa,2000000.0,Almería,2013_14
 Hicham Khaloua,200000.0,Almería,2013_14
-Suso,5000000.0,Almería,2013_14
 Aleix Vidal,2500000.0,Almería,2013_14
 Jonathan Zongo,600000.0,Almería,2013_14
 Kiu,300000.0,Almería,2013_14
-Edgar Méndez,200000.0,Almería,2013_14
 Rubén Suárez,200000.0,Almería,2013_14
 Rodri Ríos,2000000.0,Almería,2013_14
 Óscar Díaz,1200000.0,Almería,2013_14
+Edgar Méndez,200000.0,Almería,2013_14
 Dani Romera,0.0,Almería,2013_14
 Gorka Iraizoz,2000000.0,Athletic,2014_15
 Iago Herrerín,1000000.0,Athletic,2014_15
@@ -5791,8 +5791,8 @@ José María Giménez,15000000.0,Atlético,2014_15
 Nacho Monsalve,0.0,Atlético,2014_15
 Guilherme Siqueira,10000000.0,Atlético,2014_15
 Cristian Ansaldi,9000000.0,Atlético,2014_15
-Iván Pérez,0.0,Atlético,2014_15
 Lucas Hernández,0.0,Atlético,2014_15
+Iván Pérez,0.0,Atlético,2014_15
 Juanfran Torres,18000000.0,Atlético,2014_15
 Jesús Gámez,4000000.0,Atlético,2014_15
 Mario Suárez,10000000.0,Atlético,2014_15
@@ -5808,8 +5808,8 @@ Cani,1500000.0,Atlético,2014_15
 Nacho Huertas,0.0,Atlético,2014_15
 Sekou Keita,0.0,Atlético,2014_15
 Alessio Cerci,13500000.0,Atlético,2014_15
-Ángel Correa,5000000.0,Atlético,2014_15
 Antoine Griezmann,35000000.0,Atlético,2014_15
+Ángel Correa,5000000.0,Atlético,2014_15
 Mario Mandžukić,26000000.0,Atlético,2014_15
 Raúl Jiménez,7000000.0,Atlético,2014_15
 Fernando Torres,7000000.0,Atlético,2014_15
@@ -5869,8 +5869,8 @@ Víctor Sánchez,3000000.0,Espanyol,2014_15
 Salva Sevilla,2000000.0,Espanyol,2014_15
 Abraham González,1200000.0,Espanyol,2014_15
 Álex Fernández,1000000.0,Espanyol,2014_15
-Joan Jordán,0.0,Espanyol,2014_15
 Julián Luque,0.0,Espanyol,2014_15
+Joan Jordán,0.0,Espanyol,2014_15
 Paco Montañés,1500000.0,Espanyol,2014_15
 Manu Lanzarote,1000000.0,Espanyol,2014_15
 Sergio García,6000000.0,Espanyol,2014_15
@@ -5897,6 +5897,7 @@ Míchel Madera,1500000.0,Getafe,2014_15
 Míchel Herrero,1200000.0,Getafe,2014_15
 Alex Felip,0.0,Getafe,2014_15
 Philtzgerald Mbaka,0.0,Getafe,2014_15
+Pablo Sarabia,4000000.0,Getafe,2014_15
 Sammir,2500000.0,Getafe,2014_15
 Ivi López,0.0,Getafe,2014_15
 Pedro Astray,0.0,Getafe,2014_15
@@ -5906,7 +5907,6 @@ Diego Castro,2000000.0,Getafe,2014_15
 Fredy Hinestroza,1500000.0,Getafe,2014_15
 Pere Milla,0.0,Getafe,2014_15
 Pedro León,6000000.0,Getafe,2014_15
-Pablo Sarabia,4000000.0,Getafe,2014_15
 Karim Yoda,2500000.0,Getafe,2014_15
 Álvaro Vázquez,2500000.0,Getafe,2014_15
 Baba,1000000.0,Getafe,2014_15
@@ -5954,8 +5954,8 @@ Borja Mayoral,0.0,Real Madrid,2014_15
 Beto,4000000.0,Sevilla,2014_15
 Sergio Rico,2500000.0,Sevilla,2014_15
 Mariano Barbosa,800000.0,Sevilla,2014_15
-David Soria,0.0,Sevilla,2014_15
 Juan Soriano,0.0,Sevilla,2014_15
+David Soria,0.0,Sevilla,2014_15
 Federico Fazio,8000000.0,Sevilla,2014_15
 Daniel Carriço,8000000.0,Sevilla,2014_15
 Nicolás Pareja,4000000.0,Sevilla,2014_15
@@ -6029,15 +6029,15 @@ Ignacio Camacho,10000000.0,Málaga,2014_15
 Fernando Tissone,1000000.0,Málaga,2014_15
 Sergi Darder,4000000.0,Málaga,2014_15
 Recio,3000000.0,Málaga,2014_15
-Duda,1500000.0,Málaga,2014_15
 Luis Alberto,3500000.0,Málaga,2014_15
+Francisco Portillo,1500000.0,Málaga,2014_15
 Juanpi,1000000.0,Málaga,2014_15
 Juanmi,6000000.0,Málaga,2014_15
 Ricardo Horta,2500000.0,Málaga,2014_15
+Duda,1500000.0,Málaga,2014_15
 Nordin Amrabat,6000000.0,Málaga,2014_15
 Samu García,4000000.0,Málaga,2014_15
 Samu Castillejo,3000000.0,Málaga,2014_15
-Francisco Portillo,1500000.0,Málaga,2014_15
 Javi Guerra,2500000.0,Málaga,2014_15
 Roque Santa Cruz,2000000.0,Málaga,2014_15
 Ezequiel Rescaldani,1000000.0,Málaga,2014_15
@@ -6063,9 +6063,9 @@ Jon Gaztañaga,1000000.0,R. Sociedad,2014_15
 Alejandro Sanz,0.0,R. Sociedad,2014_15
 Xabi Prieto,7000000.0,R. Sociedad,2014_15
 Sergio Canales,5000000.0,R. Sociedad,2014_15
+Alain Oyarzun,0.0,R. Sociedad,2014_15
 Eneko Capilla,0.0,R. Sociedad,2014_15
 Chory Castro,5000000.0,R. Sociedad,2014_15
-Alain Oyarzun,0.0,R. Sociedad,2014_15
 Carlos Vela,18000000.0,R. Sociedad,2014_15
 Pablo Hervías,300000.0,R. Sociedad,2014_15
 Alfred Finnbogason,5000000.0,R. Sociedad,2014_15
@@ -6108,12 +6108,12 @@ Dani Giménez,1000000.0,Rayo Vallecano,2014_15
 Isma Gil,0.0,Rayo Vallecano,2014_15
 Jordi Figueras,2500000.0,Rayo Vallecano,2014_15
 Alejandro Arribas,2000000.0,Rayo Vallecano,2014_15
+Pedro Botelho,1500000.0,Rayo Vallecano,2014_15
 Mikel Labaka,1400000.0,Rayo Vallecano,2014_15
 Raúl Bravo,1000000.0,Rayo Vallecano,2014_15
 Jorge Pulido,500000.0,Rayo Vallecano,2014_15
 José Alcañiz,0.0,Rayo Vallecano,2014_15
 José Manuel Casado,2000000.0,Rayo Vallecano,2014_15
-Pedro Botelho,1500000.0,Rayo Vallecano,2014_15
 Tito,1500000.0,Rayo Vallecano,2014_15
 Sueliton,100000.0,Rayo Vallecano,2014_15
 Aitor Núñez,0.0,Rayo Vallecano,2014_15
@@ -6212,18 +6212,18 @@ Nacho Porcar,0.0,Elche,2014_15
 Domingo Cisma,1000000.0,Elche,2014_15
 Edu Albacar,1000000.0,Elche,2014_15
 Damián Suárez,3000000.0,Elche,2014_15
-Mario Pasalić,3000000.0,Elche,2014_15
+Mario Pašalić,3000000.0,Elche,2014_15
 Fayçal Fajr,2500000.0,Elche,2014_15
 Pedro Mosquera,2000000.0,Elche,2014_15
 Adrián González,2000000.0,Elche,2014_15
 Mario Arqués,0.0,Elche,2014_15
 Víctor Rodríguez,2500000.0,Elche,2014_15
-Garry Rodrigues,2000000.0,Elche,2014_15
 Franco Fragapane,0.0,Elche,2014_15
+Garry Rodrigues,2000000.0,Elche,2014_15
 Aarón Ñíguez,1000000.0,Elche,2014_15
-Moha Traoré,0.0,Elche,2014_15
 Samu Martínez,0.0,Elche,2014_15
 Jose Antonio Peral,0.0,Elche,2014_15
+Moha Traoré,0.0,Elche,2014_15
 Jonathas,6000000.0,Elche,2014_15
 Ferrán Corominas,1800000.0,Elche,2014_15
 Cristian Herrera,1500000.0,Elche,2014_15
@@ -6254,13 +6254,13 @@ Tomás Pina,3000000.0,Villarreal,2014_15
 Javier Espinosa,3000000.0,Villarreal,2014_15
 Sergio Marcos,300000.0,Villarreal,2014_15
 Aleix García,0.0,Villarreal,2014_15
-Denis Cheryshev,10000000.0,Villarreal,2014_15
 Moi Gómez,5000000.0,Villarreal,2014_15
+Denis Cheryshev,10000000.0,Villarreal,2014_15
 Cani,1500000.0,Villarreal,2014_15
 Matías Nahuel,0.0,Villarreal,2014_15
 José Naranjo,0.0,Villarreal,2014_15
-Joel Campbell,6000000.0,Villarreal,2014_15
 Giovani dos Santos,12000000.0,Villarreal,2014_15
+Joel Campbell,6000000.0,Villarreal,2014_15
 Luciano Vietto,15000000.0,Villarreal,2014_15
 Ikechukwu Uche,4000000.0,Villarreal,2014_15
 Gerard Moreno,3000000.0,Villarreal,2014_15
@@ -6288,11 +6288,11 @@ Carlos Selfa,0.0,Almería,2014_15
 Fernando Soriano,400000.0,Almería,2014_15
 Thievy Bifouma,2000000.0,Almería,2014_15
 Gaspar Panadero,0.0,Almería,2014_15
-Edgar Méndez,2500000.0,Almería,2014_15
 Wellington Silva,1500000.0,Almería,2014_15
 Jonathan Zongo,1500000.0,Almería,2014_15
 Iván Sánchez,0.0,Almería,2014_15
 Tomer Hemed,3000000.0,Almería,2014_15
+Edgar Méndez,2500000.0,Almería,2014_15
 Teerasil Dangda,1000000.0,Almería,2014_15
 Quique González,200000.0,Almería,2014_15
 Dani Romera,0.0,Almería,2014_15
@@ -6382,8 +6382,8 @@ Bebé,3000000.0,Córdoba,2014_15
 Héldon,2500000.0,Córdoba,2014_15
 Fidel,2500000.0,Córdoba,2014_15
 Ryder Matos,2500000.0,Córdoba,2014_15
-Sergio García,0.0,Córdoba,2014_15
 José Fran,0.0,Córdoba,2014_15
+Sergio García,0.0,Córdoba,2014_15
 Fede Cartabia,5000000.0,Córdoba,2014_15
 José María López Silva,1000000.0,Córdoba,2014_15
 Nabil Ghilas,3500000.0,Córdoba,2014_15
@@ -6441,9 +6441,9 @@ Augusto Fernández,6000000.0,Atlético,2015_16
 Tiago Mendes,2000000.0,Atlético,2015_16
 Raúl García,12000000.0,Atlético,2015_16
 Yannick Carrasco,25000000.0,Atlético,2015_16
-Ángel Correa,9000000.0,Atlético,2015_16
 Samuel Villa,0.0,Atlético,2015_16
 Antoine Griezmann,70000000.0,Atlético,2015_16
+Ángel Correa,9000000.0,Atlético,2015_16
 Luciano Vietto,15000000.0,Atlético,2015_16
 Jackson Martínez,14000000.0,Atlético,2015_16
 Fernando Torres,7000000.0,Atlético,2015_16
@@ -6497,13 +6497,13 @@ Víctor Álvarez,2500000.0,Espanyol,2015_16
 Juan Rafael Fuentes,2000000.0,Espanyol,2015_16
 Javi López,3000000.0,Espanyol,2015_16
 Rober Correa,200000.0,Espanyol,2015_16
-Marc Navarro,0.0,Espanyol,2015_16
 José Alberto Cañas,3000000.0,Espanyol,2015_16
 Pape Diop,2500000.0,Espanyol,2015_16
 Víctor Sánchez,3500000.0,Espanyol,2015_16
 Salva Sevilla,1500000.0,Espanyol,2015_16
 Abraham González,1000000.0,Espanyol,2015_16
 Joan Jordán,800000.0,Espanyol,2015_16
+Marc Navarro,0.0,Espanyol,2015_16
 Marco Asensio,8000000.0,Espanyol,2015_16
 Paco Montañés,1000000.0,Espanyol,2015_16
 Burgui,800000.0,Espanyol,2015_16
@@ -6530,13 +6530,13 @@ Mehdi Lacen,2500000.0,Getafe,2015_16
 Juan Rodríguez,800000.0,Getafe,2015_16
 Álvaro Medrán,400000.0,Getafe,2015_16
 Borja Galán,0.0,Getafe,2015_16
+Pablo Sarabia,5000000.0,Getafe,2015_16
 Víctor Rodríguez,3000000.0,Getafe,2015_16
+Moi Gómez,3000000.0,Getafe,2015_16
 Bernard Mensah,2000000.0,Getafe,2015_16
 Emiliano Buendía,400000.0,Getafe,2015_16
-Moi Gómez,3000000.0,Getafe,2015_16
 Ángel Lafita,2000000.0,Getafe,2015_16
 Wanderson,300000.0,Getafe,2015_16
-Pablo Sarabia,5000000.0,Getafe,2015_16
 Pedro León,5000000.0,Getafe,2015_16
 Karim Yoda,1800000.0,Getafe,2015_16
 Álvaro Vázquez,3000000.0,Getafe,2015_16
@@ -6600,8 +6600,8 @@ Sebastián Cristóforo,1500000.0,Sevilla,2015_16
 Antonio Cotán,0.0,Sevilla,2015_16
 Denis Suárez,12000000.0,Sevilla,2015_16
 Gaël Kakuta,2200000.0,Sevilla,2015_16
-Borja Lasso,0.0,Sevilla,2015_16
 Ivi López,0.0,Sevilla,2015_16
+Borja Lasso,0.0,Sevilla,2015_16
 Yevgen Konoplyanka,25000000.0,Sevilla,2015_16
 Vitolo,12000000.0,Sevilla,2015_16
 José Antonio Reyes,2000000.0,Sevilla,2015_16
@@ -6641,8 +6641,8 @@ Pablo Piatti,7000000.0,Valencia,2015_16
 Fran Villalba,0.0,Valencia,2015_16
 Denis Cheryshev,10000000.0,Valencia,2015_16
 Zakaria Bakkali,4000000.0,Valencia,2015_16
-Sito,0.0,Valencia,2015_16
 Nacho Gil,0.0,Valencia,2015_16
+Sito Pascual,0.0,Valencia,2015_16
 Paco Alcácer,25000000.0,Valencia,2015_16
 Rodrigo,12000000.0,Valencia,2015_16
 Álvaro Negredo,10000000.0,Valencia,2015_16
@@ -6668,7 +6668,6 @@ Sergi Darder,11000000.0,Málaga,2015_16
 Recio,3500000.0,Málaga,2015_16
 Miguel Cifuentes,1000000.0,Málaga,2015_16
 Pablo Fornals,1000000.0,Málaga,2015_16
-Duda,1000000.0,Málaga,2015_16
 Juanpi,3000000.0,Málaga,2015_16
 Fábio Espinho,750000.0,Málaga,2015_16
 Hachim Mastour,500000.0,Málaga,2015_16
@@ -6676,6 +6675,7 @@ Christian Atsu,3500000.0,Málaga,2015_16
 Chory Castro,2500000.0,Málaga,2015_16
 Ricardo Horta,1500000.0,Málaga,2015_16
 Adnane Tighadouini,1200000.0,Málaga,2015_16
+Duda,1000000.0,Málaga,2015_16
 Javi Ontiveros,0.0,Málaga,2015_16
 Nordin Amrabat,5000000.0,Málaga,2015_16
 Duje Cop,3000000.0,Málaga,2015_16
@@ -6705,10 +6705,10 @@ Esteban Granero,4000000.0,R. Sociedad,2015_16
 David Zurutuza,2000000.0,R. Sociedad,2015_16
 Xabi Prieto,4500000.0,R. Sociedad,2015_16
 Sergio Canales,3000000.0,R. Sociedad,2015_16
+Alain Oyarzun,300000.0,R. Sociedad,2015_16
 Eneko Capilla,0.0,R. Sociedad,2015_16
 Bruma,5000000.0,R. Sociedad,2015_16
 Chory Castro,2500000.0,R. Sociedad,2015_16
-Alain Oyarzun,300000.0,R. Sociedad,2015_16
 Carlos Vela,15000000.0,R. Sociedad,2015_16
 Jonathas,7000000.0,R. Sociedad,2015_16
 Imanol Agirretxe,4000000.0,R. Sociedad,2015_16
@@ -6751,12 +6751,12 @@ Dani Giménez,1000000.0,Rayo Vallecano,2015_16
 Isma Gil,0.0,Rayo Vallecano,2015_16
 Jordi Figueras,2500000.0,Rayo Vallecano,2015_16
 Alejandro Arribas,2000000.0,Rayo Vallecano,2015_16
+Pedro Botelho,1500000.0,Rayo Vallecano,2015_16
 Mikel Labaka,1400000.0,Rayo Vallecano,2015_16
 Raúl Bravo,1000000.0,Rayo Vallecano,2015_16
 Jorge Pulido,500000.0,Rayo Vallecano,2015_16
 José Alcañiz,0.0,Rayo Vallecano,2015_16
 José Manuel Casado,2000000.0,Rayo Vallecano,2015_16
-Pedro Botelho,1500000.0,Rayo Vallecano,2015_16
 Tito,1500000.0,Rayo Vallecano,2015_16
 Sueliton,100000.0,Rayo Vallecano,2015_16
 Aitor Núñez,0.0,Rayo Vallecano,2015_16
@@ -6820,8 +6820,8 @@ Néstor Díaz,0.0,Celta,2015_16
 Andreu Fontàs,3500000.0,Celta,2015_16
 Sergi Gómez,3000000.0,Celta,2015_16
 Gustavo Cabral,3000000.0,Celta,2015_16
-David Goldar,0.0,Celta,2015_16
 Diego Alende,0.0,Celta,2015_16
+David Goldar,0.0,Celta,2015_16
 Carles Planas,2000000.0,Celta,2015_16
 Hugo Mallo,6000000.0,Celta,2015_16
 Jonny Otto,5000000.0,Celta,2015_16
@@ -6866,9 +6866,9 @@ Denis Suárez,12000000.0,Villarreal,2015_16
 Matías Nahuel,4000000.0,Villarreal,2015_16
 Samu Castillejo,5000000.0,Villarreal,2015_16
 Samu García,4000000.0,Villarreal,2015_16
+Léo Baptistão,4000000.0,Villarreal,2015_16
 Roberto Soldado,16000000.0,Villarreal,2015_16
 Cédric Bakambu,12000000.0,Villarreal,2015_16
-Léo Baptistão,4000000.0,Villarreal,2015_16
 Adrián López,3500000.0,Villarreal,2015_16
 Xabi Irureta,800000.0,Eibar,2015_16
 Asier Riesgo,800000.0,Eibar,2015_16
@@ -6955,11 +6955,11 @@ Xavi Torres,2000000.0,Betis,2015_16
 Didier Digard,2000000.0,Betis,2015_16
 Dani Ceballos,5000000.0,Betis,2015_16
 Fabián Ruiz,500000.0,Betis,2015_16
+Francisco Portillo,1500000.0,Betis,2015_16
 Foued Kadir,1000000.0,Betis,2015_16
 Rafael van der Vaart,1000000.0,Betis,2015_16
 Charly Musonda Jr.,2000000.0,Betis,2015_16
 Álvaro Vadillo,1500000.0,Betis,2015_16
-Francisco Portillo,1500000.0,Betis,2015_16
 Joaquín,1000000.0,Betis,2015_16
 Fran Díaz,0.0,Betis,2015_16
 Álvaro Cejudo,1500000.0,Betis,2015_16
@@ -7068,7 +7068,6 @@ Diego Godín,38000000.0,Atlético,2016_17
 Stefan Savic,30000000.0,Atlético,2016_17
 José María Giménez,28000000.0,Atlético,2016_17
 Álex García,300000.0,Atlético,2016_17
-Rafa Muñoz,0.0,Atlético,2016_17
 Tachi,0.0,Atlético,2016_17
 Filipe Luís,18000000.0,Atlético,2016_17
 Lucas Hernández,15000000.0,Atlético,2016_17
@@ -7076,6 +7075,7 @@ Caio Henrique,0.0,Atlético,2016_17
 Sime Vrsaljko,16000000.0,Atlético,2016_17
 Juanfran Torres,12000000.0,Atlético,2016_17
 Javier Manquillo,4000000.0,Atlético,2016_17
+Rafa Muñoz,0.0,Atlético,2016_17
 Thomas Partey,4500000.0,Atlético,2016_17
 Koke,60000000.0,Atlético,2016_17
 Saúl Ñíguez,40000000.0,Atlético,2016_17
@@ -7091,9 +7091,9 @@ Yannick Carrasco,40000000.0,Atlético,2016_17
 Diogo Jota,8000000.0,Atlético,2016_17
 Nicolás Schiappacasse,500000.0,Atlético,2016_17
 Ferni,0.0,Atlético,2016_17
-Ángel Correa,18000000.0,Atlético,2016_17
 Alessio Cerci,4000000.0,Atlético,2016_17
 Antoine Griezmann,80000000.0,Atlético,2016_17
+Ángel Correa,18000000.0,Atlético,2016_17
 Kévin Gameiro,24000000.0,Atlético,2016_17
 Fernando Torres,4000000.0,Atlético,2016_17
 Roberto Núñez,0.0,Atlético,2016_17
@@ -7145,19 +7145,19 @@ Martín Demichelis,200000.0,Espanyol,2016_17
 Aarón Martín,10000000.0,Espanyol,2016_17
 Víctor Álvarez,1000000.0,Espanyol,2016_17
 Javi López,2000000.0,Espanyol,2016_17
-Marc Navarro,1000000.0,Espanyol,2016_17
 Marc Roca,2000000.0,Espanyol,2016_17
 Javi Fuego,1500000.0,Espanyol,2016_17
 Pape Diop,1500000.0,Espanyol,2016_17
 Víctor Sánchez,4000000.0,Espanyol,2016_17
 Salva Sevilla,500000.0,Espanyol,2016_17
+Marc Navarro,1000000.0,Espanyol,2016_17
 Pablo Piatti,6000000.0,Espanyol,2016_17
 José Manuel Jurado,3500000.0,Espanyol,2016_17
 Óscar Melendo,500000.0,Espanyol,2016_17
+Léo Baptistão,4000000.0,Espanyol,2016_17
 Hernán Pérez,3000000.0,Espanyol,2016_17
 José Antonio Reyes,800000.0,Espanyol,2016_17
 Gerard Moreno,8000000.0,Espanyol,2016_17
-Léo Baptistão,4000000.0,Espanyol,2016_17
 Felipe Caicedo,3000000.0,Espanyol,2016_17
 Álvaro Vázquez,1500000.0,Espanyol,2016_17
 Keylor Navas,18000000.0,Real Madrid,2016_17
@@ -7206,7 +7206,6 @@ Benoît Trémoulinas,2000000.0,Sevilla,2016_17
 José Matos,1200000.0,Sevilla,2016_17
 Álex Muñoz,200000.0,Sevilla,2016_17
 Mariano,8000000.0,Sevilla,2016_17
-Álex Pozo,2000000.0,Sevilla,2016_17
 David Carmona,1500000.0,Sevilla,2016_17
 Steven Nzonzi,30000000.0,Sevilla,2016_17
 Vicente Iborra,9000000.0,Sevilla,2016_17
@@ -7215,13 +7214,14 @@ Walter Montoya,3000000.0,Sevilla,2016_17
 Michael Krohn-Dehli,1500000.0,Sevilla,2016_17
 Franco Vázquez,18000000.0,Sevilla,2016_17
 Samir Nasri,16000000.0,Sevilla,2016_17
+Pablo Sarabia,15000000.0,Sevilla,2016_17
 Hiroshi Kiyotake,5000000.0,Sevilla,2016_17
 Ganso,5000000.0,Sevilla,2016_17
 Borja Lasso,1500000.0,Sevilla,2016_17
 Pepe Mena,0.0,Sevilla,2016_17
 Vitolo,25000000.0,Sevilla,2016_17
 Yevgen Konoplyanka,10000000.0,Sevilla,2016_17
-Pablo Sarabia,15000000.0,Sevilla,2016_17
+Álex Pozo,2000000.0,Sevilla,2016_17
 Joaquín Correa,10000000.0,Sevilla,2016_17
 Stevan Jovetić,10000000.0,Sevilla,2016_17
 Wissam Ben Yedder,15000000.0,Sevilla,2016_17
@@ -7253,7 +7253,7 @@ Munir El Haddadi,9000000.0,Valencia,2016_17
 Nani,10000000.0,Valencia,2016_17
 Zakaria Bakkali,2000000.0,Valencia,2016_17
 Nacho Gil,300000.0,Valencia,2016_17
-Sito,200000.0,Valencia,2016_17
+Sito Pascual,200000.0,Valencia,2016_17
 Fabián Orellana,3000000.0,Valencia,2016_17
 Rober Ibáñez,1500000.0,Valencia,2016_17
 Fede Cartabia,1500000.0,Valencia,2016_17
@@ -7284,13 +7284,13 @@ Recio,3500000.0,Málaga,2016_17
 Zdravko Kuzmanovic,1000000.0,Málaga,2016_17
 José Rodríguez,1000000.0,Málaga,2016_17
 Luis Muñoz,0.0,Málaga,2016_17
-Duda,100000.0,Málaga,2016_17
 Juanpi,2500000.0,Málaga,2016_17
 Kuki Zalazar,0.0,Málaga,2016_17
 Adalberto Peñaranda,3000000.0,Málaga,2016_17
 Javi Ontiveros,3000000.0,Málaga,2016_17
 Jony,2500000.0,Málaga,2016_17
 Chory Castro,1500000.0,Málaga,2016_17
+Duda,100000.0,Málaga,2016_17
 Álex Mula,0.0,Málaga,2016_17
 Keko Gontán,3000000.0,Málaga,2016_17
 Sandro Ramírez,10000000.0,Málaga,2016_17
@@ -7478,10 +7478,10 @@ Gaël Kakuta,1000000.0,RC Deportivo,2016_17
 Bicho,300000.0,RC Deportivo,2016_17
 Ryan Babel,5000000.0,RC Deportivo,2016_17
 Ola John,2500000.0,RC Deportivo,2016_17
-Bruno Gama,1500000.0,RC Deportivo,2016_17
 Marlos Moreno,1000000.0,RC Deportivo,2016_17
 Óscar Pinchi,0.0,RC Deportivo,2016_17
 Fede Cartabia,1500000.0,RC Deportivo,2016_17
+Bruno Gama,1500000.0,RC Deportivo,2016_17
 Lucas Pérez,15000000.0,RC Deportivo,2016_17
 Florin Andone,5000000.0,RC Deportivo,2016_17
 Joselu,3500000.0,RC Deportivo,2016_17
@@ -7534,9 +7534,9 @@ Cristian Salvador,250000.0,Real Sporting,2016_17
 Nacho Cases,1500000.0,Real Sporting,2016_17
 Rachid Aït-Atmane,1000000.0,Real Sporting,2016_17
 Alberto Lora,1000000.0,Real Sporting,2016_17
+Moi Gómez,3000000.0,Real Sporting,2016_17
 Víctor Rodríguez,1500000.0,Real Sporting,2016_17
 Dani Ndi,500000.0,Real Sporting,2016_17
-Moi Gómez,3000000.0,Real Sporting,2016_17
 Burgui,1500000.0,Real Sporting,2016_17
 Akram Afif,600000.0,Real Sporting,2016_17
 Carlos Carmona,2000000.0,Real Sporting,2016_17
@@ -7562,12 +7562,12 @@ Roque Mesa,12000000.0,Las Palmas,2016_17
 Ángel Montoro,1000000.0,Las Palmas,2016_17
 Hernán Santana,800000.0,Las Palmas,2016_17
 Javi Castellano,400000.0,Las Palmas,2016_17
-José Artiles,100000.0,Las Palmas,2016_17
 Jonathan Viera,10000000.0,Las Palmas,2016_17
 Kevin-Prince Boateng,5000000.0,Las Palmas,2016_17
 Alen Halilovic,4000000.0,Las Palmas,2016_17
 Tana,3500000.0,Las Palmas,2016_17
 Tyronne,400000.0,Las Palmas,2016_17
+José Artiles,100000.0,Las Palmas,2016_17
 Jesé,7500000.0,Las Palmas,2016_17
 Momo,100000.0,Las Palmas,2016_17
 Benito Ramírez,0.0,Las Palmas,2016_17
@@ -7603,9 +7603,9 @@ Aleksandar Katai,2000000.0,Alavés,2016_17
 Manu García,1000000.0,Alavés,2016_17
 Ibai Gómez,2000000.0,Alavés,2016_17
 Cristian Espinoza,2500000.0,Alavés,2016_17
-Edgar Méndez,2000000.0,Alavés,2016_17
 Gaizka Toquero,500000.0,Alavés,2016_17
 Deyverson,5000000.0,Alavés,2016_17
+Edgar Méndez,2000000.0,Alavés,2016_17
 Christian Santos,1500000.0,Alavés,2016_17
 Rubén Sobrino,500000.0,Alavés,2016_17
 Manu Barreiro,300000.0,Alavés,2016_17
@@ -7627,8 +7627,8 @@ Tito,2500000.0,Leganés,2016_17
 Víctor Díaz,1200000.0,Leganés,2016_17
 Gabriel Pires,4000000.0,Leganés,2016_17
 Rubén Pérez,2500000.0,Leganés,2016_17
-David Timor,2000000.0,Leganés,2016_17
 Unai López,2000000.0,Leganés,2016_17
+David Timor,2000000.0,Leganés,2016_17
 Erik Morán,1000000.0,Leganés,2016_17
 Alberto Martín,800000.0,Leganés,2016_17
 Lluis Sastre,300000.0,Leganés,2016_17
@@ -7743,10 +7743,10 @@ Nico Gaitán,8000000.0,Atlético,2017_18
 Juan Moreno,100000.0,Atlético,2017_18
 Yannick Carrasco,25000000.0,Atlético,2017_18
 Vitolo,25000000.0,Atlético,2017_18
-Ángel Correa,24000000.0,Atlético,2017_18
 Arona Sané,250000.0,Atlético,2017_18
 Juan Agüero,0.0,Atlético,2017_18
 Antoine Griezmann,100000000.0,Atlético,2017_18
+Ángel Correa,24000000.0,Atlético,2017_18
 Diego Costa,60000000.0,Atlético,2017_18
 Kévin Gameiro,20000000.0,Atlético,2017_18
 Luciano Vietto,6000000.0,Atlético,2017_18
@@ -7795,7 +7795,6 @@ Naldo,1000000.0,Espanyol,2017_18
 Sergio Sánchez,1000000.0,Espanyol,2017_18
 Aarón Martín,12000000.0,Espanyol,2017_18
 Dídac Vilà,1000000.0,Espanyol,2017_18
-Marc Navarro,2000000.0,Espanyol,2017_18
 Javi López,1000000.0,Espanyol,2017_18
 Carlos Sánchez,2000000.0,Espanyol,2017_18
 Javi Fuego,1000000.0,Espanyol,2017_18
@@ -7804,12 +7803,13 @@ Marc Roca,800000.0,Espanyol,2017_18
 Sergi Darder,11000000.0,Espanyol,2017_18
 Víctor Sánchez,3500000.0,Espanyol,2017_18
 Esteban Granero,1500000.0,Espanyol,2017_18
+Marc Navarro,2000000.0,Espanyol,2017_18
 Pablo Piatti,6000000.0,Espanyol,2017_18
 José Manuel Jurado,2500000.0,Espanyol,2017_18
 Óscar Melendo,1000000.0,Espanyol,2017_18
+Léo Baptistão,6000000.0,Espanyol,2017_18
 Hernán Pérez,1200000.0,Espanyol,2017_18
 Gerard Moreno,20000000.0,Espanyol,2017_18
-Léo Baptistão,6000000.0,Espanyol,2017_18
 Sergio García,1500000.0,Espanyol,2017_18
 Álvaro Vázquez,1000000.0,Espanyol,2017_18
 Jairo Morillas,300000.0,Espanyol,2017_18
@@ -7824,6 +7824,7 @@ Jesús Vallejo,12000000.0,Real Madrid,2017_18
 Manu Hernando,200000.0,Real Madrid,2017_18
 Marcelo,60000000.0,Real Madrid,2017_18
 Theo Hernández,15000000.0,Real Madrid,2017_18
+Luismi Quezada,300000.0,Real Madrid,2017_18
 Daniel Carvajal,60000000.0,Real Madrid,2017_18
 Lucas Vázquez,25000000.0,Real Madrid,2017_18
 Marcos Llorente,12000000.0,Real Madrid,2017_18
@@ -7835,13 +7836,12 @@ Mateo Kovacic,30000000.0,Real Madrid,2017_18
 Luka Modrić,25000000.0,Real Madrid,2017_18
 Dani Ceballos,12000000.0,Real Madrid,2017_18
 Jaime Seoane,250000.0,Real Madrid,2017_18
-Luismi Quezada,300000.0,Real Madrid,2017_18
 Marco Asensio,75000000.0,Real Madrid,2017_18
 Isco,75000000.0,Real Madrid,2017_18
 Óscar Rodríguez,800000.0,Real Madrid,2017_18
-Gareth Bale,90000000.0,Real Madrid,2017_18
 Franchu,200000.0,Real Madrid,2017_18
 Cristo,500000.0,Real Madrid,2017_18
+Gareth Bale,90000000.0,Real Madrid,2017_18
 Cristiano Ronaldo,100000000.0,Real Madrid,2017_18
 Karim Benzema,40000000.0,Real Madrid,2017_18
 Borja Mayoral,7500000.0,Real Madrid,2017_18
@@ -7857,9 +7857,7 @@ Sergio Escudero,7500000.0,Sevilla,2017_18
 Guilherme Arana,5000000.0,Sevilla,2017_18
 Lionel Carole,3000000.0,Sevilla,2017_18
 Miguel Layún,5000000.0,Sevilla,2017_18
-Jesús Navas,5000000.0,Sevilla,2017_18
 Sébastien Corchia,4000000.0,Sevilla,2017_18
-Álex Pozo,2000000.0,Sevilla,2017_18
 Steven Nzonzi,30000000.0,Sevilla,2017_18
 Guido Pizarro,7500000.0,Sevilla,2017_18
 Johannes Geis,5000000.0,Sevilla,2017_18
@@ -7867,12 +7865,14 @@ Johannes Geis,5000000.0,Sevilla,2017_18
 Roque Mesa,7000000.0,Sevilla,2017_18
 Walter Montoya,4000000.0,Sevilla,2017_18
 Michael Krohn-Dehli,800000.0,Sevilla,2017_18
+Jesús Navas,5000000.0,Sevilla,2017_18
+Pablo Sarabia,20000000.0,Sevilla,2017_18
 Franco Vázquez,7500000.0,Sevilla,2017_18
 Ganso,2000000.0,Sevilla,2017_18
 Borja Lasso,1000000.0,Sevilla,2017_18
 Nolito,5000000.0,Sevilla,2017_18
 José Alonso Lara,500000.0,Sevilla,2017_18
-Pablo Sarabia,20000000.0,Sevilla,2017_18
+Álex Pozo,2000000.0,Sevilla,2017_18
 Joaquín Correa,10000000.0,Sevilla,2017_18
 Wissam Ben Yedder,28000000.0,Sevilla,2017_18
 Luis Muriel,12000000.0,Sevilla,2017_18
@@ -7895,10 +7895,10 @@ Geoffrey Kondogbia,30000000.0,Valencia,2017_18
 Francis Coquelin,12000000.0,Valencia,2017_18
 Carlos Soler,30000000.0,Valencia,2017_18
 Dani Parejo,20000000.0,Valencia,2017_18
+Andreas Pereira,6000000.0,Valencia,2017_18
 Nemanja Maksimovic,3000000.0,Valencia,2017_18
 Álvaro Medrán,1800000.0,Valencia,2017_18
 Gonzalo Villar,200000.0,Valencia,2017_18
-Andreas Pereira,6000000.0,Valencia,2017_18
 Gonçalo Guedes,40000000.0,Valencia,2017_18
 Nacho Gil,800000.0,Valencia,2017_18
 Fabián Orellana,2000000.0,Valencia,2017_18
@@ -8099,7 +8099,6 @@ Saúl García,600000.0,RC Deportivo,2017_18
 Fernando Navarro,100000.0,RC Deportivo,2017_18
 Juanfran Moreno,4000000.0,RC Deportivo,2017_18
 Eneko Bóveda,1500000.0,RC Deportivo,2017_18
-Gerard Valentín,500000.0,RC Deportivo,2017_18
 Blas Alonso,300000.0,RC Deportivo,2017_18
 Guilherme,3500000.0,RC Deportivo,2017_18
 Federico Valverde,6000000.0,RC Deportivo,2017_18
@@ -8111,9 +8110,10 @@ Sulley Muntari,300000.0,RC Deportivo,2017_18
 Emre Çolak,2000000.0,RC Deportivo,2017_18
 Carles Gil,1000000.0,RC Deportivo,2017_18
 Zakaria Bakkali,1500000.0,RC Deportivo,2017_18
-Bruno Gama,800000.0,RC Deportivo,2017_18
 Óscar Pinchi,300000.0,RC Deportivo,2017_18
 Fede Cartabia,2000000.0,RC Deportivo,2017_18
+Bruno Gama,800000.0,RC Deportivo,2017_18
+Gerard Valentín,500000.0,RC Deportivo,2017_18
 Lucas Pérez,7500000.0,RC Deportivo,2017_18
 Florin Andone,6000000.0,RC Deportivo,2017_18
 Adrián López,4000000.0,RC Deportivo,2017_18
@@ -8141,9 +8141,9 @@ Julio Gracia,300000.0,Betis,2017_18
 Ryad Boudebouz,8000000.0,Betis,2017_18
 Cristian Tello,6000000.0,Betis,2017_18
 Matías Nahuel,1000000.0,Betis,2017_18
-Joel Campbell,3000000.0,Betis,2017_18
 Joaquín,500000.0,Betis,2017_18
 Aitor Ruibal,300000.0,Betis,2017_18
+Joel Campbell,3000000.0,Betis,2017_18
 Antonio Sanabria,7500000.0,Betis,2017_18
 Loren Morón,7500000.0,Betis,2017_18
 Sergio León,5000000.0,Betis,2017_18
@@ -8307,8 +8307,8 @@ Pablo Maffeo,10000000.0,Girona,2017_18
 Maximiliano Villa,250000.0,Girona,2017_18
 Pedro Porro,0.0,Girona,2017_18
 Álex Granell,5000000.0,Girona,2017_18
-David Timor,2000000.0,Girona,2017_18
 Pere Pons,5000000.0,Girona,2017_18
+David Timor,2000000.0,Girona,2017_18
 Douglas Luiz,1500000.0,Girona,2017_18
 Aleix García,1000000.0,Girona,2017_18
 Borja García,3500000.0,Girona,2017_18
@@ -8346,10 +8346,10 @@ Gaku Shibasaki,1800000.0,Getafe,2017_18
 Sergio Mora,100000.0,Getafe,2017_18
 Gustavo Quezada,0.0,Getafe,2017_18
 Diego Barri,0.0,Getafe,2017_18
+Francisco Portillo,2000000.0,Getafe,2017_18
 Merveil Ndockyt,1000000.0,Getafe,2017_18
 Jefferson Montero,1500000.0,Getafe,2017_18
 Amath Ndiaye,5000000.0,Getafe,2017_18
-Francisco Portillo,2000000.0,Getafe,2017_18
 Álvaro Jiménez,900000.0,Getafe,2017_18
 Carlos Calderón,0.0,Getafe,2017_18
 Loïc Rémy,6000000.0,Getafe,2017_18
@@ -8417,10 +8417,10 @@ Mikel Carro,150000.0,Atlético,2018_19
 Thomas Lemar,40000000.0,Atlético,2018_19
 Vitolo,18000000.0,Atlético,2018_19
 Joaquín Muñoz,300000.0,Atlético,2018_19
-Ángel Correa,35000000.0,Atlético,2018_19
 Gelson Martins,28000000.0,Atlético,2018_19
 Víctor Mollejo,2500000.0,Atlético,2018_19
 Antoine Griezmann,130000000.0,Atlético,2018_19
+Ángel Correa,35000000.0,Atlético,2018_19
 Álvaro Morata,50000000.0,Atlético,2018_19
 Diego Costa,25000000.0,Atlético,2018_19
 Nikola Kalinić,10000000.0,Atlético,2018_19
@@ -8443,10 +8443,10 @@ Juan Miranda,5000000.0,Barcelona,2018_19
 Nélson Semedo,40000000.0,Barcelona,2018_19
 Moussa Wagué,5000000.0,Barcelona,2018_19
 Guillem Jaime,200000.0,Barcelona,2018_19
-Arthur Melo,70000000.0,Barcelona,2018_19
 Sergio Busquets,50000000.0,Barcelona,2018_19
 Uri Busquets,2500000.0,Barcelona,2018_19
 Sergi Samper,1500000.0,Barcelona,2018_19
+Arthur Melo,70000000.0,Barcelona,2018_19
 Sergi Roberto,50000000.0,Barcelona,2018_19
 Ivan Rakitic,40000000.0,Barcelona,2018_19
 Carles Aleñá,30000000.0,Barcelona,2018_19
@@ -8489,9 +8489,9 @@ Pablo Piatti,4000000.0,Espanyol,2018_19
 Javi Puado,1000000.0,Espanyol,2018_19
 Carlos Doncel,200000.0,Espanyol,2018_19
 Lei Wu,10000000.0,Espanyol,2018_19
+Léo Baptistão,4500000.0,Espanyol,2018_19
 Hernán Pérez,1500000.0,Espanyol,2018_19
 Borja Iglesias,28000000.0,Espanyol,2018_19
-Léo Baptistão,4500000.0,Espanyol,2018_19
 Facundo Ferreyra,4000000.0,Espanyol,2018_19
 Sergio García,1000000.0,Espanyol,2018_19
 Víctor Campuzano,300000.0,Espanyol,2018_19
@@ -8523,11 +8523,11 @@ Jaume Grau,300000.0,Real Madrid,2018_19
 Jaime Seoane,250000.0,Real Madrid,2018_19
 Marco Asensio,60000000.0,Real Madrid,2018_19
 Isco,60000000.0,Real Madrid,2018_19
+Franchu,200000.0,Real Madrid,2018_19
 Vinicius Junior,70000000.0,Real Madrid,2018_19
+Cristo,5000000.0,Real Madrid,2018_19
 Gareth Bale,60000000.0,Real Madrid,2018_19
 Brahim Díaz,17000000.0,Real Madrid,2018_19
-Franchu,200000.0,Real Madrid,2018_19
-Cristo,5000000.0,Real Madrid,2018_19
 Karim Benzema,40000000.0,Real Madrid,2018_19
 Mariano Díaz,20000000.0,Real Madrid,2018_19
 Borja Mayoral,4000000.0,Real Madrid,2018_19
@@ -8547,13 +8547,14 @@ Juan Berrocal,500000.0,Sevilla,2018_19
 Sergio Escudero,7500000.0,Sevilla,2018_19
 Guilherme Arana,3000000.0,Sevilla,2018_19
 Javi Vázquez,100000.0,Sevilla,2018_19
-Jesús Navas,4000000.0,Sevilla,2018_19
 Sébastien Corchia,2000000.0,Sevilla,2018_19
 Ibrahim Amadou,7000000.0,Sevilla,2018_19
 Maxime Gonalons,4000000.0,Sevilla,2018_19
 Éver Banega,15000000.0,Sevilla,2018_19
 Roque Mesa,7000000.0,Sevilla,2018_19
 Marko Rog,6000000.0,Sevilla,2018_19
+Jesús Navas,4000000.0,Sevilla,2018_19
+Pablo Sarabia,40000000.0,Sevilla,2018_19
 Franco Vázquez,15000000.0,Sevilla,2018_19
 Munir El Haddadi,10000000.0,Sevilla,2018_19
 Ganso,2000000.0,Sevilla,2018_19
@@ -8562,7 +8563,6 @@ Pepe Mena,250000.0,Sevilla,2018_19
 Quincy Promes,18000000.0,Sevilla,2018_19
 Bryan Gil,10000000.0,Sevilla,2018_19
 Nolito,2000000.0,Sevilla,2018_19
-Pablo Sarabia,40000000.0,Sevilla,2018_19
 Aleix Vidal,4000000.0,Sevilla,2018_19
 Pejiño,300000.0,Sevilla,2018_19
 Wissam Ben Yedder,40000000.0,Sevilla,2018_19
@@ -8589,12 +8589,12 @@ Hugo Guillamón,200000.0,Valencia,2018_19
 Carlos Soler,50000000.0,Valencia,2018_19
 Dani Parejo,30000000.0,Valencia,2018_19
 Daniel Wass,14000000.0,Valencia,2018_19
+Kang-in Lee,10000000.0,Valencia,2018_19
 Gonçalo Guedes,40000000.0,Valencia,2018_19
 Denis Cheryshev,6000000.0,Valencia,2018_19
 Nacho Gil,700000.0,Valencia,2018_19
 Álex Blanco,500000.0,Valencia,2018_19
-Sito,200000.0,Valencia,2018_19
-Kang-in Lee,10000000.0,Valencia,2018_19
+Sito Pascual,200000.0,Valencia,2018_19
 Rodrigo,50000000.0,Valencia,2018_19
 Santi Mina,30000000.0,Valencia,2018_19
 Michy Batshuayi,30000000.0,Valencia,2018_19
@@ -8773,11 +8773,11 @@ Adrián Marín,800000.0,Alavés,2018_19
 Martín Aguirregabiria,7500000.0,Alavés,2018_19
 Ximo Navarro,3000000.0,Alavés,2018_19
 Dani Torres,900000.0,Alavés,2018_19
-Antonio Perera,0.0,Alavés,2018_19
 Tomás Pina,2500000.0,Alavés,2018_19
 Mubarak Wakaso,2500000.0,Alavés,2018_19
 Manu García,2000000.0,Alavés,2018_19
 Darko Brasanac,2000000.0,Alavés,2018_19
+Antonio Perera,0.0,Alavés,2018_19
 Jony,10000000.0,Alavés,2018_19
 Takashi Inui,4000000.0,Alavés,2018_19
 Ibai Gómez,4000000.0,Alavés,2018_19
@@ -8875,10 +8875,10 @@ Carles Planas,800000.0,Girona,2018_19
 Pedro Porro,10000000.0,Girona,2018_19
 Yhoan Andzouana,250000.0,Girona,2018_19
 Álex Granell,5000000.0,Girona,2018_19
-David Timor,1500000.0,Girona,2018_19
 Pere Pons,4000000.0,Girona,2018_19
 Aleix García,3000000.0,Girona,2018_19
 Douglas Luiz,2500000.0,Girona,2018_19
+David Timor,1500000.0,Girona,2018_19
 Seung-ho Paik,300000.0,Girona,2018_19
 Èric Montes,300000.0,Girona,2018_19
 Borja García,7000000.0,Girona,2018_19
@@ -8910,8 +8910,8 @@ Mauro Arambarri,15000000.0,Getafe,2018_19
 Nemanja Maksimovic,15000000.0,Getafe,2018_19
 Gaku Shibasaki,2000000.0,Getafe,2018_19
 Sebastián Cristóforo,1800000.0,Getafe,2018_19
-Samu Saiz,2000000.0,Getafe,2018_19
 Francisco Portillo,4000000.0,Getafe,2018_19
+Samu Saiz,2000000.0,Getafe,2018_19
 Amath Ndiaye,4000000.0,Getafe,2018_19
 Rober Ibáñez,1000000.0,Getafe,2018_19
 Jaime Mata,10000000.0,Getafe,2018_19
@@ -8971,7 +8971,6 @@ Nacho Uche,0.0,Huesca,2018_19
 Javi Galán,1500000.0,Huesca,2018_19
 Luisinho,500000.0,Huesca,2018_19
 Rajko Brezancic,400000.0,Huesca,2018_19
-Jorge Miramón,3000000.0,Huesca,2018_19
 Carlos Akapo,800000.0,Huesca,2018_19
 Javier Almerge,0.0,Huesca,2018_19
 Damián Musto,1200000.0,Huesca,2018_19
@@ -8982,10 +8981,11 @@ Yangel Herrera,2000000.0,Huesca,2018_19
 Eugeni,1500000.0,Huesca,2018_19
 Lluis Sastre,300000.0,Huesca,2018_19
 Javito López,0.0,Huesca,2018_19
+Jorge Miramón,3000000.0,Huesca,2018_19
+Moi Gómez,5000000.0,Huesca,2018_19
 Juanpi,2000000.0,Huesca,2018_19
 Jonathan Rubio Toro,400000.0,Huesca,2018_19
 Juanjo Camacho,100000.0,Huesca,2018_19
-Moi Gómez,5000000.0,Huesca,2018_19
 David Ferreiro,1800000.0,Huesca,2018_19
 Serdar Gürler,1500000.0,Huesca,2018_19
 Álex Gallar,1400000.0,Huesca,2018_19
@@ -9016,6 +9016,7 @@ Rubén Alcaraz,10000000.0,Real Valladolid,2018_19
 Fede San Emeterio,5000000.0,Real Valladolid,2018_19
 Míchel Herrero,2000000.0,Real Valladolid,2018_19
 Antonio Cotán,500000.0,Real Valladolid,2018_19
+Óscar Plano,4000000.0,Real Valladolid,2018_19
 Ivi López,1000000.0,Real Valladolid,2018_19
 Kuki Zalazar,250000.0,Real Valladolid,2018_19
 Pablo Muñoz,100000.0,Real Valladolid,2018_19
@@ -9028,7 +9029,6 @@ Leo Suárez,1000000.0,Real Valladolid,2018_19
 Pablo Hervías,700000.0,Real Valladolid,2018_19
 David Mayoral,300000.0,Real Valladolid,2018_19
 Antonio Domínguez,150000.0,Real Valladolid,2018_19
-Óscar Plano,4000000.0,Real Valladolid,2018_19
 Enes Ünal,5000000.0,Real Valladolid,2018_19
 Sergi Guardiola,5000000.0,Real Valladolid,2018_19
 Duje Cop,1500000.0,Real Valladolid,2018_19
@@ -9092,9 +9092,9 @@ Thomas Lemar,24000000.0,Atlético,2019_20
 Yannick Carrasco,22500000.0,Atlético,2019_20
 Vitolo,14500000.0,Atlético,2019_20
 Rodrigo Riquelme,2300000.0,Atlético,2019_20
-Ángel Correa,32000000.0,Atlético,2019_20
 Germán Valera,1800000.0,Atlético,2019_20
 João Félix,81000000.0,Atlético,2019_20
+Ángel Correa,32000000.0,Atlético,2019_20
 Álvaro Morata,36000000.0,Atlético,2019_20
 Diego Costa,14500000.0,Atlético,2019_20
 Sergio Camello,2300000.0,Atlético,2019_20
@@ -9118,10 +9118,10 @@ Nélson Semedo,32000000.0,Barcelona,2019_20
 Moussa Wagué,6700000.0,Barcelona,2019_20
 Dani Morer,300000.0,Barcelona,2019_20
 Óscar Mingueza,200000.0,Barcelona,2019_20
-Arthur Melo,56000000.0,Barcelona,2019_20
 Sergio Busquets,28000000.0,Barcelona,2019_20
 Jandro Orellana,300000.0,Barcelona,2019_20
 Frenkie de Jong,72000000.0,Barcelona,2019_20
+Arthur Melo,56000000.0,Barcelona,2019_20
 Sergi Roberto,40000000.0,Barcelona,2019_20
 Ivan Rakitic,20000000.0,Barcelona,2019_20
 Carles Aleñá,18000000.0,Barcelona,2019_20
@@ -9228,8 +9228,6 @@ Sergio Escudero,4800000.0,Sevilla,2019_20
 Felipe Chacartegui,250000.0,Sevilla,2019_20
 Pablo Pérez,0.0,Sevilla,2019_20
 Jules Koundé,22500000.0,Sevilla,2019_20
-Álex Pozo,4500000.0,Sevilla,2019_20
-Jesús Navas,3200000.0,Sevilla,2019_20
 Juanlu Sánchez,100000.0,Sevilla,2019_20
 Fernando,8000000.0,Sevilla,2019_20
 Nemanja Gudelj,5500000.0,Sevilla,2019_20
@@ -9237,6 +9235,8 @@ Genaro Rodríguez,150000.0,Sevilla,2019_20
 Joan Jordán,14500000.0,Sevilla,2019_20
 Óliver Torres,13500000.0,Sevilla,2019_20
 Éver Banega,7000000.0,Sevilla,2019_20
+Jesús Navas,3200000.0,Sevilla,2019_20
+Suso,17500000.0,Sevilla,2019_20
 Franco Vázquez,9500000.0,Sevilla,2019_20
 Munir El Haddadi,9000000.0,Sevilla,2019_20
 Pepe Mena,300000.0,Sevilla,2019_20
@@ -9244,8 +9244,8 @@ Lucas Ocampos,32000000.0,Sevilla,2019_20
 Bryan Gil,9000000.0,Sevilla,2019_20
 Nolito,1600000.0,Sevilla,2019_20
 José Alonso Lara,450000.0,Sevilla,2019_20
-Suso,17500000.0,Sevilla,2019_20
 Rony Lopes,10000000.0,Sevilla,2019_20
+Álex Pozo,4500000.0,Sevilla,2019_20
 Youssef En-Nesyri,12000000.0,Sevilla,2019_20
 Luuk de Jong,9500000.0,Sevilla,2019_20
 Munas Dabbur,8000000.0,Sevilla,2019_20
@@ -9272,11 +9272,11 @@ Carlos Soler,40000000.0,Valencia,2019_20
 Dani Parejo,28000000.0,Valencia,2019_20
 Daniel Wass,11000000.0,Valencia,2019_20
 Koba Koindredi,200000.0,Valencia,2019_20
+Kang-in Lee,13500000.0,Valencia,2019_20
 Vicente Esquerdo,300000.0,Valencia,2019_20
 Pablo Gozálbez,0.0,Valencia,2019_20
 Gonçalo Guedes,22500000.0,Valencia,2019_20
 Denis Cheryshev,4800000.0,Valencia,2019_20
-Kang-in Lee,13500000.0,Valencia,2019_20
 Manu Vallejo,4800000.0,Valencia,2019_20
 Ferran Torres,45000000.0,Valencia,2019_20
 Rodrigo,40000000.0,Valencia,2019_20
@@ -9375,10 +9375,10 @@ Frank Anguissa,20000000.0,Villarreal,2019_20
 Manu Trigueros,12000000.0,Villarreal,2019_20
 Santi Cazorla,3200000.0,Villarreal,2019_20
 Manu Morlanes,1800000.0,Villarreal,2019_20
-Ramiro Guerra,200000.0,Villarreal,2019_20
 Iván Martín,300000.0,Villarreal,2019_20
-Javi Ontiveros,7000000.0,Villarreal,2019_20
+Ramiro Guerra,200000.0,Villarreal,2019_20
 Moi Gómez,4800000.0,Villarreal,2019_20
+Javi Ontiveros,7000000.0,Villarreal,2019_20
 Álex Baena,200000.0,Villarreal,2019_20
 Samuel Chukwueze,27000000.0,Villarreal,2019_20
 Leo Suárez,1000000.0,Villarreal,2019_20
@@ -9480,17 +9480,17 @@ Manu García,1400000.0,Alavés,2019_20
 Ismael Gutiérrez,900000.0,Alavés,2019_20
 Javi Muñoz,325000.0,Alavés,2019_20
 Abdallahi Mahmoud,100000.0,Alavés,2019_20
-Luis Rioja,2000000.0,Alavés,2019_20
 Burgui,1200000.0,Alavés,2019_20
 José Luis Rodríguez,450000.0,Alavés,2019_20
 Borja Sainz,300000.0,Alavés,2019_20
 Aleix Vidal,3500000.0,Alavés,2019_20
-Edgar Méndez,1600000.0,Alavés,2019_20
+Luis Rioja,2000000.0,Alavés,2019_20
 Paulino de la Fuente,250000.0,Alavés,2019_20
 Lucas Pérez,12000000.0,Alavés,2019_20
 Joselu,6000000.0,Alavés,2019_20
 Oliver Burke,4800000.0,Alavés,2019_20
 John Guidetti,1600000.0,Alavés,2019_20
+Edgar Méndez,1600000.0,Alavés,2019_20
 Juan Soriano,1600000.0,Leganés,2019_20
 Iván Cuéllar,650000.0,Leganés,2019_20
 André Grandi,300000.0,Leganés,2019_20
@@ -9506,7 +9506,6 @@ Kévin Rodrigues,2400000.0,Leganés,2019_20
 Vasyl Kravets,1600000.0,Leganés,2019_20
 Mario del Campo,100000.0,Leganés,2019_20
 Roberto Rosales,1600000.0,Leganés,2019_20
-Marc Navarro,1200000.0,Leganés,2019_20
 Rubén Pérez,6000000.0,Leganés,2019_20
 Ibrahim Amadou,5500000.0,Leganés,2019_20
 Aymane Mourid,0.0,Leganés,2019_20
@@ -9515,6 +9514,7 @@ Recio,2400000.0,Leganés,2019_20
 Christian Rivera,1600000.0,Leganés,2019_20
 Javi Eraso,1200000.0,Leganés,2019_20
 Iván Amores,0.0,Leganés,2019_20
+Marc Navarro,1200000.0,Leganés,2019_20
 Óscar Rodríguez,11000000.0,Leganés,2019_20
 Federico Varela,800000.0,Leganés,2019_20
 Bryan Gil,9000000.0,Leganés,2019_20
@@ -9544,7 +9544,6 @@ Gonzalo Pereira,300000.0,Levante,2019_20
 Eliseo Falcón,300000.0,Levante,2019_20
 Carlos Clerc,2000000.0,Levante,2019_20
 Toño García,725000.0,Levante,2019_20
-Jorge Miramón,2800000.0,Levante,2019_20
 Coke,1200000.0,Levante,2019_20
 Iván López,300000.0,Levante,2019_20
 Rubén García,200000.0,Levante,2019_20
@@ -9555,6 +9554,7 @@ Gonzalo Melero,3200000.0,Levante,2019_20
 Pablo Martínez,250000.0,Levante,2019_20
 Álex Blesa,100000.0,Levante,2019_20
 Giorgi Kochorashvili,100000.0,Levante,2019_20
+Jorge Miramón,2800000.0,Levante,2019_20
 Enis Bardhi,12000000.0,Levante,2019_20
 Hernâni,2000000.0,Levante,2019_20
 Rubén Rochina,3200000.0,Levante,2019_20
@@ -9581,14 +9581,14 @@ Raúl Carnero,800000.0,Getafe,2019_20
 Allan Nyom,3200000.0,Getafe,2019_20
 Damián Suárez,3200000.0,Getafe,2019_20
 Peter Etebo,4000000.0,Getafe,2019_20
-David Timor,1600000.0,Getafe,2019_20
 Markel Bergara,0.0,Getafe,2019_20
 Mauro Arambarri,20000000.0,Getafe,2019_20
 Nemanja Maksimovic,20000000.0,Getafe,2019_20
 Fayçal Fajr,3200000.0,Getafe,2019_20
+David Timor,1600000.0,Getafe,2019_20
+Francisco Portillo,2800000.0,Getafe,2019_20
 Kenedy,9500000.0,Getafe,2019_20
 Jason Remeseiro,4800000.0,Getafe,2019_20
-Francisco Portillo,2800000.0,Getafe,2019_20
 Amath Ndiaye,2400000.0,Getafe,2019_20
 Jaime Mata,8000000.0,Getafe,2019_20
 Ángel Rodríguez,6000000.0,Getafe,2019_20
@@ -9622,12 +9622,12 @@ Míchel Herrero,1600000.0,Real Valladolid,2019_20
 Álvaro Aguado,475000.0,Real Valladolid,2019_20
 Kike Pérez,250000.0,Real Valladolid,2019_20
 Hatem Ben Arfa,4000000.0,Real Valladolid,2019_20
+Óscar Plano,3200000.0,Real Valladolid,2019_20
 Toni Villa,3200000.0,Real Valladolid,2019_20
 Waldo Rubio,800000.0,Real Valladolid,2019_20
 Jorge de Frutos,2000000.0,Real Valladolid,2019_20
 Anuar,1200000.0,Real Valladolid,2019_20
 Pablo Hervías,650000.0,Real Valladolid,2019_20
-Óscar Plano,3200000.0,Real Valladolid,2019_20
 Sergi Guardiola,4800000.0,Real Valladolid,2019_20
 Enes Ünal,4000000.0,Real Valladolid,2019_20
 Sandro Ramírez,3200000.0,Real Valladolid,2019_20
@@ -9659,6 +9659,7 @@ Roberto Torres,4000000.0,Osasuna,2019_20
 Javi Martínez,200000.0,Osasuna,2019_20
 Aimar Oroz,100000.0,Osasuna,2019_20
 José Manuel Arnáiz,2000000.0,Osasuna,2019_20
+Brandon Thomas,1200000.0,Osasuna,2019_20
 José Hualde,300000.0,Osasuna,2019_20
 Rubén García,6000000.0,Osasuna,2019_20
 Rober Ibáñez,800000.0,Osasuna,2019_20
@@ -9668,7 +9669,6 @@ Chimy Ávila,12000000.0,Osasuna,2019_20
 Adrián López,1400000.0,Osasuna,2019_20
 Marc Cardona,1200000.0,Osasuna,2019_20
 Enric Gallego,1200000.0,Osasuna,2019_20
-Brandon Thomas,1200000.0,Osasuna,2019_20
 Iván Barbero,300000.0,Osasuna,2019_20
 Rui Silva,4000000.0,Granada,2019_20
 Aarón Escandell,300000.0,Granada,2019_20
@@ -9718,7 +9718,6 @@ Leonardo Koutris,3500000.0,Mallorca,2019_20
 Abdul Rahman Baba,2400000.0,Mallorca,2019_20
 Lumor Agbenyenu,1200000.0,Mallorca,2019_20
 Rafa Obrador,0.0,Mallorca,2019_20
-Álex Pozo,4500000.0,Mallorca,2019_20
 Joan Sastre,1600000.0,Mallorca,2019_20
 Fran Gámez,650000.0,Mallorca,2019_20
 Sung-yueng Ki,2400000.0,Mallorca,2019_20
@@ -9731,6 +9730,7 @@ Josep Señé,300000.0,Mallorca,2019_20
 Lago Júnior,3200000.0,Mallorca,2019_20
 Aleksandar Trajkovski,1200000.0,Mallorca,2019_20
 Takefusa Kubo,13500000.0,Mallorca,2019_20
+Álex Pozo,4500000.0,Mallorca,2019_20
 Yannis Salibur,1200000.0,Mallorca,2019_20
 Aridai Cabrera,325000.0,Mallorca,2019_20
 Luka Romero,0.0,Mallorca,2019_20
@@ -9780,10 +9780,10 @@ Stefan Savic,25000000.0,Atlético,2020_21
 Felipe,12000000.0,Atlético,2020_21
 Nehuén Pérez,4000000.0,Atlético,2020_21
 Álvaro García,200000.0,Atlético,2020_21
-Adrián Corral,200000.0,Atlético,2020_21
 Renan Lodi,25000000.0,Atlético,2020_21
 Manu Sánchez,8000000.0,Atlético,2020_21
 Juan Manuel Sanabria,800000.0,Atlético,2020_21
+Adrián Corral,200000.0,Atlético,2020_21
 Marcos Llorente,80000000.0,Atlético,2020_21
 Kieran Trippier,20000000.0,Atlético,2020_21
 Sime Vrsaljko,5000000.0,Atlético,2020_21
@@ -9801,10 +9801,10 @@ Thomas Lemar,25000000.0,Atlético,2020_21
 Mario Soriano,500000.0,Atlético,2020_21
 Yannick Carrasco,40000000.0,Atlético,2020_21
 Vitolo,4000000.0,Atlético,2020_21
-Ángel Correa,40000000.0,Atlético,2020_21
-Víctor Mollejo,3000000.0,Atlético,2020_21
 Germán Valera,2500000.0,Atlético,2020_21
+Víctor Mollejo,3000000.0,Atlético,2020_21
 João Félix,80000000.0,Atlético,2020_21
+Ángel Correa,40000000.0,Atlético,2020_21
 Moussa Dembélé,20000000.0,Atlético,2020_21
 Luis Suárez,15000000.0,Atlético,2020_21
 Diego Costa,6000000.0,Atlético,2020_21
@@ -9833,12 +9833,12 @@ Riqui Puig,18000000.0,Barcelona,2020_21
 Sergi Roberto,18000000.0,Barcelona,2020_21
 Carles Aleñá,15000000.0,Barcelona,2020_21
 Philippe Coutinho,30000000.0,Barcelona,2020_21
+Francisco Trincão,22000000.0,Barcelona,2020_21
 Rafinha,15000000.0,Barcelona,2020_21
 Álex Collado,5000000.0,Barcelona,2020_21
 Ansu Fati,60000000.0,Barcelona,2020_21
 Konrad de la Fuente,4000000.0,Barcelona,2020_21
 Lionel Messi,80000000.0,Barcelona,2020_21
-Francisco Trincão,22000000.0,Barcelona,2020_21
 Antoine Griezmann,60000000.0,Barcelona,2020_21
 Ousmane Dembélé,50000000.0,Barcelona,2020_21
 Martin Braithwaite,9000000.0,Barcelona,2020_21
@@ -9894,24 +9894,24 @@ Sergio Escudero,2500000.0,Sevilla,2020_21
 Javi Vázquez,150000.0,Sevilla,2020_21
 Pablo Pérez,100000.0,Sevilla,2020_21
 Jules Koundé,60000000.0,Sevilla,2020_21
-Álex Pozo,4000000.0,Sevilla,2020_21
-Jesús Navas,3000000.0,Sevilla,2020_21
 Juanlu Sánchez,400000.0,Sevilla,2020_21
 Nemanja Gudelj,6000000.0,Sevilla,2020_21
 Fernando,4000000.0,Sevilla,2020_21
 Joan Jordán,30000000.0,Sevilla,2020_21
 Óliver Torres,13000000.0,Sevilla,2020_21
 Ivan Rakitic,10000000.0,Sevilla,2020_21
+Jesús Navas,3000000.0,Sevilla,2020_21
+Suso,20000000.0,Sevilla,2020_21
 Óscar Rodríguez,12000000.0,Sevilla,2020_21
 Munir El Haddadi,10000000.0,Sevilla,2020_21
 Franco Vázquez,4000000.0,Sevilla,2020_21
+Carlos Álvarez,300000.0,Sevilla,2020_21
 Lucas Ocampos,40000000.0,Sevilla,2020_21
 Bryan Gil,30000000.0,Sevilla,2020_21
 Papu Gómez,9000000.0,Sevilla,2020_21
 Oussama Idrissi,8000000.0,Sevilla,2020_21
-Suso,20000000.0,Sevilla,2020_21
+Álex Pozo,4000000.0,Sevilla,2020_21
 Aleix Vidal,2000000.0,Sevilla,2020_21
-Carlos Álvarez,300000.0,Sevilla,2020_21
 Antonio Zarzana,50000.0,Sevilla,2020_21
 Youssef En-Nesyri,40000000.0,Sevilla,2020_21
 Luuk de Jong,10000000.0,Sevilla,2020_21
@@ -9941,11 +9941,11 @@ Carlos Soler,40000000.0,Valencia,2020_21
 Yunus Musah,15000000.0,Valencia,2020_21
 Daniel Wass,7000000.0,Valencia,2020_21
 Koba Koindredi,600000.0,Valencia,2020_21
+Kang-in Lee,10000000.0,Valencia,2020_21
 Vicente Esquerdo,1000000.0,Valencia,2020_21
 Gonçalo Guedes,25000000.0,Valencia,2020_21
 Denis Cheryshev,3500000.0,Valencia,2020_21
 Álex Blanco,1500000.0,Valencia,2020_21
-Kang-in Lee,10000000.0,Valencia,2020_21
 Jason Remeseiro,2500000.0,Valencia,2020_21
 Manu Vallejo,7000000.0,Valencia,2020_21
 Maxi Gómez,25000000.0,Valencia,2020_21
@@ -10080,7 +10080,6 @@ Unai Dufur,0.0,Eibar,2020_21
 Kévin Rodrigues,3500000.0,Eibar,2020_21
 Rafa Soares,1600000.0,Eibar,2020_21
 Cote,1500000.0,Eibar,2020_21
-Álex Pozo,4000000.0,Eibar,2020_21
 Álvaro Tejero,1000000.0,Eibar,2020_21
 Rober Correa,900000.0,Eibar,2020_21
 Sergio Cubero,0.0,Eibar,2020_21
@@ -10091,9 +10090,10 @@ Aleix García,1800000.0,Eibar,2020_21
 Recio,1200000.0,Eibar,2020_21
 Roberto Olabe,700000.0,Eibar,2020_21
 Miguel Atienza,600000.0,Eibar,2020_21
-Damian Kadzior,1700000.0,Eibar,2020_21
+Damian Kądzior,1700000.0,Eibar,2020_21
 Bryan Gil,30000000.0,Eibar,2020_21
 Takashi Inui,1500000.0,Eibar,2020_21
+Álex Pozo,4000000.0,Eibar,2020_21
 Pedro León,1000000.0,Eibar,2020_21
 Kike García,2800000.0,Eibar,2020_21
 Yoshinori Muto,2500000.0,Eibar,2020_21
@@ -10158,16 +10158,16 @@ Manu García,800000.0,Alavés,2020_21
 Pepe Blanco,150000.0,Alavés,2020_21
 Abdallahi Mahmoud,300000.0,Alavés,2020_21
 Sergi García,100000.0,Alavés,2020_21
-Luis Rioja,3000000.0,Alavés,2020_21
 Iñigo Córdoba,2000000.0,Alavés,2020_21
 Borja Sainz,2000000.0,Alavés,2020_21
 Burgui,800000.0,Alavés,2020_21
 Facundo Pellistri,6000000.0,Alavés,2020_21
-Edgar Méndez,2200000.0,Alavés,2020_21
+Luis Rioja,3000000.0,Alavés,2020_21
 Jota Peleteiro,1800000.0,Alavés,2020_21
 Joselu,8000000.0,Alavés,2020_21
 Lucas Pérez,3000000.0,Alavés,2020_21
 Deyverson,2800000.0,Alavés,2020_21
+Edgar Méndez,2200000.0,Alavés,2020_21
 John Guidetti,1200000.0,Alavés,2020_21
 Aitor Fernández,6000000.0,Levante,2020_21
 Dani Cárdenas,600000.0,Levante,2020_21
@@ -10181,7 +10181,6 @@ Alfredo Pedraza,200000.0,Levante,2020_21
 Euse Monzó,200000.0,Levante,2020_21
 Carlos Clerc,3000000.0,Levante,2020_21
 Toño García,800000.0,Levante,2020_21
-Jorge Miramón,2000000.0,Levante,2020_21
 Son,800000.0,Levante,2020_21
 Coke,800000.0,Levante,2020_21
 Mickaël Malsa,5000000.0,Levante,2020_21
@@ -10193,6 +10192,7 @@ Gonzalo Melero,4500000.0,Levante,2020_21
 Pablo Martínez,600000.0,Levante,2020_21
 Álex Blesa,300000.0,Levante,2020_21
 Giorgi Kochorashvili,300000.0,Levante,2020_21
+Jorge Miramón,2000000.0,Levante,2020_21
 Enis Bardhi,15000000.0,Levante,2020_21
 Hernâni,1200000.0,Levante,2020_21
 Álex Cantero,700000.0,Levante,2020_21
@@ -10214,22 +10214,22 @@ David Alba,150000.0,Getafe,2020_21
 Ryan Nolan,150000.0,Getafe,2020_21
 Marc Cucurella,20000000.0,Getafe,2020_21
 Mathías Olivera,12000000.0,Getafe,2020_21
-Koffi,200000.0,Getafe,2020_21
+Emmanuel Koffi,200000.0,Getafe,2020_21
 Allan Nyom,2000000.0,Getafe,2020_21
 Damián Suárez,1500000.0,Getafe,2020_21
 Juan Iglesias,250000.0,Getafe,2020_21
 Ante Palaversa,2500000.0,Getafe,2020_21
-David Timor,1500000.0,Getafe,2020_21
 Sabit Abdulai,150000.0,Getafe,2020_21
 Mauro Arambarri,20000000.0,Getafe,2020_21
 Carles Aleñá,15000000.0,Getafe,2020_21
 Nemanja Maksimovic,15000000.0,Getafe,2020_21
+David Timor,1500000.0,Getafe,2020_21
 John Patrick,1000000.0,Getafe,2020_21
+Francisco Portillo,1200000.0,Getafe,2020_21
 Josete Miranda,200000.0,Getafe,2020_21
 Takefusa Kubo,15000000.0,Getafe,2020_21
 Víctor Mollejo,3000000.0,Getafe,2020_21
 Abdoulay Diaby,2000000.0,Getafe,2020_21
-Francisco Portillo,1200000.0,Getafe,2020_21
 Cucho Hernández,9000000.0,Getafe,2020_21
 Enes Ünal,7000000.0,Getafe,2020_21
 Jaime Mata,4000000.0,Getafe,2020_21
@@ -10264,6 +10264,7 @@ Roque Mesa,2500000.0,Real Valladolid,2020_21
 Míchel Herrero,1200000.0,Real Valladolid,2020_21
 Kike Pérez,1000000.0,Real Valladolid,2020_21
 Moha Moukhliss,100000.0,Real Valladolid,2020_21
+Óscar Plano,2800000.0,Real Valladolid,2020_21
 Kuki Zalazar,250000.0,Real Valladolid,2020_21
 Fran Álvarez,200000.0,Real Valladolid,2020_21
 Jota,3500000.0,Real Valladolid,2020_21
@@ -10271,7 +10272,6 @@ Toni Villa,2500000.0,Real Valladolid,2020_21
 Waldo Rubio,1200000.0,Real Valladolid,2020_21
 Pablo Hervías,1500000.0,Real Valladolid,2020_21
 Fabián Orellana,1500000.0,Real Valladolid,2020_21
-Óscar Plano,2800000.0,Real Valladolid,2020_21
 Shon Weissman,6000000.0,Real Valladolid,2020_21
 Marcos André,3500000.0,Real Valladolid,2020_21
 Sergi Guardiola,3000000.0,Real Valladolid,2020_21
@@ -10303,6 +10303,7 @@ Javi Martínez,1200000.0,Osasuna,2020_21
 Aimar Oroz,200000.0,Osasuna,2020_21
 Asier Córdoba,200000.0,Osasuna,2020_21
 Jony,2800000.0,Osasuna,2020_21
+Brandon Thomas,600000.0,Osasuna,2020_21
 Kike Saverio,200000.0,Osasuna,2020_21
 Rubén García,10000000.0,Osasuna,2020_21
 Kike Barja,3000000.0,Osasuna,2020_21
@@ -10312,7 +10313,6 @@ Jonathan Calleri,5000000.0,Osasuna,2020_21
 Adrián López,1200000.0,Osasuna,2020_21
 Enric Gallego,1000000.0,Osasuna,2020_21
 Marc Cardona,600000.0,Osasuna,2020_21
-Brandon Thomas,600000.0,Osasuna,2020_21
 Rui Silva,12000000.0,Granada,2020_21
 Aarón Escandell,1000000.0,Granada,2020_21
 João Costa,250000.0,Granada,2020_21
@@ -10336,6 +10336,7 @@ Kingsley Fobi,150000.0,Granada,2020_21
 Maxime Gonalons,2500000.0,Granada,2020_21
 Yan Eteki,2000000.0,Granada,2020_21
 Eris Abedini,300000.0,Granada,2020_21
+Juan Brunet,50000.0,Granada,2020_21
 Yangel Herrera,18000000.0,Granada,2020_21
 Luis Milla,4000000.0,Granada,2020_21
 Domingos Quina,3000000.0,Granada,2020_21
@@ -10343,7 +10344,6 @@ Domingos Quina,3000000.0,Granada,2020_21
 Ramon Azeez,800000.0,Granada,2020_21
 Isma Ruiz,300000.0,Granada,2020_21
 Álvaro Bravo,200000.0,Granada,2020_21
-Juan Brunet,50000.0,Granada,2020_21
 Carlos León,0.0,Granada,2020_21
 Fede Vico,1200000.0,Granada,2020_21
 Antonio Aranda,200000.0,Granada,2020_21
@@ -10401,6 +10401,7 @@ Marcos Mauro,1500000.0,Cádiz,2020_21
 Juan Cala,1200000.0,Cádiz,2020_21
 Pedro Alcalá,600000.0,Cádiz,2020_21
 Álex Martín,600000.0,Cádiz,2020_21
+Sergio González,500000.0,Cádiz,2020_21
 Jean-Pierre Rhyner,300000.0,Cádiz,2020_21
 Saturday Erimuya,300000.0,Cádiz,2020_21
 Momo Mbaye,50000.0,Cádiz,2020_21
@@ -10411,11 +10412,10 @@ Iza Carcelén,1500000.0,Cádiz,2020_21
 Iván Alejo,1200000.0,Cádiz,2020_21
 Carlos Akapo,800000.0,Cádiz,2020_21
 Jens Jönsson,4000000.0,Cádiz,2020_21
-Yann Bodiger,800000.0,Cádiz,2020_21
 Jon Ander Garrido,600000.0,Cádiz,2020_21
 José Mari,500000.0,Cádiz,2020_21
 Álex Fernández,6000000.0,Cádiz,2020_21
-Sergio González,500000.0,Cádiz,2020_21
+Yann Bodiger,800000.0,Cádiz,2020_21
 Augusto Fernández,300000.0,Cádiz,2020_21
 Álvaro Bastida,0.0,Cádiz,2020_21
 Jorge Pombo,1000000.0,Cádiz,2020_21
@@ -10448,6 +10448,7 @@ Juan Sánchez Miño,2500000.0,Elche,2020_21
 Johan Mojica,2000000.0,Elche,2020_21
 Youssouf Koné,1600000.0,Elche,2020_21
 José Salinas,0.0,Elche,2020_21
+Diego Bri,0.0,Elche,2020_21
 Helibelton Palacios,1000000.0,Elche,2020_21
 Antonio Barragán,800000.0,Elche,2020_21
 Iván Marcone,3000000.0,Elche,2020_21
@@ -10466,7 +10467,6 @@ Tete Morente,1500000.0,Elche,2020_21
 Jeison Lucumí,950000.0,Elche,2020_21
 Emiliano Rigoni,2500000.0,Elche,2020_21
 Josan,1000000.0,Elche,2020_21
-Diego Bri,0.0,Elche,2020_21
 Lucas Boyé,3500000.0,Elche,2020_21
 Guido Carrillo,2000000.0,Elche,2020_21
 Claudio Medina,350000.0,Elche,2020_21
@@ -10539,9 +10539,9 @@ Pablo Barrios,0.0,Atlético,2021_22
 Thomas Lemar,40000000.0,Atlético,2021_22
 Yannick Carrasco,40000000.0,Atlético,2021_22
 Carlos Martín,0.0,Atlético,2021_22
-Ángel Correa,45000000.0,Atlético,2021_22
 Giuliano Simeone,500000.0,Atlético,2021_22
 João Félix,70000000.0,Atlético,2021_22
+Ángel Correa,45000000.0,Atlético,2021_22
 Antoine Griezmann,35000000.0,Atlético,2021_22
 Matheus Cunha,30000000.0,Atlético,2021_22
 Luis Suárez,8000000.0,Atlético,2021_22
@@ -10585,8 +10585,8 @@ Adama Traoré,20000000.0,Barcelona,2021_22
 Yusuf Demir,5000000.0,Barcelona,2021_22
 Ilias Akhomach,3000000.0,Barcelona,2021_22
 Antoine Griezmann,35000000.0,Barcelona,2021_22
-Ferran Torres,45000000.0,Barcelona,2021_22
 Memphis Depay,35000000.0,Barcelona,2021_22
+Ferran Torres,45000000.0,Barcelona,2021_22
 Ousmane Dembélé,30000000.0,Barcelona,2021_22
 Pierre-Emerick Aubameyang,15000000.0,Barcelona,2021_22
 Martin Braithwaite,6000000.0,Barcelona,2021_22
@@ -10645,8 +10645,6 @@ Juan María Alcedo,200000.0,Sevilla,2021_22
 Pablo Pérez,100000.0,Sevilla,2021_22
 Jules Koundé,60000000.0,Sevilla,2021_22
 Gonzalo Montiel,14000000.0,Sevilla,2021_22
-Álex Pozo,4000000.0,Sevilla,2021_22
-Jesús Navas,3000000.0,Sevilla,2021_22
 Juanlu Sánchez,500000.0,Sevilla,2021_22
 Valentino Fattore,400000.0,Sevilla,2021_22
 José Ángel Carmona,200000.0,Sevilla,2021_22
@@ -10657,6 +10655,8 @@ Joan Jordán,22000000.0,Sevilla,2021_22
 Ivan Rakitic,7000000.0,Sevilla,2021_22
 Thomas Delaney,7000000.0,Sevilla,2021_22
 Pedro Ortiz,150000.0,Sevilla,2021_22
+Jesús Navas,3000000.0,Sevilla,2021_22
+Suso,10000000.0,Sevilla,2021_22
 Óscar Rodríguez,9000000.0,Sevilla,2021_22
 Munir El Haddadi,8000000.0,Sevilla,2021_22
 Nacho Quintana,300000.0,Sevilla,2021_22
@@ -10665,7 +10665,7 @@ Papu Gómez,6000000.0,Sevilla,2021_22
 Oussama Idrissi,4000000.0,Sevilla,2021_22
 Jesús Corona,18000000.0,Sevilla,2021_22
 Erik Lamela,16000000.0,Sevilla,2021_22
-Suso,10000000.0,Sevilla,2021_22
+Álex Pozo,4000000.0,Sevilla,2021_22
 Luismi Cruz,400000.0,Sevilla,2021_22
 Antonio Zarzana,200000.0,Sevilla,2021_22
 Youssef En-Nesyri,25000000.0,Sevilla,2021_22
@@ -10745,10 +10745,10 @@ David Silva,4000000.0,R. Sociedad,2021_22
 Ander Barrenetxea,9000000.0,R. Sociedad,2021_22
 Julen Lobete,3000000.0,R. Sociedad,2021_22
 Naïs Djouahra,1500000.0,R. Sociedad,2021_22
+Germán Valera,1500000.0,R. Sociedad,2021_22
 Adnan Januzaj,12000000.0,R. Sociedad,2021_22
 Portu,9000000.0,R. Sociedad,2021_22
 Robert Navarro,3000000.0,R. Sociedad,2021_22
-Germán Valera,1500000.0,R. Sociedad,2021_22
 Ander Martín,500000.0,R. Sociedad,2021_22
 Álex Sola,300000.0,R. Sociedad,2021_22
 Mikel Oyarzabal,60000000.0,R. Sociedad,2021_22
@@ -10818,8 +10818,8 @@ Manu Morlanes,5000000.0,Villarreal,2021_22
 Carlo García,400000.0,Villarreal,2021_22
 Antonio Pacheco,200000.0,Villarreal,2021_22
 Giovani Lo Celso,22000000.0,Villarreal,2021_22
-Arnaut Danjuma,50000000.0,Villarreal,2021_22
 Moi Gómez,8000000.0,Villarreal,2021_22
+Arnaut Danjuma,50000000.0,Villarreal,2021_22
 Nikita Iosifov,1200000.0,Villarreal,2021_22
 Yéremy Pino,40000000.0,Villarreal,2021_22
 Samuel Chukwueze,20000000.0,Villarreal,2021_22
@@ -10887,19 +10887,18 @@ Martín Aguirregabiria,2500000.0,Alavés,2021_22
 Ximo Navarro,1200000.0,Alavés,2021_22
 Alexandru Țîrlea,100000.0,Alavés,2021_22
 Mamadou Loum,4000000.0,Alavés,2021_22
-Antonio Perera,400000.0,Alavés,2021_22
 Tomás Mendes,0.0,Alavés,2021_22
 Gonzalo Escalante,2500000.0,Alavés,2021_22
 Pere Pons,2500000.0,Alavés,2021_22
 Toni Moya,1500000.0,Alavés,2021_22
+Iván Martín,800000.0,Alavés,2021_22
 Tomás Pina,800000.0,Alavés,2021_22
+Antonio Perera,400000.0,Alavés,2021_22
 Álex Balboa,100000.0,Alavés,2021_22
 Manu García,3000000.0,Alavés,2021_22
-Iván Martín,800000.0,Alavés,2021_22
 Luis Rioja,3000000.0,Alavés,2021_22
 Facundo Pellistri,2500000.0,Alavés,2021_22
 Jason Remeseiro,2500000.0,Alavés,2021_22
-Edgar Méndez,1200000.0,Alavés,2021_22
 Unai Ropero,0.0,Alavés,2021_22
 Manu Vallejo,3000000.0,Alavés,2021_22
 Joselu,5000000.0,Alavés,2021_22
@@ -10907,6 +10906,7 @@ Lucas Pérez,2500000.0,Alavés,2021_22
 Miguel de la Fuente,1500000.0,Alavés,2021_22
 Taichi Hara,1300000.0,Alavés,2021_22
 Mamadou Sylla,1200000.0,Alavés,2021_22
+Edgar Méndez,1200000.0,Alavés,2021_22
 John Guidetti,1000000.0,Alavés,2021_22
 Marc Tenas,500000.0,Alavés,2021_22
 Giorgi Gagua,150000.0,Alavés,2021_22
@@ -10922,15 +10922,14 @@ Shkodran Mustafi,2000000.0,Levante,2021_22
 Róber Pier,1500000.0,Levante,2021_22
 Martín Cáceres,900000.0,Levante,2021_22
 Óscar Duarte,800000.0,Levante,2021_22
+Marc Pubill,800000.0,Levante,2021_22
 Sergio Postigo,700000.0,Levante,2021_22
 José Manuel,150000.0,Levante,2021_22
 Antonio Leal,100000.0,Levante,2021_22
 Marcelo Saracchi,2500000.0,Levante,2021_22
 Carlos Clerc,2000000.0,Levante,2021_22
 Enric Franquesa,800000.0,Levante,2021_22
-Jorge Miramón,1800000.0,Levante,2021_22
 Son,1000000.0,Levante,2021_22
-Marc Pubill,800000.0,Levante,2021_22
 Coke,600000.0,Levante,2021_22
 Carlos Giménez,100000.0,Levante,2021_22
 Joseda Álvarez,50000.0,Levante,2021_22
@@ -10944,6 +10943,7 @@ Pablo Martínez,1500000.0,Levante,2021_22
 Álex Blesa,300000.0,Levante,2021_22
 Giorgi Kochorashvili,200000.0,Levante,2021_22
 Carlos Benítez,100000.0,Levante,2021_22
+Jorge Miramón,1800000.0,Levante,2021_22
 Enis Bardhi,8000000.0,Levante,2021_22
 Álex Cantero,1000000.0,Levante,2021_22
 Hernâni,700000.0,Levante,2021_22
@@ -10968,19 +10968,18 @@ Chinchu,0.0,Getafe,2021_22
 Marc Cucurella,28000000.0,Getafe,2021_22
 Mathías Olivera,15000000.0,Getafe,2021_22
 Jonathan Silva,1800000.0,Getafe,2021_22
-Koffi,200000.0,Getafe,2021_22
-Pablo Montero,0.0,Getafe,2021_22
+Emmanuel Koffi,200000.0,Getafe,2021_22
 Juan Iglesias,1500000.0,Getafe,2021_22
 Damián Suárez,1500000.0,Getafe,2021_22
 Allan Nyom,1000000.0,Getafe,2021_22
 Florentino,5000000.0,Getafe,2021_22
 Okay Yokuşlu,3000000.0,Getafe,2021_22
-David Timor,1000000.0,Getafe,2021_22
 Ángel Algobia,100000.0,Getafe,2021_22
 Mauro Arambarri,15000000.0,Getafe,2021_22
 Nemanja Maksimovic,14000000.0,Getafe,2021_22
 Carles Aleñá,9000000.0,Getafe,2021_22
 Gonzalo Villar,5000000.0,Getafe,2021_22
+David Timor,1000000.0,Getafe,2021_22
 John Patrick,1000000.0,Getafe,2021_22
 Totti,0.0,Getafe,2021_22
 Jakub Jankto,4000000.0,Getafe,2021_22
@@ -10988,6 +10987,7 @@ Jakub Jankto,4000000.0,Getafe,2021_22
 Santi García,50000.0,Getafe,2021_22
 Diego López,0.0,Getafe,2021_22
 Vitolo,1500000.0,Getafe,2021_22
+Pablo Montero,0.0,Getafe,2021_22
 Enes Ünal,25000000.0,Getafe,2021_22
 Hugo Duro,10000000.0,Getafe,2021_22
 Borja Mayoral,9000000.0,Getafe,2021_22
@@ -11097,13 +11097,13 @@ Alberto Perea,1000000.0,Cádiz,2021_22
 Salvi Sánchez,2000000.0,Cádiz,2021_22
 Álvaro Jiménez,600000.0,Cádiz,2021_22
 Iván Chapela,600000.0,Cádiz,2021_22
+Pedro Benito,300000.0,Cádiz,2021_22
 Choco Lozano,4000000.0,Cádiz,2021_22
 Lucas Pérez,2500000.0,Cádiz,2021_22
 Rubén Sobrino,2000000.0,Cádiz,2021_22
 Álvaro Negredo,1500000.0,Cádiz,2021_22
 Florin Andone,1000000.0,Cádiz,2021_22
 Milutin Osmajic,700000.0,Cádiz,2021_22
-Pedro Benito,300000.0,Cádiz,2021_22
 Edgar Badia,3000000.0,Elche,2021_22
 Axel Werner,800000.0,Elche,2021_22
 Kiko Casilla,700000.0,Elche,2021_22
@@ -11117,6 +11117,7 @@ Sergio Bono,25000.0,Elche,2021_22
 John Donald,0.0,Elche,2021_22
 Johan Mojica,5000000.0,Elche,2021_22
 Lucas Olaza,2500000.0,Elche,2021_22
+Diego Bri,0.0,Elche,2021_22
 Helibelton Palacios,1200000.0,Elche,2021_22
 Antonio Barragán,600000.0,Elche,2021_22
 Carles Marco,0.0,Elche,2021_22
@@ -11133,7 +11134,6 @@ Pere Milla,3000000.0,Elche,2021_22
 Tete Morente,3000000.0,Elche,2021_22
 Fidel,2000000.0,Elche,2021_22
 Josan,1000000.0,Elche,2021_22
-Diego Bri,0.0,Elche,2021_22
 Lucas Boyé,15000000.0,Elche,2021_22
 Ezequiel Ponce,5000000.0,Elche,2021_22
 Darío Benedetto,3000000.0,Elche,2021_22
@@ -11205,11 +11205,11 @@ Aleix Febas,1000000.0,Mallorca,2021_22
 Clément Grenier,1000000.0,Mallorca,2021_22
 Salva Sevilla,300000.0,Mallorca,2021_22
 Thomas Giaquinto,150000.0,Mallorca,2021_22
+Kang-in Lee,6000000.0,Mallorca,2021_22
 Dani Rodríguez,1200000.0,Mallorca,2021_22
 Lago Júnior,1200000.0,Mallorca,2021_22
 Javi Llabrés,0.0,Mallorca,2021_22
 Takefusa Kubo,7500000.0,Mallorca,2021_22
-Kang-in Lee,6000000.0,Mallorca,2021_22
 Víctor Mollejo,3000000.0,Mallorca,2021_22
 Amath Ndiaye,2000000.0,Mallorca,2021_22
 Jordi Mboula,1500000.0,Mallorca,2021_22
@@ -11298,10 +11298,11 @@ Stefan Savic,6000000.0,Atlético,2022_23
 Felipe,2000000.0,Atlético,2022_23
 Marco Moreno,200000.0,Atlético,2022_23
 Ilias Kostis,100000.0,Atlético,2022_23
-Adrián Corral,50000.0,Atlético,2022_23
 Reinildo Mandava,25000000.0,Atlético,2022_23
 Renan Lodi,20000000.0,Atlético,2022_23
 Sergio Reguilón,10000000.0,Atlético,2022_23
+Diego Bri,150000.0,Atlético,2022_23
+Adrián Corral,50000.0,Atlético,2022_23
 Marcos Llorente,35000000.0,Atlético,2022_23
 Nahuel Molina,35000000.0,Atlético,2022_23
 Matt Doherty,5000000.0,Atlético,2022_23
@@ -11319,13 +11320,12 @@ Antonio Alemán,0.0,Atlético,2022_23
 Yannick Carrasco,25000000.0,Atlético,2022_23
 Carlos Martín,500000.0,Atlético,2022_23
 Salim El Jebari,0.0,Atlético,2022_23
-Ángel Correa,30000000.0,Atlético,2022_23
-Diego Bri,150000.0,Atlético,2022_23
 João Félix,50000000.0,Atlético,2022_23
-Matheus Cunha,25000000.0,Atlético,2022_23
+Ángel Correa,30000000.0,Atlético,2022_23
 Antoine Griezmann,25000000.0,Atlético,2022_23
-Álvaro Morata,20000000.0,Atlético,2022_23
 Memphis Depay,14000000.0,Atlético,2022_23
+Matheus Cunha,25000000.0,Atlético,2022_23
+Álvaro Morata,20000000.0,Atlético,2022_23
 Abde Raihani,0.0,Atlético,2022_23
 Marc-André ter Stegen,35000000.0,Barcelona,2022_23
 Iñaki Peña,4000000.0,Barcelona,2022_23
@@ -11362,10 +11362,10 @@ Estanis Pedrola,500000.0,Barcelona,2022_23
 Ilias Akhomach,3000000.0,Barcelona,2022_23
 Lamine Yamal,0.0,Barcelona,2022_23
 Dani Rodríguez,0.0,Barcelona,2022_23
+Memphis Depay,14000000.0,Barcelona,2022_23
 Ousmane Dembélé,60000000.0,Barcelona,2022_23
 Robert Lewandowski,30000000.0,Barcelona,2022_23
 Ferran Torres,30000000.0,Barcelona,2022_23
-Memphis Depay,14000000.0,Barcelona,2022_23
 Pierre-Emerick Aubameyang,4000000.0,Barcelona,2022_23
 Marc Guiu,0.0,Barcelona,2022_23
 Thibaut Courtois,45000000.0,Real Madrid,2022_23
@@ -11421,18 +11421,20 @@ Pablo Pérez,200000.0,Sevilla,2022_23
 Diego Hormigo,100000.0,Sevilla,2022_23
 Gonzalo Montiel,12000000.0,Sevilla,2022_23
 José Ángel Carmona,4000000.0,Sevilla,2022_23
-Jesús Navas,3000000.0,Sevilla,2022_23
-Pape Gueye,10000000.0,Sevilla,2022_23
 Nemanja Gudelj,4000000.0,Sevilla,2022_23
 Fernando,3000000.0,Sevilla,2022_23
+Pape Gueye,10000000.0,Sevilla,2022_23
 Joan Jordán,9000000.0,Sevilla,2022_23
 Óliver Torres,9000000.0,Sevilla,2022_23
 Ivan Rakitic,4000000.0,Sevilla,2022_23
 Thomas Delaney,2000000.0,Sevilla,2022_23
 Manu Bueno,300000.0,Sevilla,2022_23
 Pedro Ortiz,200000.0,Sevilla,2022_23
+Jesús Navas,3000000.0,Sevilla,2022_23
+Suso,6000000.0,Sevilla,2022_23
 Isco,5000000.0,Sevilla,2022_23
 Munir El Haddadi,3500000.0,Sevilla,2022_23
+Carlos Álvarez,400000.0,Sevilla,2022_23
 Nacho Quintana,200000.0,Sevilla,2022_23
 Bryan Gil,15000000.0,Sevilla,2022_23
 Lucas Ocampos,12000000.0,Sevilla,2022_23
@@ -11440,8 +11442,6 @@ Papu Gómez,3000000.0,Sevilla,2022_23
 Erik Lamela,9000000.0,Sevilla,2022_23
 Jesús Corona,8000000.0,Sevilla,2022_23
 Adnan Januzaj,6000000.0,Sevilla,2022_23
-Suso,6000000.0,Sevilla,2022_23
-Carlos Álvarez,400000.0,Sevilla,2022_23
 Youssef En-Nesyri,20000000.0,Sevilla,2022_23
 Rafa Mir,10000000.0,Sevilla,2022_23
 Kasper Dolberg,7000000.0,Sevilla,2022_23
@@ -11653,7 +11653,7 @@ Stefan Mitrovic,2000000.0,Getafe,2022_23
 Pablo Ramírez,0.0,Getafe,2022_23
 Fabrizio Angileri,2000000.0,Getafe,2022_23
 Jordan Amavi,2000000.0,Getafe,2022_23
-Koffi,200000.0,Getafe,2022_23
+Emmanuel Koffi,200000.0,Getafe,2022_23
 Gorka Rivera,0.0,Getafe,2022_23
 Juan Iglesias,3500000.0,Getafe,2022_23
 Damián Suárez,1000000.0,Getafe,2022_23
@@ -11668,7 +11668,7 @@ Jaime Seoane,2500000.0,Getafe,2022_23
 John Patrick,500000.0,Getafe,2022_23
 Munir El Haddadi,3500000.0,Getafe,2022_23
 Santi García,50000.0,Getafe,2022_23
-Moises Parra,0.0,Getafe,2022_23
+Moi Parra,0.0,Getafe,2022_23
 Portu,3500000.0,Getafe,2022_23
 Enes Ünal,25000000.0,Getafe,2022_23
 Borja Mayoral,9000000.0,Getafe,2022_23
@@ -11695,10 +11695,10 @@ Jon Moncayola,12000000.0,Osasuna,2022_23
 Darko Brasanac,2000000.0,Osasuna,2022_23
 Pablo Ibáñez,1500000.0,Osasuna,2022_23
 Aimar Oroz,15000000.0,Osasuna,2022_23
+Moi Gómez,10000000.0,Osasuna,2022_23
 Roberto Torres,1200000.0,Osasuna,2022_23
 Javi Martínez,1000000.0,Osasuna,2022_23
 Abde Ezzalzouli,15000000.0,Osasuna,2022_23
-Moi Gómez,10000000.0,Osasuna,2022_23
 Rubén García,6000000.0,Osasuna,2022_23
 Kike Barja,4000000.0,Osasuna,2022_23
 Iker Benito,300000.0,Osasuna,2022_23
@@ -11739,9 +11739,9 @@ Moussa Diakité,50000.0,Cádiz,2022_23
 Brian Ocampo,2000000.0,Cádiz,2022_23
 Awer Mabil,1200000.0,Cádiz,2022_23
 Alberto Perea,1000000.0,Cádiz,2022_23
-José Antonio de la Rosa,300000.0,Cádiz,2022_23
 Théo Bongonda,4000000.0,Cádiz,2022_23
 Mamady Diarra,300000.0,Cádiz,2022_23
+José Antonio de la Rosa,300000.0,Cádiz,2022_23
 Choco Lozano,2500000.0,Cádiz,2022_23
 Rubén Sobrino,2000000.0,Cádiz,2022_23
 Roger Martí,2000000.0,Cádiz,2022_23
@@ -11782,7 +11782,6 @@ Branislav Knezevic,0.0,Elche,2022_23
 Alejandro Alfaro,0.0,Elche,2022_23
 Rodrigo Mendoza,0.0,Elche,2022_23
 Álex Collado,3000000.0,Elche,2022_23
-Nicolás Fernández Mercau,2000000.0,Elche,2022_23
 Randy Nteka,1800000.0,Elche,2022_23
 Javier Pastore,500000.0,Elche,2022_23
 Pere Milla,3000000.0,Elche,2022_23
@@ -11792,6 +11791,7 @@ Josan,1000000.0,Elche,2022_23
 Lucas Boyé,10000000.0,Elche,2022_23
 Ezequiel Ponce,2500000.0,Elche,2022_23
 Roger Martí,2000000.0,Elche,2022_23
+Nicolás Fernández Mercau,2000000.0,Elche,2022_23
 Benjamin Lecomte,4000000.0,Espanyol,2022_23
 Fernando Pacheco,2500000.0,Espanyol,2022_23
 Álvaro Fernández,2500000.0,Espanyol,2022_23
@@ -11808,7 +11808,6 @@ Ronaël Pierre-Gabriel,3500000.0,Espanyol,2022_23
 Óscar Gil,3000000.0,Espanyol,2022_23
 Rubén Sánchez,700000.0,Espanyol,2022_23
 Omar El Hilali,500000.0,Espanyol,2022_23
-Nabil Touaizi,200000.0,Espanyol,2022_23
 Vini Souza,6000000.0,Espanyol,2022_23
 Sergi Darder,16000000.0,Espanyol,2022_23
 Edu Expósito,4000000.0,Espanyol,2022_23
@@ -11817,6 +11816,7 @@ José Gragera,2500000.0,Espanyol,2022_23
 Pol Lozano,1500000.0,Espanyol,2022_23
 Roger Martínez,400000.0,Espanyol,2022_23
 Dani Villahermosa,250000.0,Espanyol,2022_23
+Nabil Touaizi,200000.0,Espanyol,2022_23
 Nico Melamed,6000000.0,Espanyol,2022_23
 Denis Suárez,5000000.0,Espanyol,2022_23
 Javi Puado,8000000.0,Espanyol,2022_23
@@ -11856,10 +11856,10 @@ Clément Grenier,800000.0,Mallorca,2022_23
 Miquel Llabrés,100000.0,Mallorca,2022_23
 Luis Montiel,25000.0,Mallorca,2022_23
 Rubén Quintanilla,25000.0,Mallorca,2022_23
+Kang-in Lee,22000000.0,Mallorca,2022_23
 Dani Rodríguez,1200000.0,Mallorca,2022_23
 Lago Júnior,900000.0,Mallorca,2022_23
 Javi Llabrés,300000.0,Mallorca,2022_23
-Kang-in Lee,22000000.0,Mallorca,2022_23
 Amath Ndiaye,2000000.0,Mallorca,2022_23
 Tòfol Montiel,150000.0,Mallorca,2022_23
 Miguelito,50000.0,Mallorca,2022_23
@@ -11907,7 +11907,6 @@ Chumi,2000000.0,Almería,2022_23
 Sergio Akieme,7500000.0,Almería,2022_23
 Álex Centelles,1500000.0,Almería,2022_23
 Arvin Appiah,500000.0,Almería,2022_23
-Álex Pozo,3000000.0,Almería,2022_23
 Houboulang Mendes,2000000.0,Almería,2022_23
 Samú Costa,5000000.0,Almería,2022_23
 Iñigo Eguaras,1200000.0,Almería,2022_23
@@ -11918,17 +11917,18 @@ Arnau Puigmal,2000000.0,Almería,2022_23
 Gui Guedes,1200000.0,Almería,2022_23
 Martin Svidersky,500000.0,Almería,2022_23
 Marcos Peña,0.0,Almería,2022_23
-Largie Ramazani,6000000.0,Almería,2022_23
-Lázaro,6000000.0,Almería,2022_23
-José Carlos Lazo,2500000.0,Almería,2022_23
-Adrián Embarba,2500000.0,Almería,2022_23
 Francisco Portillo,1500000.0,Almería,2022_23
+El Bilal Touré,12000000.0,Almería,2022_23
+Largie Ramazani,6000000.0,Almería,2022_23
+José Carlos Lazo,2500000.0,Almería,2022_23
+Álex Pozo,3000000.0,Almería,2022_23
+Adrián Embarba,2500000.0,Almería,2022_23
+Léo Baptistão,1800000.0,Almería,2022_23
 Curro Sánchez,1000000.0,Almería,2022_23
 Carlos Rojas,0.0,Almería,2022_23
 Umar Sadiq,18000000.0,Almería,2022_23
-El Bilal Touré,12000000.0,Almería,2022_23
 Luis Suárez,8000000.0,Almería,2022_23
-Léo Baptistão,1800000.0,Almería,2022_23
+Lázaro,6000000.0,Almería,2022_23
 Marko Milovanović,1000000.0,Almería,2022_23
 Dyego Sousa,800000.0,Almería,2022_23
 Marciano Sanca,0.0,Almería,2022_23
@@ -11956,6 +11956,7 @@ Roque Mesa,2500000.0,Real Valladolid,2022_23
 Mario Maroto,150000.0,Real Valladolid,2022_23
 Alberto Quintana,100000.0,Real Valladolid,2022_23
 Selim Amallah,3000000.0,Real Valladolid,2022_23
+Óscar Plano,3000000.0,Real Valladolid,2022_23
 Darwin Machís,3000000.0,Real Valladolid,2022_23
 Toni Villa,2500000.0,Real Valladolid,2022_23
 Kenedy,1500000.0,Real Valladolid,2022_23
@@ -11964,7 +11965,6 @@ Gonzalo Plata,5000000.0,Real Valladolid,2022_23
 Anuar,900000.0,Real Valladolid,2022_23
 Iván Sánchez,800000.0,Real Valladolid,2022_23
 Manu Pozo,300000.0,Real Valladolid,2022_23
-Óscar Plano,3000000.0,Real Valladolid,2022_23
 Cyle Larin,8000000.0,Real Valladolid,2022_23
 Shon Weissman,4000000.0,Real Valladolid,2022_23
 Sergi Guardiola,2000000.0,Real Valladolid,2022_23
@@ -11992,9 +11992,9 @@ Ibrahima Kébé,500000.0,Girona,2022_23
 Aleix García,10000000.0,Girona,2022_23
 Yangel Herrera,5000000.0,Girona,2022_23
 Ramón Terrats,4000000.0,Girona,2022_23
+Iván Martín,3000000.0,Girona,2022_23
 Álex Sala,200000.0,Girona,2022_23
 Yan Couto,4000000.0,Girona,2022_23
-Iván Martín,3000000.0,Girona,2022_23
 Reinier,2000000.0,Girona,2022_23
 Borja García,1000000.0,Girona,2022_23
 Samu Saiz,900000.0,Girona,2022_23
@@ -12069,18 +12069,18 @@ Aitor Gismera,250000.0,Atlético,2023_24
 Thomas Lemar,10000000.0,Atlético,2023_24
 Sergio Guerrero,200000.0,Atlético,2023_24
 Álex Calatrava,200000.0,Atlético,2023_24
+Rayane Belaid,0.0,Atlético,2023_24
 Samuel Lino,30000000.0,Atlético,2023_24
 Rodrigo Riquelme,25000000.0,Atlético,2023_24
 Yannick Carrasco,14000000.0,Atlético,2023_24
 Marcos Paulo,2000000.0,Atlético,2023_24
 Salim El Jebari,1000000.0,Atlético,2023_24
 Vitolo,100000.0,Atlético,2023_24
-Rayane Belaid,0.0,Atlético,2023_24
-Ángel Correa,18000000.0,Atlético,2023_24
 João Félix,30000000.0,Atlético,2023_24
 Antoine Griezmann,25000000.0,Atlético,2023_24
-Álvaro Morata,16000000.0,Atlético,2023_24
+Ángel Correa,18000000.0,Atlético,2023_24
 Memphis Depay,10000000.0,Atlético,2023_24
+Álvaro Morata,16000000.0,Atlético,2023_24
 Adrián Niño,500000.0,Atlético,2023_24
 Abde Raihani,300000.0,Atlético,2023_24
 Marc-André ter Stegen,28000000.0,Barcelona,2023_24
@@ -12177,7 +12177,6 @@ Diego Hormigo,200000.0,Sevilla,2023_24
 Oso,200000.0,Sevilla,2023_24
 Juanlu Sánchez,15000000.0,Sevilla,2023_24
 Gonzalo Montiel,10000000.0,Sevilla,2023_24
-Jesús Navas,2500000.0,Sevilla,2023_24
 Darío Benavides,150000.0,Sevilla,2023_24
 Boubakary Soumaré,14000000.0,Sevilla,2023_24
 Lucien Agoumé,6000000.0,Sevilla,2023_24
@@ -12190,14 +12189,15 @@ Ivan Rakitic,3500000.0,Sevilla,2023_24
 Manu Bueno,300000.0,Sevilla,2023_24
 Lulo Dasilva,150000.0,Sevilla,2023_24
 Alberto Collado,0.0,Sevilla,2023_24
+Jesús Navas,2500000.0,Sevilla,2023_24
 Hannibal,9000000.0,Sevilla,2023_24
+Suso,4000000.0,Sevilla,2023_24
 Stanis Idumbo,800000.0,Sevilla,2023_24
 Miguel Capitas,200000.0,Sevilla,2023_24
 Lucas Ocampos,9000000.0,Sevilla,2023_24
 Isra Domínguez,150000.0,Sevilla,2023_24
 Papu Gómez,0.0,Sevilla,2023_24
 Dodi Lukébakio,12000000.0,Sevilla,2023_24
-Suso,4000000.0,Sevilla,2023_24
 Jesús Corona,3500000.0,Sevilla,2023_24
 Erik Lamela,2000000.0,Sevilla,2023_24
 Adnan Januzaj,2000000.0,Sevilla,2023_24
@@ -12230,7 +12230,6 @@ Javi Navarro,25000.0,Valencia,2023_24
 André Almeida,15000000.0,Valencia,2023_24
 Selim Amallah,1500000.0,Valencia,2023_24
 Pablo Gozálbez,800000.0,Valencia,2023_24
-Martín Tejón,100000.0,Valencia,2023_24
 Sergi Canós,2500000.0,Valencia,2023_24
 Marco Camus,300000.0,Valencia,2023_24
 Diego López,14000000.0,Valencia,2023_24
@@ -12238,6 +12237,7 @@ Fran Pérez,8000000.0,Valencia,2023_24
 Peter Federico,3000000.0,Valencia,2023_24
 David Otorbi,500000.0,Valencia,2023_24
 Hugo González,300000.0,Valencia,2023_24
+Martín Tejón,100000.0,Valencia,2023_24
 Hugo Duro,16000000.0,Valencia,2023_24
 Roman Yaremchuk,3500000.0,Valencia,2023_24
 Alberto Marí,1500000.0,Valencia,2023_24
@@ -12259,6 +12259,7 @@ Diego Rico,1500000.0,R. Sociedad,2023_24
 Hamari Traoré,6000000.0,R. Sociedad,2023_24
 Jon Aramburu,2500000.0,R. Sociedad,2023_24
 Álvaro Odriozola,2500000.0,R. Sociedad,2023_24
+Alberto Dadie,250000.0,R. Sociedad,2023_24
 Iñaki Rupérez,150000.0,R. Sociedad,2023_24
 Martín Zubimendi,50000000.0,R. Sociedad,2023_24
 Urko González de Zárate,1200000.0,R. Sociedad,2023_24
@@ -12276,7 +12277,6 @@ Takefusa Kubo,50000000.0,R. Sociedad,2023_24
 Mohamed-Ali Cho,10000000.0,R. Sociedad,2023_24
 Robert Navarro,6000000.0,R. Sociedad,2023_24
 Álex Sola,4000000.0,R. Sociedad,2023_24
-Alberto Dadie,250000.0,R. Sociedad,2023_24
 Mikel Oyarzabal,45000000.0,R. Sociedad,2023_24
 Umar Sadiq,10000000.0,R. Sociedad,2023_24
 André Silva,6000000.0,R. Sociedad,2023_24
@@ -12330,7 +12330,7 @@ Matteo Gabbia,8000000.0,Villarreal,2023_24
 Yerson Mosquera,6000000.0,Villarreal,2023_24
 Jorge Cuenca,6000000.0,Villarreal,2023_24
 Eric Bailly,3000000.0,Villarreal,2023_24
-Stefan Leković,1800000.0,Villarreal,2023_24
+Stefan Lekovic,1800000.0,Villarreal,2023_24
 Aïssa Mandi,1800000.0,Villarreal,2023_24
 Raúl Albiol,1500000.0,Villarreal,2023_24
 Antonio Espigares,500000.0,Villarreal,2023_24
@@ -12465,9 +12465,9 @@ Pablo Ibáñez,2500000.0,Osasuna,2023_24
 Darko Brasanac,1400000.0,Osasuna,2023_24
 Asier Osambela,500000.0,Osasuna,2023_24
 Aimar Oroz,15000000.0,Osasuna,2023_24
+Moi Gómez,3500000.0,Osasuna,2023_24
 Javi Martínez,1200000.0,Osasuna,2023_24
 Xabi Huarte,200000.0,Osasuna,2023_24
-Moi Gómez,3500000.0,Osasuna,2023_24
 José Manuel Arnáiz,2000000.0,Osasuna,2023_24
 Rubén García,2500000.0,Osasuna,2023_24
 Kike Barja,2000000.0,Osasuna,2023_24
@@ -12507,8 +12507,8 @@ Moussa Diakité,150000.0,Cádiz,2023_24
 Juanmi,6000000.0,Cádiz,2023_24
 Darwin Machís,2000000.0,Cádiz,2023_24
 Brian Ocampo,900000.0,Cádiz,2023_24
-José Antonio de la Rosa,300000.0,Cádiz,2023_24
 Robert Navarro,6000000.0,Cádiz,2023_24
+José Antonio de la Rosa,300000.0,Cádiz,2023_24
 Nico Njalla,150000.0,Cádiz,2023_24
 Chris Ramos,4000000.0,Cádiz,2023_24
 Milutin Osmajic,2000000.0,Cádiz,2023_24
@@ -12546,7 +12546,7 @@ Antonio Sánchez,2500000.0,Mallorca,2023_24
 Rubén Quintanilla,50000.0,Mallorca,2023_24
 Dani Rodríguez,1000000.0,Mallorca,2023_24
 Daniel Luna,300000.0,Mallorca,2023_24
-Nemanja Radonjić,2800000.0,Mallorca,2023_24
+Nemanja Radonjic,2800000.0,Mallorca,2023_24
 Javi Llabrés,700000.0,Mallorca,2023_24
 Amath Ndiaye,1500000.0,Mallorca,2023_24
 Miguelito,50000.0,Mallorca,2023_24
@@ -12589,6 +12589,7 @@ Fernando Martínez,700000.0,Almería,2023_24
 Diego Mariño,300000.0,Almería,2023_24
 Bruno Iribarne,0.0,Almería,2023_24
 Srdjan Babic,4000000.0,Almería,2023_24
+Marc Pubill,4000000.0,Almería,2023_24
 Edgar González,3000000.0,Almería,2023_24
 César Montes,3000000.0,Almería,2023_24
 Kaiky,2000000.0,Almería,2023_24
@@ -12599,8 +12600,6 @@ Sergio Akieme,7000000.0,Almería,2023_24
 Bruno Langa,1500000.0,Almería,2023_24
 Álex Centelles,1200000.0,Almería,2023_24
 Arvin Appiah,400000.0,Almería,2023_24
-Marc Pubill,4000000.0,Almería,2023_24
-Álex Pozo,2000000.0,Almería,2023_24
 Houboulang Mendes,700000.0,Almería,2023_24
 Miguel Peña,0.0,Almería,2023_24
 Carlos Ballestero,0.0,Almería,2023_24
@@ -12615,12 +12614,13 @@ Martin Svidersky,300000.0,Almería,2023_24
 Sergio Arribas,10000000.0,Almería,2023_24
 Jonathan Viera,1000000.0,Almería,2023_24
 Largie Ramazani,5000000.0,Almería,2023_24
-Lázaro,3500000.0,Almería,2023_24
 Luka Romero,5000000.0,Almería,2023_24
+Álex Pozo,2000000.0,Almería,2023_24
 Adrián Embarba,1800000.0,Almería,2023_24
-Luis Suárez,3500000.0,Almería,2023_24
-Ibrahima Koné,2500000.0,Almería,2023_24
 Léo Baptistão,1500000.0,Almería,2023_24
+Luis Suárez,3500000.0,Almería,2023_24
+Lázaro,3500000.0,Almería,2023_24
+Ibrahima Koné,2500000.0,Almería,2023_24
 Choco Lozano,1200000.0,Almería,2023_24
 Marko Milovanović,900000.0,Almería,2023_24
 Marciano Sanca,800000.0,Almería,2023_24
@@ -12642,10 +12642,10 @@ Ibrahima Kébé,500000.0,Girona,2023_24
 Selvi Clua,0.0,Girona,2023_24
 Aleix García,25000000.0,Girona,2023_24
 Yangel Herrera,25000000.0,Girona,2023_24
+Iván Martín,15000000.0,Girona,2023_24
 Jhon Solís,3000000.0,Girona,2023_24
 Enric García,0.0,Girona,2023_24
 Yan Couto,25000000.0,Girona,2023_24
-Iván Martín,15000000.0,Girona,2023_24
 Pablo Torre,3000000.0,Girona,2023_24
 Borja García,800000.0,Girona,2023_24
 Ricard Artero,0.0,Girona,2023_24
@@ -12671,7 +12671,7 @@ Pol Tristán,100000.0,Granada,2023_24
 Fran Árbol,0.0,Granada,2023_24
 Bruno Méndez,5000000.0,Granada,2023_24
 Raúl Torrente,3000000.0,Granada,2023_24
-Kamil Piatkowski,2500000.0,Granada,2023_24
+Kamil Piątkowski,2500000.0,Granada,2023_24
 Miguel Rubio,1500000.0,Granada,2023_24
 Ignasi Miquel,1200000.0,Granada,2023_24
 Jesús Vallejo,1000000.0,Granada,2023_24
@@ -12693,7 +12693,7 @@ Lass Sangaré,150000.0,Granada,2023_24
 Mario González,150000.0,Granada,2023_24
 Bryan Zaragoza,12000000.0,Granada,2023_24
 Myrto Uzuni,8000000.0,Granada,2023_24
-Kamil Jozwiak,2000000.0,Granada,2023_24
+Kamil Jóźwiak,2000000.0,Granada,2023_24
 Alberto Perea,450000.0,Granada,2023_24
 Sergio Rodelas,200000.0,Granada,2023_24
 Facundo Pellistri,8000000.0,Granada,2023_24
@@ -12769,10 +12769,10 @@ Jon Guridi,4000000.0,Alavés,2023_24
 Selu Diallo,200000.0,Alavés,2023_24
 Ianis Hagi,2000000.0,Alavés,2023_24
 Ander Sánchez,100000.0,Alavés,2023_24
-Luis Rioja,4000000.0,Alavés,2023_24
 Abde Rebbach,800000.0,Alavés,2023_24
 José de León,200000.0,Alavés,2023_24
 Álex Sola,4000000.0,Alavés,2023_24
+Luis Rioja,4000000.0,Alavés,2023_24
 Carlos Vicente,4000000.0,Alavés,2023_24
 Giuliano Simeone,3000000.0,Alavés,2023_24
 Xeber Alkain,1500000.0,Alavés,2023_24
@@ -12847,16 +12847,16 @@ Koke,8000000.0,Atlético,2024_25
 Javi Serrano,700000.0,Atlético,2024_25
 Aitor Gismera,250000.0,Atlético,2024_25
 Thomas Lemar,5000000.0,Atlético,2024_25
+Rayane Belaid,600000.0,Atlético,2024_25
 Samuel Lino,22000000.0,Atlético,2024_25
 Rodrigo Riquelme,12000000.0,Atlético,2024_25
 Carlos Martín,2800000.0,Atlético,2024_25
-Rayane Belaid,600000.0,Atlético,2024_25
+Germán Valera,1500000.0,Atlético,2024_25
 Marcos Paulo,450000.0,Atlético,2024_25
 Giuliano Simeone,35000000.0,Atlético,2024_25
-Ángel Correa,10000000.0,Atlético,2024_25
-Germán Valera,1500000.0,Atlético,2024_25
 Víctor Mollejo,300000.0,Atlético,2024_25
 Antoine Griezmann,18000000.0,Atlético,2024_25
+Ángel Correa,10000000.0,Atlético,2024_25
 Julián Alvarez,100000000.0,Atlético,2024_25
 Alexander Sørloth,25000000.0,Atlético,2024_25
 Omar Janneh,1000000.0,Atlético,2024_25
@@ -12864,7 +12864,7 @@ Adrián Niño,800000.0,Atlético,2024_25
 Borja Garcés,300000.0,Atlético,2024_25
 Marc-André ter Stegen,12000000.0,Barcelona,2024_25
 Iñaki Peña,8000000.0,Barcelona,2024_25
-Wojciech Szczesny,1000000.0,Barcelona,2024_25
+Wojciech Szczęsny,1000000.0,Barcelona,2024_25
 Ander Astralaga,800000.0,Barcelona,2024_25
 Diego Kochen,500000.0,Barcelona,2024_25
 Áron Yaakobishvili,300000.0,Barcelona,2024_25
@@ -12892,11 +12892,11 @@ Guille Fernández,3000000.0,Barcelona,2024_25
 Dani Olmo,60000000.0,Barcelona,2024_25
 Fermín López,50000000.0,Barcelona,2024_25
 Pablo Torre,6000000.0,Barcelona,2024_25
-Noah Darvich,2000000.0,Barcelona,2024_25
 Raphinha,90000000.0,Barcelona,2024_25
 Ansu Fati,5000000.0,Barcelona,2024_25
 Lamine Yamal,200000000.0,Barcelona,2024_25
 Toni Fernández,3000000.0,Barcelona,2024_25
+Noah Darvich,2000000.0,Barcelona,2024_25
 Dani Rodríguez,200000.0,Barcelona,2024_25
 Ferran Torres,40000000.0,Barcelona,2024_25
 Robert Lewandowski,12000000.0,Barcelona,2024_25
@@ -12961,7 +12961,6 @@ José Ángel Carmona,12000000.0,Sevilla,2024_25
 Juanlu Sánchez,12000000.0,Sevilla,2024_25
 Gonzalo Montiel,5000000.0,Sevilla,2024_25
 Darío Benavides,300000.0,Sevilla,2024_25
-Jesús Navas,0.0,Sevilla,2024_25
 Lucien Agoumé,8000000.0,Sevilla,2024_25
 Nemanja Gudelj,3000000.0,Sevilla,2024_25
 Valentín Barco,12000000.0,Sevilla,2024_25
@@ -12973,13 +12972,14 @@ Pedro Ortiz,600000.0,Sevilla,2024_25
 Pablo Rivera,200000.0,Sevilla,2024_25
 Alberto Collado,200000.0,Sevilla,2024_25
 Lulo Dasilva,150000.0,Sevilla,2024_25
+Jesús Navas,0.0,Sevilla,2024_25
 Stanis Idumbo,2500000.0,Sevilla,2024_25
+Suso,1500000.0,Sevilla,2024_25
 Rubén Vargas,7000000.0,Sevilla,2024_25
 Lucas Ocampos,6000000.0,Sevilla,2024_25
 Chidera Ejuke,4000000.0,Sevilla,2024_25
 Isra Domínguez,200000.0,Sevilla,2024_25
 Dodi Lukébakio,20000000.0,Sevilla,2024_25
-Suso,1500000.0,Sevilla,2024_25
 Peque Fernández,3500000.0,Sevilla,2024_25
 Isaac Romero,6000000.0,Sevilla,2024_25
 Akor Adams,5000000.0,Sevilla,2024_25
@@ -13015,14 +13015,15 @@ Pedro Alemañ,200000.0,Valencia,2024_25
 Lucas Núñez,25000.0,Valencia,2024_25
 André Almeida,10000000.0,Valencia,2024_25
 Iván Jaime,5000000.0,Valencia,2024_25
-Martín Tejón,500000.0,Valencia,2024_25
-Luis Rioja,2000000.0,Valencia,2024_25
+Germán Valera,1500000.0,Valencia,2024_25
 Sergi Canós,1000000.0,Valencia,2024_25
+Warren Madrigal,400000.0,Valencia,2024_25
 Pablo López,50000.0,Valencia,2024_25
 Diego López,15000000.0,Valencia,2024_25
 Fran Pérez,3000000.0,Valencia,2024_25
-Germán Valera,1500000.0,Valencia,2024_25
+Luis Rioja,2000000.0,Valencia,2024_25
 David Otorbi,500000.0,Valencia,2024_25
+Martín Tejón,500000.0,Valencia,2024_25
 Hamza Bellari,100000.0,Valencia,2024_25
 Ismael Santana,25000.0,Valencia,2024_25
 Hugo Duro,14000000.0,Valencia,2024_25
@@ -13030,7 +13031,6 @@ Umar Sadiq,5000000.0,Valencia,2024_25
 Dani Gómez,1000000.0,Valencia,2024_25
 Alberto Marí,1000000.0,Valencia,2024_25
 Rafa Mir,800000.0,Valencia,2024_25
-Warren Madrigal,400000.0,Valencia,2024_25
 Álex Remiro,18000000.0,R. Sociedad,2024_25
 Unai Marrero,600000.0,R. Sociedad,2024_25
 Aitor Fraga,500000.0,R. Sociedad,2024_25
@@ -13144,7 +13144,7 @@ Gerard Moreno,4000000.0,Villarreal,2024_25
 Pau Cabanes,800000.0,Villarreal,2024_25
 Rui Silva,7000000.0,Betis,2024_25
 Fran Vieites,2000000.0,Betis,2024_25
-Adrián,500000.0,Betis,2024_25
+Adrián San Miguel,500000.0,Betis,2024_25
 Guilherme Fernandes,150000.0,Betis,2024_25
 Germán García,50000.0,Betis,2024_25
 Manu González,0.0,Betis,2024_25
@@ -13246,11 +13246,11 @@ Iker Muñoz,3000000.0,Osasuna,2024_25
 Jon Moncayola,7000000.0,Osasuna,2024_25
 Pablo Ibáñez,2000000.0,Osasuna,2024_25
 Asier Osambela,500000.0,Osasuna,2024_25
-Aimar Oroz,15000000.0,Osasuna,2024_25
-Javi Martínez,800000.0,Osasuna,2024_25
 Jon García,300000.0,Osasuna,2024_25
-Bryan Zaragoza,12000000.0,Osasuna,2024_25
+Aimar Oroz,15000000.0,Osasuna,2024_25
 Moi Gómez,2000000.0,Osasuna,2024_25
+Javi Martínez,800000.0,Osasuna,2024_25
+Bryan Zaragoza,12000000.0,Osasuna,2024_25
 José Manuel Arnáiz,1500000.0,Osasuna,2024_25
 Rubén García,2000000.0,Osasuna,2024_25
 Iker Benito,1500000.0,Osasuna,2024_25
@@ -13300,12 +13300,12 @@ Abdul Mumin,5000000.0,Rayo Vallecano,2024_25
 Florian Lejeune,2500000.0,Rayo Vallecano,2024_25
 Pelayo Fernández,500000.0,Rayo Vallecano,2024_25
 Aridane Hernández,300000.0,Rayo Vallecano,2024_25
-Marco de las Sías,0.0,Rayo Vallecano,2024_25
 Sergio Lozano,0.0,Rayo Vallecano,2024_25
 Pep Chavarría,5000000.0,Rayo Vallecano,2024_25
 Alfonso Espino,1200000.0,Rayo Vallecano,2024_25
 Andrei Rațiu,12000000.0,Rayo Vallecano,2024_25
 Iván Balliu,1400000.0,Rayo Vallecano,2024_25
+Marco de las Sías,0.0,Rayo Vallecano,2024_25
 Gerard Gumbau,1500000.0,Rayo Vallecano,2024_25
 Pedro Díaz,3000000.0,Rayo Vallecano,2024_25
 Unai López,2500000.0,Rayo Vallecano,2024_25
@@ -13328,11 +13328,11 @@ Pau López,2500000.0,Girona,2024_25
 Paulo Gazzaniga,2500000.0,Girona,2024_25
 Vladyslav Krapyvtsov,200000.0,Girona,2024_25
 Juan Carlos,100000.0,Girona,2024_25
-Aleksandar Andreev,0.0,Girona,2024_25
 Lucas García,0.0,Girona,2024_25
+Aleksandar Andreev,0.0,Girona,2024_25
 Jordi Danso,0.0,Girona,2024_25
 Pau Funallet,0.0,Girona,2024_25
-Ladislav Krejci,12000000.0,Girona,2024_25
+Ladislav Krejčí,12000000.0,Girona,2024_25
 Alejandro Francés,2000000.0,Girona,2024_25
 Daley Blind,1500000.0,Girona,2024_25
 David López,1000000.0,Girona,2024_25
@@ -13343,15 +13343,15 @@ Marc Aznar,0.0,Girona,2024_25
 Miguel Gutiérrez,20000000.0,Girona,2024_25
 Arnau Martínez,10000000.0,Girona,2024_25
 Ferran Ruiz,0.0,Girona,2024_25
-Arthur Melo,5000000.0,Girona,2024_25
 Oriol Romeu,1200000.0,Girona,2024_25
 Selvi Clua,300000.0,Girona,2024_25
 Yangel Herrera,15000000.0,Girona,2024_25
+Iván Martín,6000000.0,Girona,2024_25
 Donny van de Beek,5000000.0,Girona,2024_25
+Arthur Melo,5000000.0,Girona,2024_25
 Jhon Solís,2500000.0,Girona,2024_25
 Enric García,0.0,Girona,2024_25
 Raúl Martínez,0.0,Girona,2024_25
-Iván Martín,6000000.0,Girona,2024_25
 Gabriel Misehouy,1000000.0,Girona,2024_25
 Ricard Artero,0.0,Girona,2024_25
 Bryan Gil,15000000.0,Girona,2024_25
@@ -13401,11 +13401,11 @@ Josito González,0.0,Las Palmas,2024_25
 Alberto Moleiro,25000000.0,Las Palmas,2024_25
 Benito Ramírez,700000.0,Las Palmas,2024_25
 Sergio Ruiz,0.0,Las Palmas,2024_25
-Arturo Rodríguez,0.0,Las Palmas,2024_25
 Manu Fuster,1500000.0,Las Palmas,2024_25
 Adnan Januzaj,1200000.0,Las Palmas,2024_25
 Pejiño,800000.0,Las Palmas,2024_25
 Saliou Mandiang,0.0,Las Palmas,2024_25
+Arturo Rodríguez,0.0,Las Palmas,2024_25
 Fábio Silva,20000000.0,Las Palmas,2024_25
 Oli McBurnie,2500000.0,Las Palmas,2024_25
 Sandro Ramírez,2500000.0,Las Palmas,2024_25
@@ -13430,18 +13430,18 @@ Egoitz Muñoz,200000.0,Alavés,2024_25
 Alejandro Jay,150000.0,Alavés,2024_25
 Antonio Blanco,10000000.0,Alavés,2024_25
 Carlos Protesoni,1200000.0,Alavés,2024_25
+Daouda Doumbia,200000.0,Alavés,2024_25
 Ander Guevara,3500000.0,Alavés,2024_25
 Jon Guridi,3000000.0,Alavés,2024_25
 Carles Aleñá,2500000.0,Alavés,2024_25
 Joan Jordán,2500000.0,Alavés,2024_25
-Daouda Doumbia,200000.0,Alavés,2024_25
 Lander Pinillos,150000.0,Alavés,2024_25
 Carlos Martín,2800000.0,Alavés,2024_25
-Luis Rioja,2000000.0,Alavés,2024_25
 Tomás Conechny,1800000.0,Alavés,2024_25
 Abde Rebbach,700000.0,Alavés,2024_25
 Carlos Vicente,10000000.0,Alavés,2024_25
 Luka Romero,4000000.0,Alavés,2024_25
+Luis Rioja,2000000.0,Alavés,2024_25
 Julen Lartitegi,50000.0,Alavés,2024_25
 Stoichkov,1500000.0,Alavés,2024_25
 Joaquín Panichelli,7000000.0,Alavés,2024_25
@@ -13459,13 +13459,13 @@ Sergio González,800000.0,Leganés,2024_25
 Matija Nastasić,800000.0,Leganés,2024_25
 Aritz Arambarri,600000.0,Leganés,2024_25
 Lalo Aguilar,300000.0,Leganés,2024_25
-Joao Urbáez,50000.0,Leganés,2024_25
 Javi Hernández,2500000.0,Leganés,2024_25
 Enric Franquesa,1500000.0,Leganés,2024_25
 Borna Barisic,800000.0,Leganés,2024_25
 Iker Bachiller,25000.0,Leganés,2024_25
 Valentin Rosier,3000000.0,Leganés,2024_25
 Adrià Altimira,1500000.0,Leganés,2024_25
+Joao Urbáez,50000.0,Leganés,2024_25
 Yvan Neyou,3000000.0,Leganés,2024_25
 Renato Tapia,2000000.0,Leganés,2024_25
 Julián Chicco,500000.0,Leganés,2024_25
@@ -13543,9 +13543,9 @@ Leandro Cabrera,1000000.0,Espanyol,2024_25
 Sergi Gómez,600000.0,Espanyol,2024_25
 José Luis Català,150000.0,Espanyol,2024_25
 Pablo Ramón,100000.0,Espanyol,2024_25
-Roger Hinojo,50000.0,Espanyol,2024_25
 Carlos Romero,5000000.0,Espanyol,2024_25
 Brian Oliván,1800000.0,Espanyol,2024_25
+Roger Hinojo,50000.0,Espanyol,2024_25
 Omar El Hilali,15000000.0,Espanyol,2024_25
 Álvaro Tejero,1800000.0,Espanyol,2024_25
 José Ángel López,150000.0,Espanyol,2024_25
@@ -13562,10 +13562,529 @@ Naci Ünüvar,2000000.0,Espanyol,2024_25
 Pere Milla,1200000.0,Espanyol,2024_25
 Alex Almansa,200000.0,Espanyol,2024_25
 Jofre Carreras,3000000.0,Espanyol,2024_25
+Irvin Cardona,2500000.0,Espanyol,2024_25
 Antoniu Roca,1800000.0,Espanyol,2024_25
 Salvi Sánchez,600000.0,Espanyol,2024_25
 Roberto Fernández,6000000.0,Espanyol,2024_25
-Irvin Cardona,2500000.0,Espanyol,2024_25
 Alejo Veliz,2500000.0,Espanyol,2024_25
 Walid Cheddira,2500000.0,Espanyol,2024_25
 Omar Sadik,500000.0,Espanyol,2024_25
+Unai Simón,25000000.0,Athletic,2025_26
+Álex Padilla,3000000.0,Athletic,2025_26
+Dani Vivian,25000000.0,Athletic,2025_26
+Aitor Paredes,15000000.0,Athletic,2025_26
+Aymeric Laporte,9000000.0,Athletic,2025_26
+Yeray Álvarez,1000000.0,Athletic,2025_26
+Unai Egiluz,600000.0,Athletic,2025_26
+Adama Boiro,3000000.0,Athletic,2025_26
+Yuri Berchiche,1200000.0,Athletic,2025_26
+Jesús Areso,8000000.0,Athletic,2025_26
+Andoni Gorosabel,4000000.0,Athletic,2025_26
+Iñigo Lekue,1200000.0,Athletic,2025_26
+Mikel Vesga,1500000.0,Athletic,2025_26
+Mikel Jauregizar,35000000.0,Athletic,2025_26
+Beñat Prados,18000000.0,Athletic,2025_26
+Alejandro Rego,3000000.0,Athletic,2025_26
+Selton Sánchez,3000000.0,Athletic,2025_26
+Iñigo Ruiz de Galarreta,2500000.0,Athletic,2025_26
+Oihan Sancet,35000000.0,Athletic,2025_26
+Unai Gómez,5000000.0,Athletic,2025_26
+Nico Williams,50000000.0,Athletic,2025_26
+Álex Berenguer,5000000.0,Athletic,2025_26
+Nico Serrano,1500000.0,Athletic,2025_26
+Iñaki Williams,10000000.0,Athletic,2025_26
+Robert Navarro,6000000.0,Athletic,2025_26
+Gorka Guruzeta,5000000.0,Athletic,2025_26
+Maroan Sannadi,5000000.0,Athletic,2025_26
+Urko Izeta,1500000.0,Athletic,2025_26
+Jan Oblak,17000000.0,Atlético,2025_26
+Juan Musso,3000000.0,Atlético,2025_26
+Dávid Hancko,35000000.0,Atlético,2025_26
+Marc Pubill,28000000.0,Atlético,2025_26
+Robin Le Normand,25000000.0,Atlético,2025_26
+José María Giménez,12000000.0,Atlético,2025_26
+Clément Lenglet,5000000.0,Atlético,2025_26
+Matteo Ruggeri,20000000.0,Atlético,2025_26
+Marcos Llorente,22000000.0,Atlético,2025_26
+Nahuel Molina,15000000.0,Atlético,2025_26
+Pablo Barrios,60000000.0,Atlético,2025_26
+Johnny Cardoso,22000000.0,Atlético,2025_26
+Rodrigo Mendoza,20000000.0,Atlético,2025_26
+Obed Vargas,8000000.0,Atlético,2025_26
+Koke,6000000.0,Atlético,2025_26
+Álex Baena,45000000.0,Atlético,2025_26
+Ademola Lookman,40000000.0,Atlético,2025_26
+Nico González,24000000.0,Atlético,2025_26
+Thiago Almada,20000000.0,Atlético,2025_26
+Giuliano Simeone,40000000.0,Atlético,2025_26
+Antoine Griezmann,10000000.0,Atlético,2025_26
+Julián Alvarez,90000000.0,Atlético,2025_26
+Alexander Sørloth,20000000.0,Atlético,2025_26
+Joan García,40000000.0,Barcelona,2025_26
+Wojciech Szczęsny,900000.0,Barcelona,2025_26
+Diego Kochen,500000.0,Barcelona,2025_26
+Pau Cubarsí,80000000.0,Barcelona,2025_26
+Eric García,35000000.0,Barcelona,2025_26
+Ronald Araujo,20000000.0,Barcelona,2025_26
+Andreas Christensen,9000000.0,Barcelona,2025_26
+Alejandro Balde,55000000.0,Barcelona,2025_26
+Gerard Martín,25000000.0,Barcelona,2025_26
+Jules Koundé,65000000.0,Barcelona,2025_26
+João Cancelo,9000000.0,Barcelona,2025_26
+Marc Bernal,30000000.0,Barcelona,2025_26
+Marc Casadó,20000000.0,Barcelona,2025_26
+Pedri,150000000.0,Barcelona,2025_26
+Frenkie de Jong,45000000.0,Barcelona,2025_26
+Gavi,30000000.0,Barcelona,2025_26
+Fermín López,100000000.0,Barcelona,2025_26
+Dani Olmo,60000000.0,Barcelona,2025_26
+Raphinha,80000000.0,Barcelona,2025_26
+Marcus Rashford,40000000.0,Barcelona,2025_26
+Lamine Yamal,200000000.0,Barcelona,2025_26
+Roony Bardghji,15000000.0,Barcelona,2025_26
+Ferran Torres,50000000.0,Barcelona,2025_26
+Robert Lewandowski,8000000.0,Barcelona,2025_26
+Thibaut Courtois,18000000.0,Real Madrid,2025_26
+Andriy Lunin,15000000.0,Real Madrid,2025_26
+Fran González,3000000.0,Real Madrid,2025_26
+Dean Huijsen,65000000.0,Real Madrid,2025_26
+Éder Militão,25000000.0,Real Madrid,2025_26
+Raúl Asencio,25000000.0,Real Madrid,2025_26
+Antonio Rüdiger,9000000.0,Real Madrid,2025_26
+David Alaba,3500000.0,Real Madrid,2025_26
+Álvaro Carreras,60000000.0,Real Madrid,2025_26
+Fran García,12000000.0,Real Madrid,2025_26
+Ferland Mendy,6000000.0,Real Madrid,2025_26
+Trent Alexander-Arnold,65000000.0,Real Madrid,2025_26
+Daniel Carvajal,6000000.0,Real Madrid,2025_26
+Aurélien Tchouaméni,75000000.0,Real Madrid,2025_26
+Federico Valverde,120000000.0,Real Madrid,2025_26
+Eduardo Camavinga,50000000.0,Real Madrid,2025_26
+Thiago Pitarch,20000000.0,Real Madrid,2025_26
+Dani Ceballos,8000000.0,Real Madrid,2025_26
+Jorge Cestero,7500000.0,Real Madrid,2025_26
+Manuel Ángel,5000000.0,Real Madrid,2025_26
+Jude Bellingham,140000000.0,Real Madrid,2025_26
+Arda Güler,90000000.0,Real Madrid,2025_26
+Vinicius Junior,150000000.0,Real Madrid,2025_26
+Rodrygo,50000000.0,Real Madrid,2025_26
+Franco Mastantuono,45000000.0,Real Madrid,2025_26
+Brahim Díaz,35000000.0,Real Madrid,2025_26
+Kylian Mbappé,200000000.0,Real Madrid,2025_26
+Gonzalo García,30000000.0,Real Madrid,2025_26
+Odysseas Vlachodimos,4000000.0,Sevilla,2025_26
+Ørjan Nyland,900000.0,Sevilla,2025_26
+Kike Salas,8000000.0,Sevilla,2025_26
+Marcão,2500000.0,Sevilla,2025_26
+Fábio Cardoso,2000000.0,Sevilla,2025_26
+Andrés Castrín,1500000.0,Sevilla,2025_26
+Tanguy Nianzou,1400000.0,Sevilla,2025_26
+César Azpilicueta,1200000.0,Sevilla,2025_26
+Federico Gattoni,1000000.0,Sevilla,2025_26
+Gabriel Suazo,7000000.0,Sevilla,2025_26
+Oso,5000000.0,Sevilla,2025_26
+Juanlu Sánchez,15000000.0,Sevilla,2025_26
+José Ángel Carmona,12000000.0,Sevilla,2025_26
+Lucien Agoumé,12000000.0,Sevilla,2025_26
+Batista Mendy,10000000.0,Sevilla,2025_26
+Nemanja Gudelj,2500000.0,Sevilla,2025_26
+Djibril Sow,7500000.0,Sevilla,2025_26
+Joan Jordán,2000000.0,Sevilla,2025_26
+Manu Bueno,1500000.0,Sevilla,2025_26
+Rubén Vargas,12000000.0,Sevilla,2025_26
+Chidera Ejuke,4000000.0,Sevilla,2025_26
+Adnan Januzaj,1200000.0,Sevilla,2025_26
+Miguel Sierra,300000.0,Sevilla,2025_26
+Peque Fernández,3500000.0,Sevilla,2025_26
+Alexis Sánchez,1400000.0,Sevilla,2025_26
+Akor Adams,12000000.0,Sevilla,2025_26
+Isaac Romero,5000000.0,Sevilla,2025_26
+Neal Maupay,4000000.0,Sevilla,2025_26
+Julen Agirrezabala,15000000.0,Valencia,2025_26
+Stole Dimitrievski,2000000.0,Valencia,2025_26
+Cristian Rivero,100000.0,Valencia,2025_26
+César Tárrega,12000000.0,Valencia,2025_26
+José Copete,5000000.0,Valencia,2025_26
+Unai Núñez,3500000.0,Valencia,2025_26
+Eray Cömert,2500000.0,Valencia,2025_26
+Mouctar Diakhaby,2000000.0,Valencia,2025_26
+José Gayà,5000000.0,Valencia,2025_26
+Jesús Vázquez,4000000.0,Valencia,2025_26
+Thierry Correia,3000000.0,Valencia,2025_26
+Renzo Saravia,1500000.0,Valencia,2025_26
+Dimitri Foulquier,1000000.0,Valencia,2025_26
+Pepelu,9000000.0,Valencia,2025_26
+Guido Rodríguez,5000000.0,Valencia,2025_26
+Baptiste Santamaria,3000000.0,Valencia,2025_26
+Javi Guerra,25000000.0,Valencia,2025_26
+Filip Ugrinic,6000000.0,Valencia,2025_26
+André Almeida,7500000.0,Valencia,2025_26
+Largie Ramazani,8000000.0,Valencia,2025_26
+Arnaut Danjuma,4000000.0,Valencia,2025_26
+Diego López,12000000.0,Valencia,2025_26
+Luis Rioja,2000000.0,Valencia,2025_26
+Dani Raba,1500000.0,Valencia,2025_26
+Hugo Duro,12000000.0,Valencia,2025_26
+Lucas Beltrán,8000000.0,Valencia,2025_26
+Umar Sadiq,4000000.0,Valencia,2025_26
+Álex Remiro,14000000.0,R. Sociedad,2025_26
+Unai Marrero,600000.0,R. Sociedad,2025_26
+Jon Martín,20000000.0,R. Sociedad,2025_26
+Igor Zubeldia,9000000.0,R. Sociedad,2025_26
+Duje Caleta-Car,3000000.0,R. Sociedad,2025_26
+Aritz Elustondo,1800000.0,R. Sociedad,2025_26
+Sergio Gómez,15000000.0,R. Sociedad,2025_26
+Aihen Muñoz,3500000.0,R. Sociedad,2025_26
+Jon Aramburu,15000000.0,R. Sociedad,2025_26
+Álvaro Odriozola,800000.0,R. Sociedad,2025_26
+Jon Gorrotxategi,25000000.0,R. Sociedad,2025_26
+Beñat Turrientes,10000000.0,R. Sociedad,2025_26
+Luka Sucic,10000000.0,R. Sociedad,2025_26
+Yangel Herrera,9000000.0,R. Sociedad,2025_26
+Carlos Soler,8000000.0,R. Sociedad,2025_26
+Brais Méndez,12000000.0,R. Sociedad,2025_26
+Arsen Zakharyan,10000000.0,R. Sociedad,2025_26
+Pablo Marín,8000000.0,R. Sociedad,2025_26
+Ander Barrenetxea,18000000.0,R. Sociedad,2025_26
+Gonçalo Guedes,6000000.0,R. Sociedad,2025_26
+Wesley,5000000.0,R. Sociedad,2025_26
+Takefusa Kubo,30000000.0,R. Sociedad,2025_26
+Mikel Oyarzabal,25000000.0,R. Sociedad,2025_26
+Orri Óskarsson,12000000.0,R. Sociedad,2025_26
+Jon Karrikaburu,2000000.0,R. Sociedad,2025_26
+Ionuț Radu,8000000.0,Celta,2025_26
+Iván Villar,900000.0,Celta,2025_26
+Marc Vidal,300000.0,Celta,2025_26
+Javi Rodríguez,15000000.0,Celta,2025_26
+Carl Starfelt,5000000.0,Celta,2025_26
+Carlos Domínguez,3000000.0,Celta,2025_26
+Yoel Lago,2500000.0,Celta,2025_26
+Manu Fernández,1500000.0,Celta,2025_26
+Marcos Alonso,1400000.0,Celta,2025_26
+Joseph Aidoo,1000000.0,Celta,2025_26
+Mihailo Ristic,800000.0,Celta,2025_26
+Óscar Mingueza,18000000.0,Celta,2025_26
+Sergio Carreira,8000000.0,Celta,2025_26
+Álvaro Núñez,6000000.0,Celta,2025_26
+Javi Rueda,4000000.0,Celta,2025_26
+Miguel Román,15000000.0,Celta,2025_26
+Ilaix Moriba,10000000.0,Celta,2025_26
+Hugo Sotelo,7500000.0,Celta,2025_26
+Matías Vecino,1500000.0,Celta,2025_26
+Fer López,16000000.0,Celta,2025_26
+Williot Swedberg,15000000.0,Celta,2025_26
+Hugo Álvarez,8000000.0,Celta,2025_26
+Franco Cervi,700000.0,Celta,2025_26
+Jones El-Abdellaoui,8000000.0,Celta,2025_26
+Ferran Jutglà,7000000.0,Celta,2025_26
+Pablo Durán,4000000.0,Celta,2025_26
+Borja Iglesias,3000000.0,Celta,2025_26
+Iago Aspas,1800000.0,Celta,2025_26
+Luiz Júnior,12000000.0,Villarreal,2025_26
+Diego Conde,4000000.0,Villarreal,2025_26
+Arnau Tenas,4000000.0,Villarreal,2025_26
+Renato Veiga,25000000.0,Villarreal,2025_26
+Logan Costa,18000000.0,Villarreal,2025_26
+Rafa Marín,12000000.0,Villarreal,2025_26
+Juan Foyth,10000000.0,Villarreal,2025_26
+Willy Kambwala,4000000.0,Villarreal,2025_26
+Sergi Cardona,9000000.0,Villarreal,2025_26
+Alfonso Pedraza,2500000.0,Villarreal,2025_26
+Pau Navarro,10000000.0,Villarreal,2025_26
+Santiago Mouriño,10000000.0,Villarreal,2025_26
+Alex Freeman,3500000.0,Villarreal,2025_26
+Thomas Partey,2500000.0,Villarreal,2025_26
+Pape Gueye,40000000.0,Villarreal,2025_26
+Santi Comesaña,8000000.0,Villarreal,2025_26
+Carlos Macià,3000000.0,Villarreal,2025_26
+Dani Parejo,1200000.0,Villarreal,2025_26
+Alberto Moleiro,40000000.0,Villarreal,2025_26
+Alfon González,3000000.0,Villarreal,2025_26
+Hugo López,1000000.0,Villarreal,2025_26
+Tajon Buchanan,12000000.0,Villarreal,2025_26
+Nicolas Pépé,6000000.0,Villarreal,2025_26
+Georges Mikautadze,28000000.0,Villarreal,2025_26
+Tani Oluwaseyi,8000000.0,Villarreal,2025_26
+Ayoze Pérez,6000000.0,Villarreal,2025_26
+Gerard Moreno,2800000.0,Villarreal,2025_26
+Pau Cabanes,800000.0,Villarreal,2025_26
+Álvaro Valles,6000000.0,Betis,2025_26
+Pau López,2500000.0,Betis,2025_26
+Adrián San Miguel,400000.0,Betis,2025_26
+Natan,25000000.0,Betis,2025_26
+Valentín Gómez,12000000.0,Betis,2025_26
+Diego Llorente,3000000.0,Betis,2025_26
+Marc Bartra,1000000.0,Betis,2025_26
+Junior Firpo,5000000.0,Betis,2025_26
+Ricardo Rodríguez,1500000.0,Betis,2025_26
+Ángel Ortiz,4000000.0,Betis,2025_26
+Héctor Bellerín,2500000.0,Betis,2025_26
+Sofyan Amrabat,12000000.0,Betis,2025_26
+Marc Roca,4000000.0,Betis,2025_26
+Sergi Altimira,20000000.0,Betis,2025_26
+Álvaro Fidalgo,10000000.0,Betis,2025_26
+Nelson Deossa,9000000.0,Betis,2025_26
+Pablo Fornals,8000000.0,Betis,2025_26
+Giovani Lo Celso,10000000.0,Betis,2025_26
+Isco,4000000.0,Betis,2025_26
+Abde Ezzalzouli,30000000.0,Betis,2025_26
+Rodrigo Riquelme,6000000.0,Betis,2025_26
+Antony,40000000.0,Betis,2025_26
+Pablo García,8000000.0,Betis,2025_26
+Aitor Ruibal,4000000.0,Betis,2025_26
+Cucho Hernández,18000000.0,Betis,2025_26
+Chimy Ávila,1500000.0,Betis,2025_26
+Cédric Bakambu,1400000.0,Betis,2025_26
+David Soria,3000000.0,Getafe,2025_26
+Jiri Letacek,2000000.0,Getafe,2025_26
+Abdel Abqar,4000000.0,Getafe,2025_26
+Sebastián Boselli,2800000.0,Getafe,2025_26
+Zaid Romero,2500000.0,Getafe,2025_26
+Dakonam Djené,1600000.0,Getafe,2025_26
+Domingos Duarte,800000.0,Getafe,2025_26
+Diego Rico,1200000.0,Getafe,2025_26
+Davinchi,1000000.0,Getafe,2025_26
+Juan Iglesias,5000000.0,Getafe,2025_26
+Kiko Femenía,800000.0,Getafe,2025_26
+Ismael Bekhoucha,300000.0,Getafe,2025_26
+Allan Nyom,200000.0,Getafe,2025_26
+Mario Martín,10000000.0,Getafe,2025_26
+Mauro Arambarri,10000000.0,Getafe,2025_26
+Luis Milla,3500000.0,Getafe,2025_26
+Javi Muñoz,1500000.0,Getafe,2025_26
+Adrián Liso,6000000.0,Getafe,2025_26
+Veljko Birmancevic,4500000.0,Getafe,2025_26
+Juanmi,1200000.0,Getafe,2025_26
+Abu Kamara,3000000.0,Getafe,2025_26
+Álex Sancris,2000000.0,Getafe,2025_26
+Borja Mayoral,7500000.0,Getafe,2025_26
+Martín Satriano,6000000.0,Getafe,2025_26
+Luis Vázquez,2500000.0,Getafe,2025_26
+Sergio Herrera,3000000.0,Osasuna,2025_26
+Aitor Fernández,600000.0,Osasuna,2025_26
+Enzo Boyomo,20000000.0,Osasuna,2025_26
+Jorge Herrando,4000000.0,Osasuna,2025_26
+Alejandro Catena,2800000.0,Osasuna,2025_26
+Abel Bretones,4000000.0,Osasuna,2025_26
+Javi Galán,2000000.0,Osasuna,2025_26
+Juan Cruz,1200000.0,Osasuna,2025_26
+Valentin Rosier,3000000.0,Osasuna,2025_26
+Iñigo Arguibide,800000.0,Osasuna,2025_26
+Lucas Torró,2800000.0,Osasuna,2025_26
+Iker Muñoz,2000000.0,Osasuna,2025_26
+Jon Moncayola,7000000.0,Osasuna,2025_26
+Asier Osambela,1000000.0,Osasuna,2025_26
+Aimar Oroz,9000000.0,Osasuna,2025_26
+Moi Gómez,1800000.0,Osasuna,2025_26
+Víctor Muñoz,20000000.0,Osasuna,2025_26
+Raúl Moro,5000000.0,Osasuna,2025_26
+Rubén García,1800000.0,Osasuna,2025_26
+Iker Benito,1500000.0,Osasuna,2025_26
+Kike Barja,1500000.0,Osasuna,2025_26
+Raúl García,3000000.0,Osasuna,2025_26
+Ante Budimir,3000000.0,Osasuna,2025_26
+Leo Román,6000000.0,Mallorca,2025_26
+Lucas Bergström,1500000.0,Mallorca,2025_26
+Iván Cuéllar,100000.0,Mallorca,2025_26
+Martin Valjent,4500000.0,Mallorca,2025_26
+Marash Kumbulla,4000000.0,Mallorca,2025_26
+Antonio Raíllo,1500000.0,Mallorca,2025_26
+David López,1200000.0,Mallorca,2025_26
+Johan Mojica,1800000.0,Mallorca,2025_26
+Toni Lato,1500000.0,Mallorca,2025_26
+Pablo Maffeo,5000000.0,Mallorca,2025_26
+Mateu Morey,1500000.0,Mallorca,2025_26
+Samú Costa,15000000.0,Mallorca,2025_26
+Omar Mascarell,800000.0,Mallorca,2025_26
+Sergi Darder,3500000.0,Mallorca,2025_26
+Antonio Sánchez,2400000.0,Mallorca,2025_26
+Manu Morlanes,2400000.0,Mallorca,2025_26
+Jan Salas,500000.0,Mallorca,2025_26
+Pablo Torre,5000000.0,Mallorca,2025_26
+Jan Virgili,15000000.0,Mallorca,2025_26
+Javi Llabrés,800000.0,Mallorca,2025_26
+Zito Luvumbo,3500000.0,Mallorca,2025_26
+Takuma Asano,1800000.0,Mallorca,2025_26
+Justin Kalumba,800000.0,Mallorca,2025_26
+Vedat Muriqi,4500000.0,Mallorca,2025_26
+Mateo Joseph,3500000.0,Mallorca,2025_26
+Abdón Prats,900000.0,Mallorca,2025_26
+Augusto Batalla,6000000.0,Rayo Vallecano,2025_26
+Dani Cárdenas,1800000.0,Rayo Vallecano,2025_26
+Nobel Mendy,6000000.0,Rayo Vallecano,2025_26
+Abdul Mumin,4000000.0,Rayo Vallecano,2025_26
+Luiz Felipe,3000000.0,Rayo Vallecano,2025_26
+Jozhua Vertrouwd,2500000.0,Rayo Vallecano,2025_26
+Florian Lejeune,2000000.0,Rayo Vallecano,2025_26
+Pep Chavarría,10000000.0,Rayo Vallecano,2025_26
+Alfonso Espino,1000000.0,Rayo Vallecano,2025_26
+Andrei Rațiu,18000000.0,Rayo Vallecano,2025_26
+Iván Balliu,1200000.0,Rayo Vallecano,2025_26
+Gerard Gumbau,1400000.0,Rayo Vallecano,2025_26
+Pedro Díaz,3000000.0,Rayo Vallecano,2025_26
+Unai López,2500000.0,Rayo Vallecano,2025_26
+Óscar Valentín,2200000.0,Rayo Vallecano,2025_26
+Pathé Ciss,2000000.0,Rayo Vallecano,2025_26
+Samu Becerra,300000.0,Rayo Vallecano,2025_26
+Randy Nteka,1200000.0,Rayo Vallecano,2025_26
+Óscar Trejo,400000.0,Rayo Vallecano,2025_26
+Carlos Martín,2000000.0,Rayo Vallecano,2025_26
+Álvaro García,1800000.0,Rayo Vallecano,2025_26
+Ilias Akhomach,12000000.0,Rayo Vallecano,2025_26
+Jorge de Frutos,12000000.0,Rayo Vallecano,2025_26
+Fran Pérez,3000000.0,Rayo Vallecano,2025_26
+Isi Palazón,3000000.0,Rayo Vallecano,2025_26
+Alemão,3000000.0,Rayo Vallecano,2025_26
+Sergio Camello,2000000.0,Rayo Vallecano,2025_26
+Marc-André ter Stegen,4000000.0,Girona,2025_26
+Paulo Gazzaniga,2000000.0,Girona,2025_26
+Rubén Blanco,800000.0,Girona,2025_26
+Vladyslav Krapyvtsov,400000.0,Girona,2025_26
+Juan Carlos,100000.0,Girona,2025_26
+Vitor Reis,30000000.0,Girona,2025_26
+Alejandro Francés,3000000.0,Girona,2025_26
+Daley Blind,1400000.0,Girona,2025_26
+David López,800000.0,Girona,2025_26
+Álex Moreno,3500000.0,Girona,2025_26
+Arnau Martínez,10000000.0,Girona,2025_26
+Hugo Rincón,3500000.0,Girona,2025_26
+Axel Witsel,1400000.0,Girona,2025_26
+Azzedine Ounahi,10000000.0,Girona,2025_26
+Iván Martín,6000000.0,Girona,2025_26
+Fran Beltrán,5000000.0,Girona,2025_26
+Donny van de Beek,2000000.0,Girona,2025_26
+Lass Kourouma,500000.0,Girona,2025_26
+Claudio Echeverri,15000000.0,Girona,2025_26
+Thomas Lemar,2000000.0,Girona,2025_26
+Bryan Gil,12000000.0,Girona,2025_26
+Joel Roca,5000000.0,Girona,2025_26
+Viktor Tsygankov,15000000.0,Girona,2025_26
+Portu,1500000.0,Girona,2025_26
+Vladyslav Vanat,15000000.0,Girona,2025_26
+Abel Ruiz,2500000.0,Girona,2025_26
+Cristhian Stuani,800000.0,Girona,2025_26
+Antonio Sivera,6000000.0,Alavés,2025_26
+Raúl Fernández,200000.0,Alavés,2025_26
+Jon Pacheco,6000000.0,Alavés,2025_26
+Ville Koski,1500000.0,Alavés,2025_26
+Facundo Garcés,0.0,Alavés,2025_26
+Youssef Enríquez,5000000.0,Alavés,2025_26
+Victor Parada,2000000.0,Alavés,2025_26
+Nahuel Tenaglia,3000000.0,Alavés,2025_26
+Jonny Otto,2500000.0,Alavés,2025_26
+Antonio Blanco,10000000.0,Alavés,2025_26
+Carlos Protesoni,1000000.0,Alavés,2025_26
+Pablo Ibáñez,4000000.0,Alavés,2025_26
+Carles Aleñá,3500000.0,Alavés,2025_26
+Ander Guevara,3000000.0,Alavés,2025_26
+Jon Guridi,2000000.0,Alavés,2025_26
+Calebe,2000000.0,Alavés,2025_26
+Denis Suárez,1200000.0,Alavés,2025_26
+Abde Rebbach,1500000.0,Alavés,2025_26
+Ángel Pérez,1000000.0,Alavés,2025_26
+Lucas Boyé,5000000.0,Alavés,2025_26
+Toni Martínez,4000000.0,Alavés,2025_26
+Ibrahim Diabate,1500000.0,Alavés,2025_26
+Aitor Mañas,600000.0,Alavés,2025_26
+Mariano Díaz,400000.0,Alavés,2025_26
+Marko Dmitrovic,800000.0,Espanyol,2025_26
+Ángel Fortuño,300000.0,Espanyol,2025_26
+Clemens Riedel,5000000.0,Espanyol,2025_26
+Fernando Calero,2000000.0,Espanyol,2025_26
+Miguel Rubio,2000000.0,Espanyol,2025_26
+Leandro Cabrera,1000000.0,Espanyol,2025_26
+Carlos Romero,25000000.0,Espanyol,2025_26
+José Salinas,2800000.0,Espanyol,2025_26
+Omar El Hilali,15000000.0,Espanyol,2025_26
+Rubén Sánchez,1500000.0,Espanyol,2025_26
+Urko González de Zárate,10000000.0,Espanyol,2025_26
+Charles Pickel,2500000.0,Espanyol,2025_26
+Pol Lozano,6000000.0,Espanyol,2025_26
+Edu Expósito,5000000.0,Espanyol,2025_26
+Ramón Terrats,3000000.0,Espanyol,2025_26
+Javi Puado,7500000.0,Espanyol,2025_26
+Pere Milla,1200000.0,Espanyol,2025_26
+Tyrhys Dolan,10000000.0,Espanyol,2025_26
+Cyril Ngonge,8000000.0,Espanyol,2025_26
+Jofre Carreras,3000000.0,Espanyol,2025_26
+Antoniu Roca,1800000.0,Espanyol,2025_26
+Roberto Fernández,10000000.0,Espanyol,2025_26
+Kike García,800000.0,Espanyol,2025_26
+Aarón Escandell,3000000.0,Oviedo,2025_26
+Horațiu Moldovan,2000000.0,Oviedo,2025_26
+David Carmo,8000000.0,Oviedo,2025_26
+Eric Bailly,1500000.0,Oviedo,2025_26
+David Costas,1400000.0,Oviedo,2025_26
+Dani Calvo,1000000.0,Oviedo,2025_26
+Javi López,5000000.0,Oviedo,2025_26
+Rahim Alhassane,2000000.0,Oviedo,2025_26
+Nacho Vidal,1600000.0,Oviedo,2025_26
+Lucas Ahijado,700000.0,Oviedo,2025_26
+Santiago Colombatto,3000000.0,Oviedo,2025_26
+Leander Dendoncker,3000000.0,Oviedo,2025_26
+Nicolás Fonseca,3000000.0,Oviedo,2025_26
+Alberto Reina,2000000.0,Oviedo,2025_26
+Kwasi Sibo,1500000.0,Oviedo,2025_26
+Santi Cazorla,200000.0,Oviedo,2025_26
+Luka Ilic,1800000.0,Oviedo,2025_26
+Pablo Agudín,800000.0,Oviedo,2025_26
+Thiago Fernández,4500000.0,Oviedo,2025_26
+Ilyas Chaira,4000000.0,Oviedo,2025_26
+Ovie Ejaria,500000.0,Oviedo,2025_26
+Haissem Hassan,4000000.0,Oviedo,2025_26
+Federico Viñas,4000000.0,Oviedo,2025_26
+Thiago Borbas,4000000.0,Oviedo,2025_26
+Álex Forés,800000.0,Oviedo,2025_26
+Iñaki Peña,5000000.0,Elche,2025_26
+Alejandro Iturbe,1500000.0,Elche,2025_26
+Matías Dituro,200000.0,Elche,2025_26
+David Affengruber,9000000.0,Elche,2025_26
+Víctor Chust,4000000.0,Elche,2025_26
+John Donald,1000000.0,Elche,2025_26
+Pedro Bigas,400000.0,Elche,2025_26
+Adrià Pedrosa,3000000.0,Elche,2025_26
+Léo Pétrot,1500000.0,Elche,2025_26
+Héctor Fort,12000000.0,Elche,2025_26
+Buba Sangaré,1000000.0,Elche,2025_26
+Federico Redondo,3500000.0,Elche,2025_26
+Marc Aguado,3500000.0,Elche,2025_26
+Aleix Febas,5000000.0,Elche,2025_26
+Martim Neto,5000000.0,Elche,2025_26
+Gonzalo Villar,1800000.0,Elche,2025_26
+Germán Valera,6000000.0,Elche,2025_26
+Lucas Cepeda,3500000.0,Elche,2025_26
+Tete Morente,1800000.0,Elche,2025_26
+Yago Santiago,1000000.0,Elche,2025_26
+Grady Diangana,2500000.0,Elche,2025_26
+Josan,100000.0,Elche,2025_26
+Adam Boayar,800000.0,Elche,2025_26
+Álvaro Rodríguez,5000000.0,Elche,2025_26
+Rafa Mir,4000000.0,Elche,2025_26
+André Silva,3000000.0,Elche,2025_26
+Mathew Ryan,2000000.0,Levante,2025_26
+Pablo Campos,1500000.0,Levante,2025_26
+Álex Primo,0.0,Levante,2025_26
+Matías Moreno,4000000.0,Levante,2025_26
+Alan Matturro,4000000.0,Levante,2025_26
+Adrián Dela,3000000.0,Levante,2025_26
+Unai Elgezabal,600000.0,Levante,2025_26
+Manu Sánchez,6000000.0,Levante,2025_26
+Diego Pampín,1000000.0,Levante,2025_26
+Jeremy Toljan,2200000.0,Levante,2025_26
+Víctor García,1000000.0,Levante,2025_26
+Ugo Raghouber,3000000.0,Levante,2025_26
+Oriol Rey,1800000.0,Levante,2025_26
+Kervin Arriaga,1500000.0,Levante,2025_26
+Pablo Martínez,2000000.0,Levante,2025_26
+Jon Ander Olasagasti,1800000.0,Levante,2025_26
+Unai Vencedor,1800000.0,Levante,2025_26
+Carlos Álvarez,15000000.0,Levante,2025_26
+Roger Brugué,2000000.0,Levante,2025_26
+Paco Cortés,1000000.0,Levante,2025_26
+Kareem Tunde,1000000.0,Levante,2025_26
+Tay Abed,800000.0,Levante,2025_26
+Iker Losada,1400000.0,Levante,2025_26
+Karl Etta Eyong,18000000.0,Levante,2025_26
+Iván Romero,7500000.0,Levante,2025_26
+Carlos Espí,2500000.0,Levante,2025_26
+José Luis Morales,300000.0,Levante,2025_26

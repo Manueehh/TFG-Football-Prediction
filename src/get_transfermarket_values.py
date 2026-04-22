@@ -36,7 +36,6 @@ def scrape_team_squad(team_url):
     players_data = []
 
     def clean_text(text):
-        """For formatting the data returned, it has multiple \n and \t"""
         if not text:
             return None
         text = text.replace("\n", " ").replace("\t", " ").replace("\r", " ").replace("\xa0", " ")
@@ -50,28 +49,14 @@ def scrape_team_squad(team_url):
             if not name_tag:
                 continue
 
-            player_name = clean_text(name_tag.text)
-            player_link = "https://www.transfermarkt.es" + name_tag.find("a")["href"]
-
-            position_tag = row.find("td", class_="posrela")
-            position = clean_text(position_tag.text) if position_tag else None
-
-            cells = row.find_all("td")
-            age = clean_text(cells[4].text) if len(cells) > 4 else None
-
-            flag_tag = row.find("img", class_="flaggenrahmen")
-            nationality = flag_tag["title"] if flag_tag else None
+            player_name = clean_text(name_tag.find("a").text)
 
             value_tag = row.find("td", class_="rechts hauptlink")
             market_value = clean_text(value_tag.text) if value_tag else None
 
             players_data.append({
                 "name": player_name,
-                "position": position,
-                "age": age,
-                "nationality": nationality,
                 "market_value": market_value,
-                "profile_url": player_link
             })
         except Exception as e:
             print(f"Error processing player: {e}")

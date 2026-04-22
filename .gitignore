@@ -78,9 +78,20 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+#images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+
 # IPython
 profile_default/
 ipython_config.py
+
+#pickles
+*.pkl
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
