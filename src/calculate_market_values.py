@@ -66,7 +66,26 @@ def token_set_score(a_norm: str, b_norm: str) -> float:
     sa, sb = set(a_norm.split()), set(b_norm.split())
     if not sa:
         return 0.0
-    return len(sa & sb) / len(sa)
+    
+    intersection = sa & sb
+    if not intersection:
+        return 0.0
+    
+    # token de apellido
+    a_tokens = a_norm.split()
+    b_tokens = b_norm.split()
+    
+    # apellido = ultimo token
+    last_a = a_tokens[-1] if a_tokens else ""
+    last_b = b_tokens[-1] if b_tokens else ""
+    
+    base_score = len(intersection) / len(sa)
+    
+    # bonus si coincide el apellido
+    if last_a == last_b and last_a in intersection:
+        base_score = min(1.0, base_score + 0.3)
+    
+    return base_score
 
 
 def match_player_value(pname_raw: str, season: str, team_norm: str, players_df: pd.DataFrame) -> float:
