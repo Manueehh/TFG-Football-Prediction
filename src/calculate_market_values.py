@@ -106,7 +106,7 @@ def match_player_value(pname_raw: str, season: str, team_norm: str, players_df: 
     best_idx = roster["score"].idxmax()
     best_score = roster.loc[best_idx, "score"]
 
-    if best_score < 0.6:
+    if best_score < 0.3:
         roster["fuzzy"] = roster["name_norm"].apply(lambda n: SequenceMatcher(None, pname, n).ratio())
         best_idx = roster["fuzzy"].idxmax()
         best_score = roster.loc[best_idx, "fuzzy"]
