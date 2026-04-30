@@ -7,6 +7,8 @@ import sys
 import glob
 import shap
 import matplotlib.pyplot as plt
+import datetime
+
 from datetime import date
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -50,6 +52,13 @@ def load_data():
 
     teams = sorted(pd.concat([df["HomeTeam"], df["AwayTeam"]]).unique())
     return df, players, teams
+
+def load_data_players(dataplayers : pd.DataFrame, team: str, season: str):
+    team_normalizado = normalize_text(team)
+    mask = ((dataplayers['team_norm'] == team_normalizado) & (dataplayers['Season'] == season))
+    list_players = dataplayers[mask]
+    return list_players['name'].values
+
 
 
 def compute_features(df_hist, players_df, match_date, home_team, away_team,
@@ -117,16 +126,25 @@ model_name = st.selectbox("Model", [os.path.basename(f) for f in pkl_files])
 col1, col2, col3 = st.columns(3)
 with col1:
     match_date = st.date_input("Date", value=date.today())
+    season = get_season(pd.Timestamp(match_date))
 with col2:
     home_team = st.selectbox("Home Team", teams)
+    players_home = load_data_players(players,home_team,season)
 with col3:
     away_team = st.selectbox("Away Team", teams, index=min(1, len(teams) - 1))
+    players_away = load_data_players(players,away_team,season)
 
 c1, c2 = st.columns(2)
 with c1:
-    home_lineup_str = st.text_area(f"Lineup {home_team}", placeholder="Player1, Player2, ...")
+    if len(players_home) == 0:
+        st.info(f"There are not data from {home_team} in {season} season")
+    else:
+        st.multiselect(options=players_home,label=f"Lineup {home_team}", max_selections = 11)
 with c2:
-    away_lineup_str = st.text_area(f"Lineup {away_team}", placeholder="Player1, Player2, ...")
+    if len(players_away) == 0:
+        st.info(f"There are not data from {away_team} in {season} season")
+    else:
+        st.multiselect(options=players_away,label=f"Lineup {home_team}", max_selections=11)
 
 st.subheader("Odds Bet365")
 b1, b2, b3 = st.columns(3)
@@ -138,17 +156,15 @@ with b3:
     b365a = st.number_input("Away", min_value=1.01, value=3.50, step=0.01)
 
 if st.button("Predict", type="primary"):
-    home_lineup = [p.strip() for p in home_lineup_str.split(",") if p.strip()]
-    away_lineup = [p.strip() for p in away_lineup_str.split(",") if p.strip()]
 
-    if not home_lineup or not away_lineup:
+    if len(players_home) == 0 or len(players_away) == 0:
         st.warning("Introduce lineups.")
     elif home_team == away_team:
         st.warning("Teams must be different.")
     else:
         with st.spinner("Calculating..."):
             X = compute_features(df, players, match_date, home_team, away_team,
-                                 home_lineup, away_lineup, b365h, b365d, b365a)
+                                 players_home, players_away, b365h, b365d, b365a)
 
             with open(os.path.join(BASE_DIR, model_name), "rb") as f:
                 model = pickle.load(f)
