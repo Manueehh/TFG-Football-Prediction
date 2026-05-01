@@ -86,11 +86,6 @@ target/
 *.svg
 *.webp
 
-# MLflow db y artifacts
-mlflow.db
-mlartifacts/
-mlruns/
-
 # IPython
 profile_default/
 ipython_config.py
