@@ -1,20 +1,21 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
 import os
 import sys
-import glob
 import shap
 import matplotlib.pyplot as plt
 import datetime
+import pickle
 import requests
 
 from datetime import date
 
 API_KEY= "b1e997403f8e767cb315ed618df6a697"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(BASE_DIR, "src"))
+ROOT_DIR = os.path.join(BASE_DIR, "..")
+API_URL = "http://localhost:8001"
+sys.path.insert(0, os.path.join(ROOT_DIR, 'src'))
 
 from feature_engineering import generate_features, get_season
 from calculate_market_values import (
@@ -43,11 +44,11 @@ FEATURES = [
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(os.path.join(BASE_DIR, "data", "processed", "laliga_features.csv"))
+    df = pd.read_csv(os.path.join(ROOT_DIR, "data", "processed", "laliga_features.csv"))
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     df = df.sort_values("Date").reset_index(drop=True)
 
-    players = pd.read_csv(os.path.join(BASE_DIR, "data", "processed", "players_with_market_values.csv"))
+    players = pd.read_csv(os.path.join(ROOT_DIR, "data", "processed", "players_with_market_values.csv"))
     players["team_norm"] = players["team"].map(normalize_text)
     players["name_norm"] = players["name"].map(normalize_text)
     players["market_value"] = pd.to_numeric(players["market_value"], errors="coerce").fillna(0)
@@ -145,16 +146,9 @@ def extract_pinnacle_odds(home_team, away_team, date, odds_data):
 
 st.set_page_config(page_title="Match Prediction - LaLiga", page_icon="⚽")
 st.title("Match Prediction - LaLiga")
-explainer = get_explainer(os.path.join(BASE_DIR, "explainer_model_A.pkl"))
+explainer = get_explainer(os.path.join(ROOT_DIR, "explainer_model_A.pkl"))
 
 df, players, teams = load_data()
-
-pkl_files = glob.glob(os.path.join(BASE_DIR, "*.pkl"))
-if not pkl_files:
-    st.error("No .pkl on directory.")
-    st.stop()
-
-model_name = st.selectbox("Model", [os.path.basename(f) for f in pkl_files])
 
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -217,12 +211,15 @@ if st.session_state.odds_values is not None:
                 X = compute_features(df, players, match_date, home_team, away_team,
                              players_home, players_away, b365h, b365d, b365a)
 
-                with open(os.path.join(BASE_DIR, model_name), "rb") as f:
-                    model = pickle.load(f)
+                response = requests.post(
+                    f"{API_URL}/predict",
+                    json=X.iloc[0].to_dict()
+                )
+                result = response.json()
 
-                pred = model.predict(X)[0]
-                proba = model.predict_proba(X)[0]
-                classes = model.classes_
+                pred = result['prediction']
+                proba = list(result['probabilities'].values())
+                classes = list(result['probabilities'].keys())
 
             st.divider()
             st.subheader("Result")
