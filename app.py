@@ -8,9 +8,11 @@ import glob
 import shap
 import matplotlib.pyplot as plt
 import datetime
+import requests
 
 from datetime import date
 
+API_KEY= "b1e997403f8e767cb315ed618df6a697"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(BASE_DIR, "src"))
 
@@ -105,6 +107,37 @@ def get_explainer(path):
 def get_shap_values(explainer, X):
     shap_values = explainer(X)
     return shap_values
+
+def get_laliga_odds():
+    url = "https://api.the-odds-api.com/v4/sports/soccer_spain_la_liga/odds"
+    params = {
+        "apiKey" : API_KEY,
+        "regions" : "eu",
+        "markets" : "h2h",
+        "bookmarkers" : "bet365",
+        "oddsFormat" : "decimal"
+    }
+    response = requests.get(url, params=params)
+    return response.json()
+
+def extract_pinnacle_odds(home_team, away_team, date, odds_data):
+    for match in odds_data:
+        if match['home_team'] == home_team and match['away_team'] == away_team:
+            for bookmaker in match['bookmakers']:
+                if bookmaker['key'] == 'pinnacle':
+                    for market in bookmaker['markets']:
+                        if market['key'] == 'h2h':
+                            outcomes = {o['name']: o['price'] for o in market['outcomes']}
+                            return {
+                                'home_team': home_team,
+                                'away_team': away_team,
+                                'date': date,
+                                'B365H': outcomes.get(home_team),
+                                'B365D': outcomes.get('Draw'),
+                                'B365A': outcomes.get(away_team)
+                            }
+    return None
+
     
 
 
@@ -129,77 +162,92 @@ with col1:
     season = get_season(pd.Timestamp(match_date))
 with col2:
     home_team = st.selectbox("Home Team", teams)
-    players_home = load_data_players(players,home_team,season)
+    players_home_all = load_data_players(players,home_team,season)
 with col3:
     away_team = st.selectbox("Away Team", teams, index=min(1, len(teams) - 1))
-    players_away = load_data_players(players,away_team,season)
+    players_away_all = load_data_players(players,away_team,season)
 
 c1, c2 = st.columns(2)
 with c1:
-    if len(players_home) == 0:
+    if len(players_home_all) == 0:
         st.info(f"There are not data from {home_team} in {season} season")
     else:
-        st.multiselect(options=players_home,label=f"Lineup {home_team}", max_selections = 11)
+        players_home = st.multiselect(options=players_home_all,label=f"Lineup {home_team}", max_selections = 11)
 with c2:
-    if len(players_away) == 0:
+    if len(players_away_all) == 0:
         st.info(f"There are not data from {away_team} in {season} season")
     else:
-        st.multiselect(options=players_away,label=f"Lineup {home_team}", max_selections=11)
+        players_away = st.multiselect(options=players_away_all,label=f"Lineup {home_team}", max_selections=11)
 
-st.subheader("Odds Bet365")
-b1, b2, b3 = st.columns(3)
-with b1:
-    b365h = st.number_input("Home", min_value=1.01, value=2.00, step=0.01)
-with b2:
-    b365d = st.number_input("Draw", min_value=1.01, value=3.25, step=0.01)
-with b3:
-    b365a = st.number_input("Away", min_value=1.01, value=3.50, step=0.01)
+if "odds_values" not in st.session_state:
+    st.session_state.odds_values = None
 
-if st.button("Predict", type="primary"):
-
-    if len(players_home) == 0 or len(players_away) == 0:
-        st.warning("Introduce lineups.")
-    elif home_team == away_team:
-        st.warning("Teams must be different.")
+if st.button("Get Odds", type="primary"):
+    with st.spinner("Fetching odds..."):
+        odds = get_laliga_odds()
+        result = extract_pinnacle_odds(home_team, away_team, match_date, odds)
+    if result is not None:
+        st.session_state.odds_values = result
     else:
-        with st.spinner("Calculating..."):
-            X = compute_features(df, players, match_date, home_team, away_team,
-                                 players_home, players_away, b365h, b365d, b365a)
+        st.session_state.odds_values = None
+        st.info(f"Couldn't find odds for {home_team} - {away_team} on {match_date}.")
 
-            with open(os.path.join(BASE_DIR, model_name), "rb") as f:
-                model = pickle.load(f)
+if st.session_state.odds_values is not None:
+    odds_bet = st.session_state.odds_values
+    st.subheader("Odds Bet365")
+    b1, b2, b3 = st.columns(3)
+    with b1:
+        st.info(f"Home: {odds_bet['B365H']:.2f}")
+    with b2:
+        st.info(f"Draw: {odds_bet['B365D']:.2f}")
+    with b3:
+        st.info(f"Away: {odds_bet['B365A']:.2f}")
 
-            pred = model.predict(X)[0]
-            proba = model.predict_proba(X)[0]
-            classes = model.classes_
+    b365h = odds_bet['B365H']
+    b365d = odds_bet['B365D']
+    b365a = odds_bet['B365A']
 
-        st.divider()
-        st.subheader("Result")
-        shap_values = get_shap_values(explainer, X)
-
-        if str(pred) == "1":
-            st.success(f"**Prediction: {home_team} win (1)**")
-            cols = st.columns(len(classes))
-            for i, (cls, prob) in enumerate(zip(classes, proba)):
-                label = "1 (Home)" if str(cls) == "1" else "X2 (Draw/Away)"
-                cols[i].metric(label, f"{prob * 100:.1f}%")
-            with st.expander("SHAP Values"):
-                fig = plt.figure()
-                shap.plots.waterfall(shap_values[0,:,0], show=False)
-                st.pyplot(fig)
+    if st.button("Predict", type="primary"):
+        if len(players_home) == 0 or len(players_away) == 0:
+            st.warning("Introduce lineups.")
+        elif home_team == away_team:
+            st.warning("Teams must be different.")
         else:
-            st.info(f"**Prediction: Draw or {away_team} win (X2)**")
-            cols = st.columns(len(classes))
-            for i, (cls, prob) in enumerate(zip(classes, proba)):
-                label = "1 (Home)" if str(cls) == "1" else "X2 (Draw/Away)"
-                cols[i].metric(label, f"{prob * 100:.1f}%")
-            with st.expander("SHAP Values"):
-                fig = plt.figure()
-                shap.plots.waterfall(shap_values[0,:,1], show=False)
-                st.pyplot(fig)
+            with st.spinner("Calculating..."):
+                X = compute_features(df, players, match_date, home_team, away_team,
+                             players_home, players_away, b365h, b365d, b365a)
 
-        with st.expander("Features"):
-            st.dataframe(X.T.rename(columns={X.index[0]: "Value"}))
+                with open(os.path.join(BASE_DIR, model_name), "rb") as f:
+                    model = pickle.load(f)
 
-    
-    
+                pred = model.predict(X)[0]
+                proba = model.predict_proba(X)[0]
+                classes = model.classes_
+
+            st.divider()
+            st.subheader("Result")
+            shap_values = get_shap_values(explainer, X)
+
+            if str(pred) == "1":
+                st.success(f"**Prediction: {home_team} win (1)**")
+                cols = st.columns(len(classes))
+                for i, (cls, prob) in enumerate(zip(classes, proba)):
+                    label = "1 (Home)" if str(cls) == "1" else "X2 (Draw/Away)"
+                    cols[i].metric(label, f"{prob * 100:.1f}%")
+                with st.expander("SHAP Values"):
+                    fig = plt.figure()
+                    shap.plots.waterfall(shap_values[0,:,0], show=False)
+                    st.pyplot(fig)
+            else:
+                st.info(f"**Prediction: Draw or {away_team} win (X2)**")
+                cols = st.columns(len(classes))
+                for i, (cls, prob) in enumerate(zip(classes, proba)):
+                    label = "1 (Home)" if str(cls) == "1" else "X2 (Draw/Away)"
+                    cols[i].metric(label, f"{prob * 100:.1f}%")
+                with st.expander("SHAP Values"):
+                    fig = plt.figure()
+                    shap.plots.waterfall(shap_values[0,:,1], show=False)
+                    st.pyplot(fig)
+
+            with st.expander("Features"):
+                st.dataframe(X.T.rename(columns={X.index[0]: "Value"}))
