@@ -74,7 +74,12 @@ def match_player_value(pname_raw: str, season: str, team_norm: str, players_df: 
     if not pname:
         return 0.0
 
-    mask = (players_df["Season"] == season) & (players_df["team_norm"] == team_norm)
+    # Flexible team match: handles mismatches like 'real betis' vs 'betis'
+    mask = (players_df["Season"] == season) & (
+        players_df["team_norm"].apply(
+            lambda t: t == team_norm or t in team_norm or team_norm in t
+        )
+    )
     roster = players_df.loc[mask, ["name_norm", "market_value"]]
     if roster.empty:
         return 0.0

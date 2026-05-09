@@ -56,9 +56,14 @@ def load_data():
     teams = sorted(pd.concat([df["HomeTeam"], df["AwayTeam"]]).unique())
     return df, players, teams
 
-def load_data_players(dataplayers : pd.DataFrame, team: str, season: str):
+def load_data_players(dataplayers: pd.DataFrame, team: str, season: str):
     team_normalizado = normalize_text(team)
-    mask = ((dataplayers['team_norm'] == team_normalizado) & (dataplayers['Season'] == season))
+    mask = (
+        dataplayers['team_norm'].apply(
+            lambda t: t == team_normalizado or t in team_normalizado or team_normalizado in t
+        )
+        & (dataplayers['Season'] == season)
+    )
     list_players = dataplayers[mask]
     return list_players['name'].values
 
@@ -115,10 +120,10 @@ def get_laliga_odds():
         "apiKey" : API_KEY,
         "regions" : "eu",
         "markets" : "h2h",
-        "bookmarkers" : "bet365",
         "oddsFormat" : "decimal"
     }
     response = requests.get(url, params=params)
+    print(len(response.json()))
     return response.json()
 
 def extract_pinnacle_odds(home_team, away_team, date, odds_data):
@@ -175,6 +180,8 @@ with c2:
 
 if "odds_values" not in st.session_state:
     st.session_state.odds_values = None
+if "manual_odds" not in st.session_state:
+    st.session_state.manual_odds = False
 
 if st.button("Get Odds", type="primary"):
     with st.spinner("Fetching odds..."):
@@ -182,13 +189,34 @@ if st.button("Get Odds", type="primary"):
         result = extract_pinnacle_odds(home_team, away_team, match_date, odds)
     if result is not None:
         st.session_state.odds_values = result
+        st.session_state.manual_odds = False
     else:
         st.session_state.odds_values = None
-        st.info(f"Couldn't find odds for {home_team} - {away_team} on {match_date}.")
+        st.session_state.manual_odds = True
+        st.info(f"Couldn't find odds for {home_team} - {away_team} on {match_date}. Enter them manually.")
+
+# Input manual si no se encontraron odds
+if st.session_state.manual_odds:
+    st.subheader("Manual Odds Input")
+    m1, m2, m3 = st.columns(3)
+    with m1:
+        manual_h = st.number_input("Home odds", min_value=1.01, value=2.0, step=0.01)
+    with m2:
+        manual_d = st.number_input("Draw odds", min_value=1.01, value=3.0, step=0.01)
+    with m3:
+        manual_a = st.number_input("Away odds", min_value=1.01, value=4.0, step=0.01)
+
+    if st.button("Confirm Odds", type="secondary"):
+        st.session_state.odds_values = {
+            'B365H': manual_h,
+            'B365D': manual_d,
+            'B365A': manual_a
+        }
+        st.session_state.manual_odds = False
 
 if st.session_state.odds_values is not None:
     odds_bet = st.session_state.odds_values
-    st.subheader("Odds Bet365")
+    st.subheader("Odds")
     b1, b2, b3 = st.columns(3)
     with b1:
         st.info(f"Home: {odds_bet['B365H']:.2f}")
