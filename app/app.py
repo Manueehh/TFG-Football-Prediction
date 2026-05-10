@@ -41,6 +41,16 @@ FEATURES = [
     "prob_diff_home_away", "prob_fav_margin",
 ]
 
+APP_TO_API_TEAM = {
+    "Athletic":         "Athletic Bilbao",
+    "Atlético":         "Atlético Madrid",
+    "Celta":            "Celta Vigo",
+    "Elche":            "Elche CF",
+    "Osasuna":          "CA Osasuna",
+    "R. Sociedad":      "Real Sociedad",
+}
+
+
 
 @st.cache_data
 def load_data():
@@ -114,6 +124,10 @@ def get_shap_values(explainer, X):
     shap_values = explainer(X)
     return shap_values
 
+
+def map_team_to_api(team: str) -> str:
+    return APP_TO_API_TEAM.get(team, team)
+
 def get_laliga_odds():
     url = "https://api.the-odds-api.com/v4/sports/soccer_spain_la_liga/odds"
     params = {
@@ -123,12 +137,13 @@ def get_laliga_odds():
         "oddsFormat" : "decimal"
     }
     response = requests.get(url, params=params)
-    print(len(response.json()))
     return response.json()
 
 def extract_pinnacle_odds(home_team, away_team, date, odds_data):
+    api_home = map_team_to_api(home_team)
+    api_away = map_team_to_api(away_team)
     for match in odds_data:
-        if match['home_team'] == home_team and match['away_team'] == away_team:
+        if match['home_team'] == api_home and match['away_team'] == api_away:
             for bookmaker in match['bookmakers']:
                 if bookmaker['key'] == 'pinnacle':
                     for market in bookmaker['markets']:
@@ -138,9 +153,9 @@ def extract_pinnacle_odds(home_team, away_team, date, odds_data):
                                 'home_team': home_team,
                                 'away_team': away_team,
                                 'date': date,
-                                'B365H': outcomes.get(home_team),
+                                'B365H': outcomes.get(api_home),
                                 'B365D': outcomes.get('Draw'),
-                                'B365A': outcomes.get(away_team)
+                                'B365A': outcomes.get(api_away)
                             }
     return None
 
@@ -195,7 +210,6 @@ if st.button("Get Odds", type="primary"):
         st.session_state.manual_odds = True
         st.info(f"Couldn't find odds for {home_team} - {away_team} on {match_date}. Enter them manually.")
 
-# Input manual si no se encontraron odds
 if st.session_state.manual_odds:
     st.subheader("Manual Odds Input")
     m1, m2, m3 = st.columns(3)
