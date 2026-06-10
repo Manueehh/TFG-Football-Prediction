@@ -191,7 +191,7 @@ with c2:
     if len(players_away_all) == 0:
         st.info(f"There are not data from {away_team} in {season} season")
     else:
-        players_away = st.multiselect(options=players_away_all,label=f"Lineup {home_team}", max_selections=11)
+        players_away = st.multiselect(options=players_away_all,label=f"Lineup {away_team}", max_selections=11)
 
 if "odds_values" not in st.session_state:
     st.session_state.odds_values = None
