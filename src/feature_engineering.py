@@ -254,6 +254,10 @@ def get_season(date):
     """Returns season in format YYYY_YY based on football calendar."""
     if pd.isna(date):
         return None
+
+    if pd.Timestamp('2020-07-01') <= date <= pd.Timestamp('2020-07-31'):
+        return "2019_20"
+    
     year = date.year
     if date.month >= 7:
         return f"{year}_{str(year + 1)[2:]}"
@@ -287,7 +291,7 @@ def get_resultado_M(df : pd.DataFrame):
     return df
 
 if __name__ == "__main__":
-    path = os.path.join(base_dir, '..', 'data', 'processed','laliga_features.csv')
+    path = os.path.join(base_dir, '..', 'data', 'processed','LaLiga_combined.csv')
     path = os.path.normpath(path)
     
     df = pd.read_csv(path)
