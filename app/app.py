@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import datetime
 import pickle
 import requests
-
 from datetime import date
+
 
 API_KEY= "b1e997403f8e767cb315ed618df6a697"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -23,6 +23,7 @@ from calculate_market_values import (
 )
 
 FEATURES = [
+    # ELO
     "elo_home", "elo_away", "elo_diff",
     "home_avg_goals_scored_7", "away_avg_goals_scored_7",
     "home_avg_goals_conceded_7", "away_avg_goals_conceded_7",
@@ -31,14 +32,29 @@ FEATURES = [
     "home_avg_shots_7", "away_avg_shots_7",
     "home_avg_shots_on_target_7", "away_avg_shots_on_target_7",
     "shots_on_target_ratio_home", "shots_on_target_ratio_away",
+    "home_avg_corners_7", "away_avg_corners_7",
+    "home_avg_fouls_7", "away_avg_fouls_7",
+    "home_avg_yellows_7", "away_avg_yellows_7",
+    "home_avg_reds_7", "away_avg_reds_7",
     "attack_strength_home", "attack_strength_away",
     "defense_strength_home", "defense_strength_away",
     "discipline_index_home", "discipline_index_away",
     "attack_vs_defense_home", "attack_vs_defense_away",
     "home_team_value", "away_team_value",
     "team_value_diff", "team_value_ratio",
-    "B365H_prob", "B365D_prob", "B365A_prob",
+    "B365H_prob","B365D_prob", "B365A_prob",
     "prob_diff_home_away", "prob_fav_margin",
+    "derby",
+]
+FEATURE_SELECTION_AWAY = [
+    "elo_away", "elo_diff","away_avg_goals_scored_7",
+    "away_avg_goals_conceded_7","goal_diff_form_away","total_avg_goals","away_avg_shots_7",
+    "away_avg_shots_on_target_7","shots_on_target_ratio_away","attack_strength_away",
+    "defense_strength_away","discipline_index_away","attack_vs_defense_away",
+    "away_team_value","team_value_diff", "team_value_ratio",
+    "B365D_prob", "B365A_prob","prob_diff_home_away", "prob_fav_margin",
+    "home_last_7_draws", "away_last_7_draws", "home_draw_rate", "away_draw_rate", "combined_draw_rate", 
+    "away_avg_corners_7","away_avg_fouls_7","away_avg_yellows_7","away_avg_reds_7",
 ]
 
 APP_TO_API_TEAM = {
@@ -115,10 +131,46 @@ def compute_features(df_hist, players_df, match_date, home_team, away_team,
 
     return result[FEATURES]
 
-def get_explainer(path):
-    with open(path, 'rb') as f:
-        explainer = pickle.load(f)
-    return explainer
+def compute_features_away(df_hist, match_date, home_team, away_team, result_base):
+    match_ts = pd.Timestamp(match_date)
+    season = get_season(match_ts)
+
+    df_before = df_hist[df_hist["Date"] < match_ts]
+
+    past_home = df_before[
+        (df_before["HomeTeam"] == home_team) | (df_before["AwayTeam"] == home_team)
+    ].tail(7)
+    past_away = df_before[
+        (df_before["HomeTeam"] == away_team) | (df_before["AwayTeam"] == away_team)
+    ].tail(7)
+
+    home_last_7_draws = int((past_home["FTR"] == "D").sum())
+    away_last_7_draws = int((past_away["FTR"] == "D").sum())
+
+    past_home_season = df_before[
+        ((df_before["HomeTeam"] == home_team) | (df_before["AwayTeam"] == home_team))
+        & (df_before["Season"] == season)
+    ]
+    past_away_season = df_before[
+        ((df_before["HomeTeam"] == away_team) | (df_before["AwayTeam"] == away_team))
+        & (df_before["Season"] == season)
+    ]
+
+    home_draw_rate = (past_home_season["FTR"] == "D").sum() / len(past_home_season) \
+        if len(past_home_season) > 0 else 0.0
+    away_draw_rate = (past_away_season["FTR"] == "D").sum() / len(past_away_season) \
+        if len(past_away_season) > 0 else 0.0
+
+    combined_draw_rate = home_draw_rate + away_draw_rate
+
+    result = result_base.copy()
+    result["home_last_7_draws"] = home_last_7_draws
+    result["away_last_7_draws"] = away_last_7_draws
+    result["home_draw_rate"] = home_draw_rate
+    result["away_draw_rate"] = away_draw_rate
+    result["combined_draw_rate"] = combined_draw_rate
+
+    return result
 
 def get_shap_values(explainer, X):
     shap_values = explainer(X)
@@ -159,14 +211,16 @@ def extract_pinnacle_odds(home_team, away_team, date, odds_data):
                             }
     return None
 
-    
+def load_pickle(path):
+    with open(path, 'rb') as f:
+        return pickle.load(f)
 
 
 # ── UI ──
 
 st.set_page_config(page_title="Match Prediction - LaLiga", page_icon="⚽")
 st.title("Match Prediction - LaLiga")
-explainer = get_explainer(os.path.join(ROOT_DIR, "explainer_model_A.pkl"))
+explainer = load_pickle(os.path.join(ROOT_DIR, "explainer_model_A.pkl"))
 
 df, players, teams = load_data()
 
@@ -263,30 +317,66 @@ if st.session_state.odds_values is not None:
                 proba = list(result['probabilities'].values())
                 classes = list(result['probabilities'].keys())
 
-            st.divider()
-            st.subheader("Result")
             shap_values = get_shap_values(explainer, X)
 
             if str(pred) == "1":
+                st.divider()
+                st.subheader("Result from Model A")
                 st.success(f"**Prediction: {home_team} win (1)**")
                 cols = st.columns(len(classes))
                 for i, (cls, prob) in enumerate(zip(classes, proba)):
                     label = "1 (Home)" if str(cls) == "1" else "X2 (Draw/Away)"
-                    cols[i].metric(label, f"{prob * 100:.1f}%")
-                with st.expander("SHAP Values"):
+                    cols[i].metric(label, f"{prob * 100:.1f}%") 
+                st.subheader("Model A explanation")
+                with st.expander("SHAP values"):
                     fig = plt.figure()
                     shap.plots.waterfall(shap_values[0,:,0], show=False)
-                    st.pyplot(fig)
+                    st.pyplot(fig)   
+                with st.expander("Features Model A"):
+                    st.dataframe(X.T.rename(columns={X.index[0]: "Value"}))                                    
             else:
-                st.info(f"**Prediction: Draw or {away_team} win (X2)**")
+                st.divider()
+                st.subheader("Result from Model A")
+                st.success(f"**Prediction: draw or away win (X2)**")
                 cols = st.columns(len(classes))
                 for i, (cls, prob) in enumerate(zip(classes, proba)):
                     label = "1 (Home)" if str(cls) == "1" else "X2 (Draw/Away)"
-                    cols[i].metric(label, f"{prob * 100:.1f}%")
-                with st.expander("SHAP Values"):
+                    cols[i].metric(label, f"{prob * 100:.1f}%")    
+                st.subheader("Model A explanation")
+                with st.expander("SHAP values"):
                     fig = plt.figure()
-                    shap.plots.waterfall(shap_values[0,:,1], show=False)
-                    st.pyplot(fig)
+                    shap.plots.waterfall(shap_values[0,:,0], show=False)
+                    st.pyplot(fig) 
+                with st.expander("Features Model A"):
+                    st.dataframe(X.T.rename(columns={X.index[0]: "Value"}))                                   
+                X_B = compute_features_away(df,match_date, home_team, away_team, X)
+                response_B = requests.post(f"{API_URL}/predict_b", json=X_B.iloc[0].to_dict())
+                result = response_B.json()
+                XB_filtered = X_B[FEATURE_SELECTION_AWAY]
 
-            with st.expander("Features"):
-                st.dataframe(X.T.rename(columns={X.index[0]: "Value"}))
+                pred = result['prediction']
+                proba = list(result['probabilities'].values())
+                classes = list(result['probabilities'].keys())
+
+                st.divider()
+                st.subheader("Result from Model B")
+
+                if str(pred) == "X":
+                    st.success("**Prediction: Draw**")
+                    cols = st.columns(len(classes))
+                    for i, (cls, prob) in enumerate(zip(classes, proba)):
+                        label = "X (Draw)" if str(cls) == "X" else "2 (Away)"
+                        cols[i].metric(label, f"{prob * 100:.1f}%")
+                    # TODO LIME
+                    with st.expander("Features Model B"):
+                        st.dataframe(XB_filtered.T.rename(columns={XB_filtered.index[0]: "Value"}))
+                else:
+                    st.info(f"**Prediction: {away_team} win (2)**")
+                    cols = st.columns(len(classes))
+                    for i, (cls, prob) in enumerate(zip(classes, proba)):
+                        label = "X (Draw)" if str(cls) == "X" else "2 (Away)"
+                        cols[i].metric(label, f"{prob * 100:.1f}%")                     
+                    # TODO LIME                   
+                    with st.expander("Features Model B"):
+                        st.dataframe(XB_filtered.T.rename(columns={XB_filtered.index[0]: "Value"}))
+
