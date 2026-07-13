@@ -42,4 +42,16 @@ La aplicación estará disponible en `http://localhost:8501`.
 
 ## Configuración
 
-Crear un archivo `.env` en la raíz del proyecto con el token de TabPFN:
+Crear un archivo `.env` en la raíz del proyecto con el token de TabPFN: TABPFN_TOKEN=tu_token
+
+## Estructura
+- api/          # API FastAPI
+- app/          # Aplicación Streamlit (multipágina)
+- data/         # Datasets (raw y processed)
+- mlflow/       # Registro de modelos en MLflow
+- notebooks/    # Experimentación y entrenamiento
+- src/          # Feature engineering y utilidades
+
+## Autor
+
+Manuel Avilés Rodríguez — Escuela Superior de Informática, UCLM (2026)
