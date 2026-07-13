@@ -12,15 +12,17 @@ from datetime import date
 
 
 API_KEY= "b1e997403f8e767cb315ed618df6a697"
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.join(BASE_DIR, "..")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  
+APP_DIR  = os.path.dirname(BASE_DIR)                   
+ROOT_DIR = os.path.dirname(APP_DIR)                   
 API_URL = "http://localhost:8001"
 sys.path.insert(0, os.path.join(ROOT_DIR, 'src'))
-
+sys.path.insert(0, APP_DIR) 
 from feature_engineering import generate_features, get_season
 from calculate_market_values import (
     normalize_text, match_player_value, add_various_features
 )
+from utils import load_data
 
 FEATURES = [
     # ELO
@@ -67,20 +69,6 @@ APP_TO_API_TEAM = {
 }
 
 
-
-@st.cache_data
-def load_data():
-    df = pd.read_csv(os.path.join(ROOT_DIR, "data", "processed", "laliga_features.csv"))
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-    df = df.sort_values("Date").reset_index(drop=True)
-
-    players = pd.read_csv(os.path.join(ROOT_DIR, "data", "processed", "players_with_market_values.csv"))
-    players["team_norm"] = players["team"].map(normalize_text)
-    players["name_norm"] = players["name"].map(normalize_text)
-    players["market_value"] = pd.to_numeric(players["market_value"], errors="coerce").fillna(0)
-
-    teams = sorted(pd.concat([df["HomeTeam"], df["AwayTeam"]]).unique())
-    return df, players, teams
 
 def load_data_players(dataplayers: pd.DataFrame, team: str, season: str):
     team_normalizado = normalize_text(team)
@@ -218,7 +206,16 @@ def load_pickle(path):
 
 # ── UI ──
 
-st.set_page_config(page_title="Match Prediction - LaLiga", page_icon="⚽")
+st.set_page_config(page_title="Prediction - LaLiga", page_icon="🔮", layout="wide")
+st.markdown("""
+    <style>
+    .block-container {
+        max-width: 1200px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    </style>
+""", unsafe_allow_html=True)
 st.title("Match Prediction - LaLiga")
 explainer = load_pickle(os.path.join(ROOT_DIR, "explainer_model_A.pkl"))
 
@@ -361,22 +358,19 @@ if st.session_state.odds_values is not None:
                 st.divider()
                 st.subheader("Result from Model B")
 
-                if str(pred) == "X":
+                if str(pred) == "D":
                     st.success("**Prediction: Draw**")
                     cols = st.columns(len(classes))
                     for i, (cls, prob) in enumerate(zip(classes, proba)):
-                        label = "X (Draw)" if str(cls) == "X" else "2 (Away)"
+                        label = "X (Draw)" if str(cls) == "D" else "2 (Away)"
                         cols[i].metric(label, f"{prob * 100:.1f}%")
-                    # TODO LIME
                     with st.expander("Features Model B"):
                         st.dataframe(XB_filtered.T.rename(columns={XB_filtered.index[0]: "Value"}))
                 else:
                     st.info(f"**Prediction: {away_team} win (2)**")
                     cols = st.columns(len(classes))
                     for i, (cls, prob) in enumerate(zip(classes, proba)):
-                        label = "X (Draw)" if str(cls) == "X" else "2 (Away)"
-                        cols[i].metric(label, f"{prob * 100:.1f}%")                     
-                    # TODO LIME                   
+                        label = "X (Draw)" if str(cls) == "D" else "2 (Away)"
+                        cols[i].metric(label, f"{prob * 100:.1f}%")                                     
                     with st.expander("Features Model B"):
                         st.dataframe(XB_filtered.T.rename(columns={XB_filtered.index[0]: "Value"}))
-
